@@ -282,16 +282,12 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   .eyebrow { color: var(--accent); letter-spacing: 3px; font-weight: 700; }
   .btn { text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
   .btn-gold { background: var(--accent); color: #fff; }
-  .btn-gold:hover { background: var(--accent_dark); filter: none; }
+  .btn-gold:hover { background: var(--accent-dark); filter: none; }
   .card { border-left: 4px solid var(--accent); }
   .stat-box { border-top: 4px solid var(--accent); }
   .navbar { border-bottom: 3px solid var(--accent); }
   .tag { color: var(--accent); font-weight: 700; }
   .hero .subtitle { color: var(--accent); letter-spacing: 6px; }
-
-/* ============================================================
-
-/* ============================================================
 
 /* ============================================================
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)

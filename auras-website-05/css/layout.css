@@ -32,8 +32,11 @@ body{background:var(--bg)}
 .footer{background:#14171C;color:#fff;padding:46px 0 26px}
 .footer .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px;max-width:1320px;margin:0 auto;padding:0 30px}
 .footer a{color:rgba(255,255,255,.8)}
-.page-banner{background:var(--primary);color:#fff;padding:44px 5vw}
+.page-banner{background:linear-gradient(120deg,var(--dark) 0%,var(--dark-2) 55%,var(--primary) 120%);color:var(--text-on-dark);padding:44px 5vw}
 .page-banner h1{color:#fff;text-transform:uppercase;letter-spacing:1px}
+.page-banner p{color:rgba(236,238,241,.92)}
+.breadcrumb{color:rgba(236,238,241,.9)}
+.breadcrumb a{color:var(--accent)}
 @media(max-width:992px){
   .statusbar .sb-in{flex-direction:column;gap:2px;text-align:center}
   .nav-panel .np-in{flex-wrap:wrap}
