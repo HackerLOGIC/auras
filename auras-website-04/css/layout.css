@@ -1,0 +1,45 @@
+/* ===== 04 CINEMATIC LAYOUT ===== */
+.nav-float{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(10,10,14,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-float .nav-in{display:flex;align-items:center;justify-content:space-between;max-width:1440px;margin:0 auto;padding:16px 36px}
+.nav-float .brand{color:#fff}
+.nav-float .nav-links{list-style:none;display:flex;gap:6px;margin:0;padding:0}
+.nav-float .nav-links a{display:block;padding:9px 16px;border-radius:999px;color:rgba(255,255,255,.85);text-decoration:none;font-weight:500}
+.nav-float .nav-links a:hover,.nav-float .nav-links a.active{background:var(--accent);color:#fff}
+.nav-float .nav-toggle{display:none}
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.25) 45%,rgba(0,0,0,.75))}
+.hero .container{position:relative;z-index:2;max-width:900px;padding:0 24px}
+.hero h1{font-size:64px;line-height:1.08;color:#fff}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:#fff;font-size:22px;animation:bounce 2s infinite;z-index:2}
+@keyframes bounce{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
+.rail{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px 8vw}
+.rail .rail-card{flex:0 0 340px;scroll-snap-align:center;border-radius:22px;overflow:hidden;position:relative;min-height:300px;background-size:cover;background-position:center}
+.rail .rail-card::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.85))}
+.rail .rail-card .rail-body{position:absolute;left:0;right:0;bottom:0;padding:24px;color:#fff;z-index:2}
+.section{padding:70px 8vw}
+.section .container{max-width:1280px;margin:0 auto}
+.section-title{font-size:40px}
+.numwall{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center;background:var(--bg-alt);border-radius:24px;overflow:hidden}
+.numwall .stat-box{padding:40px 10px}
+.numwall .num{font-size:60px;font-weight:800;color:var(--accent)}
+.cinema-news{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{border-radius:20px;overflow:hidden;background:var(--surface);border:1px solid rgba(255,255,255,.06)}
+.card-img{min-height:210px}
+.cta{text-align:center;padding:90px 8vw;background:linear-gradient(120deg,var(--primary),var(--accent));border-radius:28px;margin:30px 8vw}
+.footer{background:#06070A;color:#fff;padding:50px 8vw 28px}
+.footer .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:28px}
+.footer a{color:rgba(255,255,255,.8)}
+.page-banner{padding:150px 8vw 60px;color:#fff;background:var(--primary)}
+.page-banner h1{font-size:44px;color:#fff}
+.page-body{max-width:1240px;margin:0 auto;padding:50px 8vw}
+.grid-4{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+@media(max-width:992px){
+  .nav-float .nav-toggle{display:block;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:10px;padding:8px 12px}
+  .nav-float .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(10,10,14,.97);padding:12px}
+  .nav-float .nav-links.open{display:flex}
+  .hero h1{font-size:40px}
+  .numwall,.cinema-news,.footer .footer-grid{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:1fr}
+  .cta{margin:0;border-radius:0}
+}
