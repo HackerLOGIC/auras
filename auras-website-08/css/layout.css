@@ -1,5 +1,5 @@
 /* ===== 08 SPLIT MENU LAYOUT ===== */
-.nav-split{background:var(--surface);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-split{background:var(--surface);border-bottom:1px solid rgba(0,0,0,.10)}
 .nav-split .ns-in{display:flex;align-items:center;justify-content:space-between;max-width:1400px;margin:0 auto;padding:12px 30px;gap:30px}
 .nav-split .brand{color:var(--text)}
 .nav-split .split-menu{display:flex;flex-direction:column;gap:2px}
@@ -7,11 +7,11 @@
 .nav-split .row1 a,.nav-split .row2 a{display:block;padding:6px 13px;border-radius:6px;color:var(--text);text-decoration:none;font-size:13.5px;font-weight:500}
 .nav-split .row1 a:hover,.nav-split .row1 a.active,.nav-split .row2 a:hover,.nav-split .row2 a.active{background:var(--accent);color:#fff}
 .nav-split .nav-toggle{display:none}
-.hero{position:relative;min-height:560px;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}
+.hero{position:relative;min-height:560px;display:flex;align-items:center;justify-content:center;color:var(--text);text-align:center}
 .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center}
 .hero-bg::after{content:'';position:absolute;inset:0;background:rgba(10,12,16,.55)}
 .hero .container{position:relative;z-index:2;padding:0 24px}
-.hero h1{font-size:56px;color:#fff}
+.hero h1{font-size:56px;color:var(--text)}
 .section .container{max-width:1360px;margin:0 auto;padding:60px 30px}
 .strip{display:grid;grid-template-columns:1fr;gap:34px}
 .strip-item{display:grid;grid-template-columns:1.15fr 1fr;gap:34px;align-items:center}
@@ -22,7 +22,7 @@
 .stat-box{text-align:center}
 .stat-box .num{font-size:44px;font-weight:800;color:var(--accent)}
 .news-scroll{display:flex;gap:24px;overflow-x:auto;padding-bottom:14px}
-.news-scroll .card{flex:0 0 360px;background:var(--surface);border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.07)}
+.news-scroll .card{flex:0 0 360px;background:var(--surface);border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,.08)}
 .news-scroll .card-img{min-height:190px}
 .cta-strip{background:var(--primary);color:#fff;border-radius:20px;padding:56px 40px;text-align:center}
 .cta-strip h2{color:#fff}
@@ -35,11 +35,11 @@
 .page-split .ps-aside{font-family:var(--font-head);font-size:26px;color:var(--accent)}
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid rgba(255,255,255,.07)}
+.card{border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid rgba(0,0,0,.08)}
 .card-img{min-height:180px}
 @media(max-width:992px){
   .nav-split .ns-in{flex-wrap:wrap;position:relative}
-  .nav-split .nav-toggle{display:block;background:none;border:1px solid rgba(255,255,255,.3);color:var(--text);border-radius:8px;padding:8px 12px}
+  .nav-split .nav-toggle{display:block;background:none;border:1px solid rgba(0,0,0,.25);color:var(--text);border-radius:8px;padding:8px 12px}
   .nav-split .split-menu{display:none;flex-basis:100%}
   .nav-split .split-menu.open{display:flex}
   .hero h1{font-size:38px}
@@ -48,3 +48,18 @@
   .page-split{grid-template-columns:1fr}
   .grid-4,.grid-3{grid-template-columns:repeat(2,1fr)}
 }
+/* brightness patch */
+.section.alt{background:var(--bg-alt)}
+.section-title{color:var(--text)}
+.section-sub{color:var(--text-muted)}
+.section-tag{color:var(--accent-dark)}
+.stat-box{background:var(--surface)}
+.card-body h3{color:var(--text)}
+.tl-title{color:var(--text)}
+.form-control{color:var(--text);background:var(--surface);border:1px solid var(--border)}
+/* brightness patch */
+.hero::after{background:linear-gradient(100deg,rgba(255,255,255,0.92) 0%,rgba(255,255,255,0.60) 55%,rgba(255,255,255,0.28) 100%)}
+.hero p{color:var(--text-muted)}
+.hero .subtitle{color:var(--accent-dark)}
+.btn-outline{color:var(--accent-dark);border-color:var(--accent-dark);background:transparent}
+.btn-outline:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark)}

@@ -45,3 +45,9 @@ body{background:var(--bg)}
   .grid-6,.grid-4,.grid-3,.news-grid,.footer .footer-grid{grid-template-columns:1fr}
   .datapanel{grid-template-columns:1fr}
 }
+/* brightness patch */
+.hero::after{background:linear-gradient(100deg,rgba(255,255,255,0.92) 0%,rgba(255,255,255,0.60) 55%,rgba(255,255,255,0.28) 100%)}
+.hero p{color:var(--text-muted)}
+.hero .subtitle{color:var(--accent-dark)}
+.btn-outline{color:var(--accent-dark);border-color:var(--accent-dark);background:transparent}
+.btn-outline:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark)}

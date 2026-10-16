@@ -43,3 +43,17 @@ body{background:var(--bg)}
   .banner4,.grid-4,.grid-3,.news-grid,.footer .footer-grid{grid-template-columns:1fr}
   .stat-row{gap:22px}
 }
+/* brightness patch */
+.section.alt{background:var(--bg-alt)}
+.section-title{color:var(--text)}
+.section-sub{color:var(--text-muted)}
+.brand{color:var(--text)}
+.card-body h3{color:var(--text)}
+.tl-title{color:var(--text)}
+.form-control{color:var(--text);background:var(--surface);border:1px solid var(--border)}
+/* brightness patch */
+.hero::after{background:linear-gradient(100deg,rgba(255,255,255,0.92) 0%,rgba(255,255,255,0.60) 55%,rgba(255,255,255,0.28) 100%)}
+.hero p{color:var(--text-muted)}
+.hero .subtitle{color:var(--accent-dark)}
+.btn-outline{color:var(--accent-dark);border-color:var(--accent-dark);background:transparent}
+.btn-outline:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark)}

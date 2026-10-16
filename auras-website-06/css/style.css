@@ -291,7 +291,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   --text: #d8f3ec; --white: #ffffff;
   --shadow: 0 4px 18px rgba(16,185,129,0.14); --shadow-lg: 0 14px 44px rgba(16,185,129,0.26);
 }
-body { font-family: "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif; background: #041a1f; color: var(--text); }
+body { font-family: "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
 .section.alt { background: linear-gradient(180deg, #062127, #072831); }
 .section-title { color: #fff; font-weight: 700; letter-spacing: 1px; }
 .section-sub { color: var(--gray); }
