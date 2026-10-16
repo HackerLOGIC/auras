@@ -42,7 +42,7 @@
   .s7-table a .no{display:none}
 }
 /* brightness patch */
-.hero::after{background:linear-gradient(100deg,rgba(255,255,255,0.92) 0%,rgba(255,255,255,0.60) 55%,rgba(255,255,255,0.28) 100%)}
+.hero::after{background:linear-gradient(100deg,rgba(255,255,255,0.42) 0%,rgba(255,255,255,0.22) 55%,rgba(255,255,255,0.10) 100%)}
 .hero p{color:var(--text-muted)}
 .hero .subtitle{color:var(--accent-dark)}
 .btn-outline{color:var(--accent-dark);border-color:var(--accent-dark);background:transparent}

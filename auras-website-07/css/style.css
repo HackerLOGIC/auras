@@ -24,7 +24,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: "Segoe UI", "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
   color: var(--text);
-  background: var(--white);
+  background: var(--bg);
   line-height: 1.65;
   font-size: 16px;
 }
@@ -291,7 +291,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   --text: #1e2b3f; --white: #ffffff;
   --shadow: 0 3px 14px rgba(11,61,145,0.10); --shadow-lg: 0 12px 38px rgba(11,61,145,0.16);
 }
-body { font-family: "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif; background: #fff; color: var(--text); }
+body { font-family: "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
 .section.alt { background: var(--light); }
 .section-title { color: var(--navy); font-weight: 700; }
 .eyebrow { color: var(--gold); letter-spacing: 3px; }

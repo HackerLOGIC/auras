@@ -43,7 +43,7 @@
   .s7-list,.news-grid,.footer .footer-grid{grid-template-columns:1fr}
 }
 /* brightness patch */
-.hero::after{background:linear-gradient(100deg,rgba(255,255,255,0.92) 0%,rgba(255,255,255,0.60) 55%,rgba(255,255,255,0.28) 100%);z-index:0}
+.hero::after{background:linear-gradient(100deg,rgba(255,255,255,0.42) 0%,rgba(255,255,255,0.22) 55%,rgba(255,255,255,0.10) 100%);z-index:0}
 .hero{position:relative}
 .hero .subtitle,.hero h1,.hero p{position:relative;z-index:2}
 .hero p{color:var(--text-muted)}

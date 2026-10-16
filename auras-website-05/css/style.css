@@ -24,7 +24,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: "Segoe UI", "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
   color: var(--text);
-  background: var(--white);
+  background: var(--bg);
   line-height: 1.65;
   font-size: 16px;
 }
@@ -291,7 +291,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   --text: #1b1f27; --white: #ffffff;
   --shadow: 0 3px 8px rgba(31,36,48,0.18); --shadow-lg: 0 12px 30px rgba(31,36,48,0.28);
 }
-body { font-family: "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif; background: #f4f6f9; color: var(--text); }
+body { font-family: "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
 .section-title { font-family: Impact, "Arial Narrow", "Segoe UI", sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; color: var(--navy); }
 .eyebrow { font-family: Consolas, "Courier New", monospace; color: var(--gold); letter-spacing: 3px; }
 .navbar { background: #1f2430; border-bottom: 5px solid var(--gold); }

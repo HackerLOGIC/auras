@@ -16,10 +16,10 @@
   --link: #1D5AA8;
   --warn: #B4542E;
   --success: #1E7A4A;
-  --bg: #FFFFFF;
-  --bg-alt: #F4F7FB;
+  --bg: #EEF3F7;
+  --bg-alt: #E2EBF3;
   --surface: #FFFFFF;
-  --surface-alt: #EAF0F8;
+  --surface-alt: #D8E3EE;
   --text: #16243A;
   --text-muted: #4E5D70;
   --text-on-dark: #EAF2FB;
@@ -51,7 +51,7 @@
   --blue: #2B6FBF; --sky: #3F87D6;
   --gold: #1D5AA8; --gold-2: #1D5AA8;
   --orange: #B4542E; --green: #1E7A4A;
-  --light: #F4F7FB; --gray: #4E5D70; --border2: #DCE5F0; --text2: #16243A;
+  --light: #E2EBF3; --gray: #4E5D70; --border2: #DCE5F0; --text2: #16243A;
 }
 
 /* ---------- base typography ---------- */

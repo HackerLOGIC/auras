@@ -24,7 +24,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: "Segoe UI", "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
   color: var(--text);
-  background: var(--white);
+  background: var(--bg);
   line-height: 1.65;
   font-size: 16px;
 }
@@ -291,7 +291,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   --text: #111111; --white: #ffffff;
   --shadow: none; --shadow-lg: 0 24px 60px rgba(17,17,17,0.10);
 }
-body { font-family: "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif; background: #fff; color: var(--text); }
+body { font-family: "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
 .section { padding: 110px 0; }
 .section.alt { background: #fafafa; }
 .section-title { font-size: 46px; font-weight: 300; letter-spacing: 2px; color: #111; }
@@ -323,7 +323,7 @@ body { font-family: "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif;
 .card-body h3 { font-weight: 400; font-size: 20px; color: #111; letter-spacing: .5px; }
 .card-body p { color: var(--gray); }
 .card-body .tag { color: var(--blue); }
-.page-banner { background: #fff; color: #111; padding: 120px 0 90px; border-bottom: 1px solid var(--border); }
+.page-banner { background: var(--bg-alt); color: #111; padding: 120px 0 90px; border-bottom: 1px solid var(--border); }
 .page-banner::after { display: none; }
 .page-banner h1 { font-weight: 200; font-size: 56px; color: #111; letter-spacing: 2px; }
 .page-banner p { color: var(--gray); }
