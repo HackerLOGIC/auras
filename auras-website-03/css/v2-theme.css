@@ -286,9 +286,9 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   .stat-box { box-shadow: none; border: 1px solid var(--border); border-top: 3px solid var(--accent); }
   .footer { border-top: 1px solid rgba(138,106,69,0.4); }
 
-/* ============================================================
+/* ============================================================ */
 
-/* ============================================================
+/* ============================================================ */
 
 /* ============================================================
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)

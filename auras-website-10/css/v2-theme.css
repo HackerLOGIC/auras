@@ -290,9 +290,9 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   .navbar.scrolled { background: rgba(255,255,255,0.86); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 20px rgba(17,17,17,0.06); }
   .footer { border-top: 1px solid var(--border); }
 
-/* ============================================================
+/* ============================================================ */
 
-/* ============================================================
+/* ============================================================ */
 
 /* ============================================================
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)

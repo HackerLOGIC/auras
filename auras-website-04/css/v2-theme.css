@@ -288,9 +288,9 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   .eyebrow { color: var(--muted_on_dark); letter-spacing: 2px; }
   .navbar { background: rgba(0,0,0,0.72); backdrop-filter: saturate(1.4) blur(18px); -webkit-backdrop-filter: saturate(1.4) blur(18px); border-bottom: 1px solid rgba(255,255,255,0.08); }
 
-/* ============================================================
+/* ============================================================ */
 
-/* ============================================================
+/* ============================================================ */
 
 /* ============================================================
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
