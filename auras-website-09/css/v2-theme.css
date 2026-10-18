@@ -7,50 +7,50 @@
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
 :root {
-  /* palette */
-  --primary: #005F46;
-  --primary-2: #008060;
-  --primary-3: #00A076;
-  --accent: #008060;
-  --accent-dark: #005F46;
-  --link: #005F46;
-  --warn: #C2410C;
-  --success: #008060;
+  /* palette - EDITORIAL GREEN SPLIT v4 */
+  --primary: #008060;
+  --primary-2: #00A076;
+  --primary-3: #2FBF8E;
+  --accent: #00A076;
+  --accent-dark: #008060;
+  --link: #008060;
+  --warn: #B4542E;
+  --success: #2E9E6B;
   --bg: #FFFFFF;
   --bg-alt: #F6F7F8;
   --surface: #FFFFFF;
-  --surface-alt: #EFF1F3;
+  --surface-alt: #F1F4F3;
   --text: #16181D;
   --text-muted: #46525F;
-  --text-on-dark: #FFFFFF;
-  --muted-on-dark: #DCE7E0;
+  --text-on-dark: #F2F6F4;
+  --muted-on-dark: #A9C0B4;
   --border: #E5E8EB;
   --border-dark: rgba(255,255,255,0.14);
-  --dark: #101418;
-  --dark-2: #0A0D10;
-  --dark-text: #FFFFFF;
+  --dark: #0B3D2E;
+  --dark-2: #06281E;
+  --dark-text: #F2F6F4;
   /* font system */
-  --font-head: 'Manrope', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
+  --font-head: 'Inter', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  --font-mono: 'IBM Plex Mono', Consolas, monospace;
-  /* radius */
-  --r-card: 12px;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+  /* radius - editorial crisp */
+  --r-card: 8px;
   --r-btn: 8px;
-  --r-input: 10px;
+  --r-input: 8px;
   --r-pill: 999px;
-  /* elevation */
-  --shadow: 0 4px 24px rgba(16,20,24,0.08);
-  --shadow-lg: 0 16px 48px rgba(16,20,24,0.13);
+  /* elevation - clean */
+  --shadow: 0 6px 18px rgba(0,0,0,0.06);
+  --shadow-lg: 0 16px 40px rgba(0,0,0,0.10);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
-  /* motion */
-  --dur-fast: 220ms; --dur: 360ms; --dur-slow: 500ms;
-  --ease: cubic-bezier(.25, .8, .3, 1);
-  /* legacy aliases so style.css vars keep working */
-  --navy: #005F46; --navy-2: #008060; --navy-3: #00A076;
-  --blue: #008060; --sky: #00A076;
-  --gold: #008060; --gold-2: #008060;
-  --orange: #C2410C; --green: #008060;
+  /* motion - compact */
+  --dur-fast: 180ms; --dur: 260ms; --dur-slow: 420ms;
+  --ease: cubic-bezier(.3,.7,.3,1);
+  /* legacy aliases */
+  --navy: #008060; --navy-2: #00A076; --navy-3: #2FBF8E;
+  --blue: #00A076; --sky: #2FBF8E;
+  --gold: #00A076; --gold-2: #00A076;
+  --orange: #B4542E; --green: #2E9E6B;
   --light: #F6F7F8; --gray: #46525F; --border2: #E5E8EB; --text2: #16181D;
 }
 

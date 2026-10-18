@@ -7,51 +7,51 @@
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
 :root {
-  /* palette */
+  /* palette - FOREST ORGANIC GREEN v4 */
   --primary: #0E5C45;
   --primary-2: #157A5C;
   --primary-3: #1F9E77;
   --accent: #2FC49A;
-  --accent-dark: #1F9E77;
-  --link: #157A5C;
-  --warn: #D98E2B;
-  --success: #2FC49A;
-  --bg: #EFF5F1;
-  --bg-alt: #E2EEE7;
+  --accent-dark: #0E5C45;
+  --link: #0E5C45;
+  --warn: #C05B2B;
+  --success: #2E9E6B;
+  --bg: #F1F6F2;
+  --bg-alt: #E4EEE8;
   --surface: #FFFFFF;
-  --surface-alt: #D8E8DE;
-  --text: #15251F;
-  --text-muted: #4E6B60;
-  --text-on-dark: #EAF6F1;
-  --muted-on-dark: #A7CDBF;
-  --border: #D9E8E1;
+  --surface-alt: #EAF3EC;
+  --text: #1C2E26;
+  --text-muted: #5A7368;
+  --text-on-dark: #F0F6F2;
+  --muted-on-dark: #9FB8AC;
+  --border: #D3E5DC;
   --border-dark: rgba(255,255,255,0.14);
-  --dark: #082E22;
-  --dark-2: #06241B;
-  --dark-text: #EAF6F1;
+  --dark: #0A3B2C;
+  --dark-2: #062E22;
+  --dark-text: #F0F6F2;
   /* font system */
-  --font-head: 'Manrope', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
+  --font-head: 'Inter', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  --font-mono: 'IBM Plex Mono', Consolas, monospace;
-  /* radius */
-  --r-card: 14px;
-  --r-btn: 10px;
-  --r-input: 10px;
+  --font-mono: 'Source Code Pro', Consolas, monospace;
+  /* radius - organic */
+  --r-card: 16px;
+  --r-btn: 12px;
+  --r-input: 12px;
   --r-pill: 999px;
-  /* elevation */
-  --shadow: 0 6px 28px rgba(8,46,34,0.10);
-  --shadow-lg: 0 18px 56px rgba(8,46,34,0.16);
+  /* elevation - soft green */
+  --shadow: 0 12px 28px rgba(14,92,69,0.10);
+  --shadow-lg: 0 24px 56px rgba(14,92,69,0.16);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
-  /* motion */
-  --dur-fast: 220ms; --dur: 360ms; --dur-slow: 500ms;
-  --ease: cubic-bezier(.25, .8, .3, 1);
-  /* legacy aliases so style.css vars keep working */
+  /* motion - soft flowing */
+  --dur-fast: 300ms; --dur: 480ms; --dur-slow: 680ms;
+  --ease: cubic-bezier(.28,.6,.3,1);
+  /* legacy aliases */
   --navy: #0E5C45; --navy-2: #157A5C; --navy-3: #1F9E77;
   --blue: #157A5C; --sky: #1F9E77;
   --gold: #2FC49A; --gold-2: #2FC49A;
-  --orange: #D98E2B; --green: #2FC49A;
-  --light: #E2EEE7; --gray: #4E6B60; --border2: #D9E8E1; --text2: #15251F;
+  --orange: #C05B2B; --green: #2E9E6B;
+  --light: #E4EEE8; --gray: #5A7368; --border2: #D3E5DC; --text2: #1C2E26;
 }
 
 /* ---------- base typography ---------- */

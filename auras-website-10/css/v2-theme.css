@@ -7,51 +7,51 @@
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
 :root {
-  /* palette */
+  /* palette - VIVID BLUE MATERIAL v4 */
   --primary: #1A73E8;
   --primary-2: #1E8EFF;
-  --primary-3: #4A9DFF;
-  --accent: #1A73E8;
-  --accent-dark: #1765CC;
+  --primary-3: #56B4FF;
+  --accent: #1E8EFF;
+  --accent-dark: #1A73E8;
   --link: #1A73E8;
-  --warn: #B4542E;
-  --success: #188038;
-  --bg: #E8EBEF;
-  --bg-alt: #DDE1E6;
+  --warn: #D6452A;
+  --success: #1E9E6A;
+  --bg: #F4F6F9;
+  --bg-alt: #E9EDF2;
   --surface: #FFFFFF;
-  --surface-alt: #D1D6DC;
-  --text: #111111;
+  --surface-alt: #F0F3F7;
+  --text: #1A1A1A;
   --text-muted: #5F6368;
-  --text-on-dark: #FFFFFF;
-  --muted-on-dark: #B8BDC4;
-  --border: #E8EAED;
+  --text-on-dark: #F5F7FA;
+  --muted-on-dark: #B8C4D0;
+  --border: #E0E4EA;
   --border-dark: rgba(255,255,255,0.14);
-  --dark: #111111;
-  --dark-2: #0A0A0A;
-  --dark-text: #FFFFFF;
+  --dark: #12273D;
+  --dark-2: #0B1B2D;
+  --dark-text: #F5F7FA;
   /* font system */
   --font-head: 'Inter', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  --font-mono: 'SF Mono', Consolas, monospace;
-  /* radius */
-  --r-card: 16px;
+  --font-mono: 'Roboto Mono', Consolas, monospace;
+  /* radius - material */
+  --r-card: 12px;
   --r-btn: 999px;
   --r-input: 10px;
   --r-pill: 999px;
-  /* elevation */
-  --shadow: 0 4px 20px rgba(17,17,17,0.06);
-  --shadow-lg: 0 14px 44px rgba(17,17,17,0.10);
+  /* elevation - material */
+  --shadow: 0 8px 24px rgba(26,115,232,0.10);
+  --shadow-lg: 0 20px 50px rgba(26,115,232,0.16);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
-  /* motion */
-  --dur-fast: 220ms; --dur: 360ms; --dur-slow: 500ms;
-  --ease: cubic-bezier(.25, .8, .3, 1);
-  /* legacy aliases so style.css vars keep working */
-  --navy: #1A73E8; --navy-2: #1E8EFF; --navy-3: #4A9DFF;
-  --blue: #1E8EFF; --sky: #4A9DFF;
-  --gold: #1A73E8; --gold-2: #1A73E8;
-  --orange: #B4542E; --green: #188038;
-  --light: #DDE1E6; --gray: #5F6368; --border2: #E8EAED; --text2: #111111;
+  /* motion - bright snappy */
+  --dur-fast: 160ms; --dur: 220ms; --dur-slow: 360ms;
+  --ease: cubic-bezier(.2,.6,.2,1);
+  /* legacy aliases */
+  --navy: #1A73E8; --navy-2: #1E8EFF; --navy-3: #56B4FF;
+  --blue: #1E8EFF; --sky: #56B4FF;
+  --gold: #1E8EFF; --gold-2: #1E8EFF;
+  --orange: #D6452A; --green: #1E9E6A;
+  --light: #E9EDF2; --gray: #5F6368; --border2: #E0E4EA; --text2: #1A1A1A;
 }
 
 /* ---------- base typography ---------- */

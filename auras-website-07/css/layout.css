@@ -177,3 +177,263 @@ body.auras-ready .hero.auras-reveal{opacity:1 !important;transform:none !importa
 
 /* AURAS V3 REDO FIX 07 : solid hero text */
 .hero h1{color:#1F2A37 !important}
+
+/* ============ AURAS V4 DIFF-07 : NORDIC MIST BLUE ============ */
+.nav-mini{border-bottom:1px solid #DCE5F0;background:rgba(242,245,249,.88) !important;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.nav-mini .nav-links a{letter-spacing:.8px;font-size:14px;font-weight:500;color:#22344A !important}
+.nav-mini .nav-links a:hover,.nav-mini .nav-links a.active{color:#1D5AA8 !important;background:rgba(29,90,168,.06);border-radius:6px}
+.nav-mini.auras-scrolled{background:rgba(255,255,255,.9) !important}
+.nav.dock{border-top:1px solid #DCE5F0;background:rgba(255,255,255,.85) !important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 -4px 20px rgba(29,90,168,.06)}
+.nav.dock .nav-links a{font-size:12.5px;letter-spacing:.6px;color:#5C6F85 !important}
+.nav.dock .nav-links a:hover,.nav.dock .nav-links a.active{color:#1D5AA8 !important}
+.hero .subtitle{color:#1D5AA8 !important;letter-spacing:3.6px;text-transform:uppercase;font-size:12px;font-weight:600}
+.hero h1{font-weight:600;color:#14294A !important;letter-spacing:-.01em;line-height:1.14}
+.hero p{color:#5C6F85 !important}
+.card,article.card,.stat-box{border-radius:10px;border:1px solid #E4EBF5;box-shadow:0 2px 10px rgba(29,90,168,.05)}
+.card:hover,article.card:hover,.stat-box:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(29,90,168,.10);border-color:#3F87D6}
+.btn.btn-gold{background:#1D5AA8;border-radius:6px;box-shadow:0 4px 14px rgba(29,90,168,.25)}
+.btn.btn-gold:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(29,90,168,.32)}
+.btn-outline{color:#1D5AA8 !important;border-color:#1D5AA8 !important}
+.footer{background:#14294A}
+.page-banner{background:#14294A}
+.eyebrow{letter-spacing:3.4px;color:#1D5AA8 !important}
+.section-title{font-weight:600}
+body.auras-ready .auras-reveal{transform:translateY(18px)}
+body.auras-ready .auras-reveal.in{transition:opacity .34s var(--ease),transform .34s var(--ease)}
+@media(max-width:480px){
+  .hero{padding:60px 0 48px}
+  .hero h1{font-size:clamp(32px,8.6vw,42px)}
+  .grid-4,.s7-list,.news-grid,.alt-rows{grid-template-columns:1fr;gap:18px}
+  .stats-band{grid-template-columns:1fr 1fr;gap:12px}
+  .footer .footer-grid{grid-template-columns:1fr;gap:20px}
+  .table-wrap{overflow-x:auto}
+  .nav.dock{display:none}
+}
+@media(max-width:375px){
+  .nav-mini{flex-wrap:wrap;padding:10px 14px}
+  .nav-mini .nav-toggle{display:block;margin-left:auto;background:none;border:1px solid #1D5AA8;color:#1D5AA8;border-radius:6px;padding:8px 12px}
+  .nav-mini .nav-links{display:none;width:100%;flex-direction:column;gap:2px;padding-top:6px}
+  .nav-mini .nav-links.open{display:flex}
+  .nav-mini .nav-links a{padding:10px 12px}
+  .hero{grid-template-columns:1fr;padding:48px 18px 40px}
+  .hero h1{font-size:29px;line-height:1.2}
+  .hero .subtitle{font-size:11px;letter-spacing:2.4px}
+  .hero p{font-size:15px;line-height:1.65}
+  .hero .btn,.hero .btn-row a{width:100%;text-align:center;display:block;box-sizing:border-box;margin-bottom:10px}
+  .stats-band{grid-template-columns:1fr;gap:10px}
+  .alt-row{grid-template-columns:1fr}
+  .alt-row .card-img{min-height:190px}
+  .news-grid .card img{max-height:200px;width:100%;object-fit:cover}
+  .footer{padding:36px 0 24px}
+  body{overflow-x:hidden}
+}
+/* ============ AURAS V4 ADMIN UX FIX (contrast + mobile table) ============ */
+.admin-nav{background:var(--dark-2) !important}
+.admin-nav h2{color:#fff !important}
+.admin-nav span{color:var(--muted-on-dark) !important}
+.admin-tabs button{color:#d6e4ff !important}
+.admin-tabs button:hover{background:rgba(255,255,255,.16) !important;color:#fff !important}
+.admin-tabs button.active{background:var(--accent) !important;color:#fff !important;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.admin-section .btn, .admin-section button.btn, .admin-section .admin-btn{background:var(--primary) !important;color:#fff !important;border:0;border-radius:var(--r-btn);padding:9px 18px;font-weight:600}
+.admin-section .btn:hover, .admin-section button.btn:hover{background:var(--primary-3) !important}
+.admin-section .btn.btn-danger{background:var(--warn) !important}
+.admin-table th{background:var(--surface-alt) !important;color:var(--text) !important}
+.admin-table tr:hover{background:var(--surface-alt) !important}
+.admin-table td{color:var(--text) !important;border-color:var(--border) !important}
+.admin-table a{color:var(--link) !important}
+#loginWrap input, .admin-section input, .admin-section textarea, .admin-section select{background:#fff;color:var(--text);border:1px solid var(--border);border-radius:var(--r-input);padding:9px 12px;font-size:14px}
+#loginWrap{max-width:420px;margin:0 auto}
+@media(max-width:480px){
+  .admin-section{padding:var(--s-3);overflow-x:auto}
+  .admin-section h3{font-size:16px}
+  .admin-tabs{gap:2px;overflow-x:auto;max-width:100%}
+  .admin-tabs button{font-size:12.5px;padding:9px 12px;white-space:nowrap}
+  .admin-nav h2{font-size:17px}
+  .admin-table{min-width:620px}
+}
+
+
+/* ===== AURAS MOBILE REWRITE V5 ===== */
+/* 移动端独立重写覆盖层：仅作用于竖屏窄视口，桌面端/横屏样式与结构保持不变 */
+@media (max-width: 768px) {
+  html { -webkit-text-size-adjust: 100%; }
+  html, body { overflow-x: clip; }
+  body { font-size: 15px; line-height: 1.6; }
+  a, button, input, select, textarea, .btn { touch-action: manipulation; }
+  .nav-toggle, .burger-open, .modal-close, .fm-close,
+  button, .btn, input, select, textarea, .modal-foot a {
+    min-height: 44px; min-width: 44px;
+  }
+  .container, .content, .wrap, section > .container, main > section { padding-left: 16px; padding-right: 16px; }
+  h1 { font-size: clamp(28px, 7vw, 40px); line-height: 1.15; }
+  h2 { font-size: clamp(22px, 5.5vw, 28px); line-height: 1.2; }
+  h3 { font-size: 18px; line-height: 1.3; }
+  p { font-size: 15px; }
+  .grid-3, .grid-4, .grid-6, .news-grid, .prod-grid, .index-list,
+  .s7-list, .alt-rows, .img-row, .stat-row, .sec-feat {
+    grid-template-columns: repeat(2, 1fr); gap: 14px;
+  }
+  .stats-band { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .footer .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .page-banner { padding: 44px 0; }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .modal-mask { padding: 12px; }
+  .modal { max-height: 90dvh; overflow-y: auto; }
+  .login-wrap { padding: 24px 16px; }
+  .login-card { width: 100%; max-width: 420px; margin: 0 auto; }
+  .hero { gap: 18px; }
+  .hero h1 { font-size: clamp(28px, 7.5vw, 38px); }
+  .hero p { font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .container, .content, .wrap, section > .container, main > section { padding-left: 14px; padding-right: 14px; }
+  h1 { font-size: clamp(26px, 7.5vw, 34px); }
+  h2 { font-size: 21px; }
+  h3 { font-size: 17px; }
+  p { font-size: 14px; }
+  .grid-3, .grid-4, .grid-6, .news-grid, .prod-grid, .index-list,
+  .s7-list, .alt-rows, .img-row, .stat-row, .sec-feat,
+  .stats-band, .footer .footer-grid, .hero-in {
+    grid-template-columns: 1fr !important; gap: 16px;
+  }
+  .hero { flex-direction: column !important; padding: 40px 0 32px; }
+  .hero-media, .hero .flank { width: 100%; }
+  .hero-media img { width: 100%; height: auto; max-height: 260px; object-fit: cover; border-radius: 12px; }
+  .btn-row { flex-direction: column; align-items: stretch; gap: 10px; }
+  .btn { display: flex; align-items: center; justify-content: center; min-height: 46px; padding: 12px 18px; font-size: 15px; }
+  .stats-band { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .page-banner { padding: 36px 0 28px; }
+  .table-wrap { overflow-x: auto; }
+  .modal-mask { padding: 0; }
+  .modal { position: fixed; inset: 0; width: 100%; max-width: 100%; height: 100dvh; max-height: 100dvh; border-radius: 0; margin: 0; padding: 18px; overflow-y: auto; }
+  .footer .footer-grid { grid-template-columns: 1fr; gap: 14px; }
+  .admin-table thead { display: none; }
+  .admin-table tr { display: block; margin: 0 0 14px; padding: 10px 12px; background: var(--surface, #fff); border: 1px solid var(--border, rgba(0,0,0,.12)); border-radius: 12px; }
+  .admin-table td { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 9px 2px; border: 0; font-size: 14px; min-height: 44px; }
+  .admin-table td::before { content: attr(data-label); flex: 0 0 56px; font-weight: 600; color: var(--text-muted, #666); }
+  .admin-table td:nth-child(1)::before { content: "标题"; }
+  .admin-table td:nth-child(2)::before { content: "分类"; }
+  .admin-table td:nth-child(3)::before { content: "日期"; }
+  .admin-table td:nth-child(4)::before { content: "摘要"; }
+  .admin-table td:nth-child(5)::before { content: "封面"; }
+  .admin-table td:nth-child(6)::before { content: "操作"; }
+  .admin-table td:last-child { justify-content: flex-start; }
+}
+
+
+@media (max-width: 480px) {
+  .lines-table thead { display: none; }
+  .lines-table, .lines-table tbody, .lines-table tr, .lines-table td { display: block; width: 100%; }
+  .lines-table tr { margin: 0 0 12px; padding: 4px 12px; background: var(--surface, #fff); border: 1px solid rgba(0,0,0,.1); border-radius: 12px; }
+  .lines-table td { border: 0; padding: 8px 2px; text-align: left; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 14px; min-height: 44px; }
+  .lines-table td:nth-child(1)::before { content: "Area"; font-weight: 600; }
+  .lines-table td:nth-child(2)::before { content: "Delivered"; font-weight: 600; }
+  .lines-table td:nth-child(3)::before { content: "Coverage"; font-weight: 600; }
+}
+@media (max-width: 360px) {
+  .container, .content, .wrap, section > .container, main > section { padding-left: 12px; padding-right: 12px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 20px; }
+  p, .card-body, .hero p { font-size: 14px; }
+  .btn { padding: 11px 14px; font-size: 14px; min-height: 44px; }
+  .stats-band { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .hero { padding: 32px 0 24px; }
+  .hero-media img { max-height: 210px; }
+  .grid-3, .grid-4, .grid-6, .news-grid, .prod-grid { gap: 12px; }
+}
+
+@media (max-width: 768px) {
+  .nav-mini { position: sticky; top: 0; z-index: 999; display: flex; flex-direction: row; flex-wrap: nowrap;
+    align-items: center; justify-content: space-between; gap: 8px; padding: 8px 14px;
+    background: var(--surface, #f2f6fb); border-bottom: 1px solid var(--border, rgba(0,0,0,.08)); }
+  .nav-mini .brand { min-height: 44px; display: flex; align-items: center; }
+  .nav-mini .nav-toggle { display: inline-flex !important; align-items: center; justify-content: center;
+    width: 44px; height: 44px; margin-left: auto; padding: 0 12px; font-size: 16px; background: none; border: 1px solid var(--border, rgba(0,0,0,.15)); border-radius: 10px; color: var(--text, #1a1a1a); }
+  .nav-mini .nav-toggle.active { background: var(--primary, #4a7fb5); color: #fff; }
+  .dock { display: none !important; }
+}
+@media (max-width: 768px) {
+  
+  .nav-mini .nav-links {
+    position: fixed !important; top: 0; z-index: 1001; right: 0; left: auto !important;
+    width: min(84vw, 320px); height: 100dvh; margin: 0 !important;
+    padding: 76px 8px 24px; overflow-y: auto;
+    display: flex !important; flex-direction: column; gap: 0;
+    background: var(--surface, #fff);
+    border-left: 1px solid var(--border, rgba(0,0,0,.1));
+    box-shadow: -8px 0 28px rgba(0,0,0,.18);
+    transform: translateX(105%); transition: transform .28s ease;
+  }
+  .nav-mini .nav-links.open { transform: translateX(0); }
+  .nav-mini .nav-links a {
+    display: flex; align-items: center; min-height: 52px;
+    padding: 0 16px; font-size: 16px; font-weight: 500;
+    color: var(--text, #1a1a1a); border-bottom: 1px solid var(--border, rgba(0,0,0,.08));
+    border-radius: 10px;
+  }
+  .nav-mini .nav-links a:hover, .nav-mini .nav-links a.active { color: var(--primary, #0b5); background: var(--bg-alt, rgba(0,0,0,.04)); }
+}
+
+
+/* ===== AURAS MOBILE REWRITE V5-MODAL FIX ===== */
+@media (max-width: 768px) {
+  .modal-mask { position: fixed !important; inset: 0 !important; width: 100% !important;
+    max-width: 100% !important; min-width: 0 !important; height: 100% !important;
+    display: flex !important; align-items: center; justify-content: center; }
+  .modal-mask .modal { position: relative !important; width: 100% !important;
+    max-width: 92vw !important; min-width: 0 !important; margin: 0 !important;
+    border-radius: 16px; }
+  .modal-mask .modal-body { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+@media (max-width: 480px) {
+  .modal-mask { align-items: stretch; }
+  .modal-mask .modal { max-width: 100% !important; height: 100dvh !important;
+    max-height: 100dvh !important; border-radius: 0 !important; }
+  .modal-mask .modal-body { overflow-y: auto; }
+}
+
+
+
+/* AURAS V5-ADMIN-TABLE FIX ===== */
+@media (max-width:768px){
+  .table thead { display:none !important; }
+  .table tr { display:block !important; margin:0 0 14px !important; padding:10px 12px !important; background:var(--surface,#fff) !important; border:1px solid var(--border,rgba(0,0,0,.12)) !important; border-radius:12px !important; }
+  .table td { display:flex !important; justify-content:space-between; align-items:center; gap:12px; padding:9px 2px !important; border:0 !important; font-size:14px; min-height:44px; }
+  .table td::before { content:attr(data-label); flex:0 0 56px; font-weight:600; color:var(--text-muted,#666); }
+  .table td:nth-child(1)::before { content:"标题"; }
+  .table td:nth-child(2)::before { content:"分类"; }
+  .table td:nth-child(3)::before { content:"日期"; }
+  .table td:nth-child(4)::before { content:"操作"; }
+  .table td:last-child { justify-content:flex-end; }
+  .table td:last-child::before { display:none; }
+  .table td a, .table td button { min-height:44px; display:inline-flex; align-items:center; }
+  .table { display:block; overflow-x:hidden; }
+}
+/* ===== AURAS V5-ADMIN-TABLE FIX END */
+
+
+/* ===== AURAS V5 NAV-FINETUNE (07) ===== */
+/* 移动端顶部导航精修：去 Menu 文字、纯汉堡图标（雾蓝极简线条）、顶部留白 16-24px、拉开首屏间距 */
+@media (max-width: 768px) {
+  .nav-mini { padding: 14px 16px 12px; }
+  .nav-mini .nav-toggle {
+    width: 44px; height: 44px; padding: 0; font-size: 0;
+    background: rgba(29,90,168,.06); color: var(--primary, #1D5AA8);
+    border: 1px solid rgba(29,90,168,.45); border-radius: 10px;
+  }
+  .nav-mini .nav-toggle::before { content: "\2630"; font-size: 22px; line-height: 1; }
+  .nav-mini .nav-toggle.active { background: var(--primary, #1D5AA8); color: #fff; border-color: var(--primary, #1D5AA8); }
+  .nav-mini .brand small { font-size: 9px; opacity: .92; }
+  .hero { padding: 56px 0 44px; }
+}
+@media (max-width: 480px) {
+  .nav-mini { padding: 14px 14px 12px; }
+  .hero { padding: 48px 0 38px; }
+}
+@media (max-width: 360px) {
+  .nav-mini { padding: 12px 12px 10px; }
+  .hero { padding: 40px 0 30px; }
+}
+/* ===== AURAS V5 NAV-FINETUNE END (07) ===== */

@@ -7,13 +7,13 @@
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
 :root {
-  /* palette */
+  /* palette - APPLE MINIMAL BLUE v4 */
   --primary: #0071E3;
   --primary-2: #2997FF;
   --primary-3: #56B4FF;
   --accent: #0071E3;
   --accent-dark: #005BB8;
-  --link: #005BB8;
+  --link: #0071E3;
   --warn: #C0392B;
   --success: #157A45;
   --bg: #FFFFFF;
@@ -24,29 +24,29 @@
   --text-muted: #5B616E;
   --text-on-dark: #F5F5F7;
   --muted-on-dark: #A1A1A6;
-  --border: rgba(0,0,0,0.12);
+  --border: rgba(0,0,0,0.10);
   --border-dark: rgba(255,255,255,0.16);
   --dark: #000000;
   --dark-2: #0A0A0C;
   --dark-text: #F5F5F7;
-  /* font system */
+  /* font system - Inter all */
   --font-head: 'Inter', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   --font-mono: 'SF Mono', Consolas, monospace;
-  /* radius */
-  --r-card: 18px;
+  /* radius - pill & large */
+  --r-card: 20px;
   --r-btn: 980px;
   --r-input: 12px;
   --r-pill: 999px;
-  /* elevation */
-  --shadow: 0 12px 40px rgba(0,0,0,0.5);
-  --shadow-lg: 0 24px 80px rgba(0,0,0,0.55);
+  /* elevation - light airy */
+  --shadow: 0 12px 40px rgba(0,0,0,0.06);
+  --shadow-lg: 0 24px 80px rgba(0,0,0,0.10);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
-  /* motion */
-  --dur-fast: 220ms; --dur: 360ms; --dur-slow: 500ms;
-  --ease: cubic-bezier(.25, .8, .3, 1);
-  /* legacy aliases so style.css vars keep working */
+  /* motion - springy fast */
+  --dur-fast: 200ms; --dur: 300ms; --dur-slow: 460ms;
+  --ease: cubic-bezier(.25,.1,.25,1);
+  /* legacy aliases */
   --navy: #0071E3; --navy-2: #2997FF; --navy-3: #56B4FF;
   --blue: #2997FF; --sky: #56B4FF;
   --gold: #0071E3; --gold-2: #0071E3;

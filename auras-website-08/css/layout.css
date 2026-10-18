@@ -179,3 +179,251 @@ body.auras-no-motion .auras-reveal, body.auras-no-motion .auras-reveal.in {
     radial-gradient(820px 420px at 88% 8%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 72%),
     radial-gradient(640px 340px at 4% 92%, color-mix(in srgb, var(--primary) 13%, transparent), transparent 72%),
     var(--bg-alt); }
+
+/* ============ AURAS V4 DIFF-08 : MIDNIGHT GOLD BUSINESS ============ */
+.nav-split{border-bottom:1px solid rgba(217,164,65,.22);background:rgba(11,12,16,.9) !important;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.nav-split .ns-in .brand small{color:#A4A9B4 !important}
+.nav-split .nav-links a{letter-spacing:2.2px;text-transform:uppercase;font-size:12px;font-weight:600;color:#E8E4DA !important}
+.nav-split .nav-links a:hover,.nav-split .nav-links a.active{color:#D9A441 !important;border-bottom:1px solid #D9A441}
+.nav-split.auras-scrolled{background:rgba(11,12,16,.96) !important}
+.hero h1{font-family:var(--font-head);font-weight:600;letter-spacing:.2px;color:#F5F1E6 !important;font-size:clamp(42px,5.6vw,68px);line-height:1.06}
+.hero .subtitle{color:#D9A441 !important;letter-spacing:4.4px;text-transform:uppercase;font-size:12px;font-weight:600}
+.hero p{color:#C3C7D0 !important}
+.hero .btn.btn-gold{background:linear-gradient(135deg,#D9A441,#B4872F);color:#0B0C10 !important;font-weight:700;letter-spacing:1.6px;text-transform:uppercase}
+.hero .btn.btn-outline{color:#F5F1E6 !important;border-color:#D9A441 !important}
+.card,article.card,.stat-box{border-radius:2px;border:1px solid rgba(217,164,65,.18);background:#1A1C23;box-shadow:0 16px 40px rgba(0,0,0,.45)}
+.card:hover,article.card:hover,.stat-box:hover{transform:translateY(-4px);border-color:rgba(217,164,65,.5);box-shadow:0 28px 64px rgba(0,0,0,.6);background:linear-gradient(180deg,#1E2029,#1A1C23)}
+.btn.btn-gold{background:linear-gradient(135deg,#D9A441,#B4872F);color:#0B0C10 !important;border-radius:2px;box-shadow:0 10px 30px rgba(217,164,65,.25)}
+.btn.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(217,164,65,.35)}
+.footer,.page-banner{background:#05060A;border-top:2px solid rgba(217,164,65,.35)}
+.page-banner h1{color:#F5F1E6 !important}
+.section-title{font-family:var(--font-head);font-weight:600;color:#F5F1E6 !important}
+.section-sub{color:#A4A9B4 !important}
+.eyebrow{letter-spacing:4px;color:#D9A441 !important}
+body.auras-ready .auras-reveal{transform:translateY(30px)}
+body.auras-ready .auras-reveal.in{transition:opacity .9s var(--ease),transform .9s var(--ease)}
+@media(max-width:480px){
+  .hero{padding:70px 0 60px}
+  .hero h1{font-size:clamp(34px,9vw,44px)}
+  .grid-4,.s7-list,.news-grid,.alt-rows{grid-template-columns:1fr;gap:18px}
+  .stats-band{grid-template-columns:1fr 1fr;gap:12px}
+  .footer .footer-grid{grid-template-columns:1fr;gap:20px}
+  .table-wrap{overflow-x:auto}
+}
+@media(max-width:375px){
+  .nav-split .ns-in{flex-wrap:wrap;padding:10px 14px}
+  .nav-split .nav-toggle{display:block;margin-left:auto;background:none;border:1px solid #D9A441;color:#D9A441;border-radius:2px;padding:8px 12px}
+  .nav-split .split-menu{display:none;width:100%;flex-direction:column;gap:0}
+  .nav-split .split-menu.open{display:flex}
+  .nav-split .split-menu ul.row1,.nav-split .split-menu ul.row2{flex-direction:column;gap:0;width:100%}
+  .nav-split .split-menu a{padding:10px 12px}
+  .hero{grid-template-columns:1fr;padding:56px 18px 48px}
+  .hero h1{font-size:32px;line-height:1.1}
+  .hero .subtitle{font-size:11px;letter-spacing:3px}
+  .hero p{font-size:15px;line-height:1.65}
+  .hero .btn,.hero .btn-row a{width:100%;text-align:center;display:block;box-sizing:border-box;margin-bottom:10px}
+  .stats-band{grid-template-columns:1fr;gap:10px}
+  .alt-row{grid-template-columns:1fr}
+  .alt-row .card-img{min-height:190px}
+  .news-grid .card img{max-height:200px;width:100%;object-fit:cover}
+  .footer{padding:36px 0 24px}
+  body{overflow-x:hidden}
+}
+/* ============ AURAS V4 ADMIN UX FIX (contrast + mobile table) ============ */
+.admin-nav{background:var(--dark-2) !important}
+.admin-nav h2{color:#fff !important}
+.admin-nav span{color:var(--muted-on-dark) !important}
+.admin-tabs button{color:#d6e4ff !important}
+.admin-tabs button:hover{background:rgba(255,255,255,.16) !important;color:#fff !important}
+.admin-tabs button.active{background:var(--accent) !important;color:#fff !important;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.admin-section .btn, .admin-section button.btn, .admin-section .admin-btn{background:var(--primary) !important;color:#fff !important;border:0;border-radius:var(--r-btn);padding:9px 18px;font-weight:600}
+.admin-section .btn:hover, .admin-section button.btn:hover{background:var(--primary-3) !important}
+.admin-section .btn.btn-danger{background:var(--warn) !important}
+.admin-table th{background:var(--surface-alt) !important;color:var(--text) !important}
+.admin-table tr:hover{background:var(--surface-alt) !important}
+.admin-table td{color:var(--text) !important;border-color:var(--border) !important}
+.admin-table a{color:var(--link) !important}
+#loginWrap input, .admin-section input, .admin-section textarea, .admin-section select{background:#fff;color:var(--text);border:1px solid var(--border);border-radius:var(--r-input);padding:9px 12px;font-size:14px}
+#loginWrap{max-width:420px;margin:0 auto}
+@media(max-width:480px){
+  .admin-section{padding:var(--s-3);overflow-x:auto}
+  .admin-section h3{font-size:16px}
+  .admin-tabs{gap:2px;overflow-x:auto;max-width:100%}
+  .admin-tabs button{font-size:12.5px;padding:9px 12px;white-space:nowrap}
+  .admin-nav h2{font-size:17px}
+  .admin-table{min-width:620px}
+}
+
+
+/* ===== AURAS MOBILE REWRITE V5 ===== */
+/* 移动端独立重写覆盖层：仅作用于竖屏窄视口，桌面端/横屏样式与结构保持不变 */
+@media (max-width: 768px) {
+  html { -webkit-text-size-adjust: 100%; }
+  html, body { overflow-x: clip; }
+  body { font-size: 15px; line-height: 1.6; }
+  a, button, input, select, textarea, .btn { touch-action: manipulation; }
+  .nav-toggle, .burger-open, .modal-close, .fm-close,
+  button, .btn, input, select, textarea, .modal-foot a {
+    min-height: 44px; min-width: 44px;
+  }
+  .container, .content, .wrap, section > .container, main > section { padding-left: 16px; padding-right: 16px; }
+  h1 { font-size: clamp(28px, 7vw, 40px); line-height: 1.15; }
+  h2 { font-size: clamp(22px, 5.5vw, 28px); line-height: 1.2; }
+  h3 { font-size: 18px; line-height: 1.3; }
+  p { font-size: 15px; }
+  .grid-3, .grid-4, .grid-6, .news-grid, .prod-grid, .index-list,
+  .s7-list, .alt-rows, .img-row, .stat-row, .sec-feat {
+    grid-template-columns: repeat(2, 1fr); gap: 14px;
+  }
+  .stats-band { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .footer .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .page-banner { padding: 44px 0; }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .modal-mask { padding: 12px; }
+  .modal { max-height: 90dvh; overflow-y: auto; }
+  .login-wrap { padding: 24px 16px; }
+  .login-card { width: 100%; max-width: 420px; margin: 0 auto; }
+  .hero { gap: 18px; }
+  .hero h1 { font-size: clamp(28px, 7.5vw, 38px); }
+  .hero p { font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .container, .content, .wrap, section > .container, main > section { padding-left: 14px; padding-right: 14px; }
+  h1 { font-size: clamp(26px, 7.5vw, 34px); }
+  h2 { font-size: 21px; }
+  h3 { font-size: 17px; }
+  p { font-size: 14px; }
+  .grid-3, .grid-4, .grid-6, .news-grid, .prod-grid, .index-list,
+  .s7-list, .alt-rows, .img-row, .stat-row, .sec-feat,
+  .stats-band, .footer .footer-grid, .hero-in {
+    grid-template-columns: 1fr !important; gap: 16px;
+  }
+  .hero { flex-direction: column !important; padding: 40px 0 32px; }
+  .hero-media, .hero .flank { width: 100%; }
+  .hero-media img { width: 100%; height: auto; max-height: 260px; object-fit: cover; border-radius: 12px; }
+  .btn-row { flex-direction: column; align-items: stretch; gap: 10px; }
+  .btn { display: flex; align-items: center; justify-content: center; min-height: 46px; padding: 12px 18px; font-size: 15px; }
+  .stats-band { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .page-banner { padding: 36px 0 28px; }
+  .table-wrap { overflow-x: auto; }
+  .modal-mask { padding: 0; }
+  .modal { position: fixed; inset: 0; width: 100%; max-width: 100%; height: 100dvh; max-height: 100dvh; border-radius: 0; margin: 0; padding: 18px; overflow-y: auto; }
+  .footer .footer-grid { grid-template-columns: 1fr; gap: 14px; }
+  .admin-table thead { display: none; }
+  .admin-table tr { display: block; margin: 0 0 14px; padding: 10px 12px; background: var(--surface, #fff); border: 1px solid var(--border, rgba(0,0,0,.12)); border-radius: 12px; }
+  .admin-table td { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 9px 2px; border: 0; font-size: 14px; min-height: 44px; }
+  .admin-table td::before { content: attr(data-label); flex: 0 0 56px; font-weight: 600; color: var(--text-muted, #666); }
+  .admin-table td:nth-child(1)::before { content: "标题"; }
+  .admin-table td:nth-child(2)::before { content: "分类"; }
+  .admin-table td:nth-child(3)::before { content: "日期"; }
+  .admin-table td:nth-child(4)::before { content: "摘要"; }
+  .admin-table td:nth-child(5)::before { content: "封面"; }
+  .admin-table td:nth-child(6)::before { content: "操作"; }
+  .admin-table td:last-child { justify-content: flex-start; }
+}
+
+
+@media (max-width: 480px) {
+  .lines-table thead { display: none; }
+  .lines-table, .lines-table tbody, .lines-table tr, .lines-table td { display: block; width: 100%; }
+  .lines-table tr { margin: 0 0 12px; padding: 4px 12px; background: var(--surface, #fff); border: 1px solid rgba(0,0,0,.1); border-radius: 12px; }
+  .lines-table td { border: 0; padding: 8px 2px; text-align: left; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 14px; min-height: 44px; }
+  .lines-table td:nth-child(1)::before { content: "Area"; font-weight: 600; }
+  .lines-table td:nth-child(2)::before { content: "Delivered"; font-weight: 600; }
+  .lines-table td:nth-child(3)::before { content: "Coverage"; font-weight: 600; }
+}
+@media (max-width: 360px) {
+  .container, .content, .wrap, section > .container, main > section { padding-left: 12px; padding-right: 12px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 20px; }
+  p, .card-body, .hero p { font-size: 14px; }
+  .btn { padding: 11px 14px; font-size: 14px; min-height: 44px; }
+  .stats-band { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .hero { padding: 32px 0 24px; }
+  .hero-media img { max-height: 210px; }
+  .grid-3, .grid-4, .grid-6, .news-grid, .prod-grid { gap: 12px; }
+}
+
+@media (max-width: 768px) {
+  .nav-split { position: sticky; top: 0; z-index: 999; padding: 0; background: var(--surface, #0f1115); }
+  .nav-split .ns-in { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 14px; }
+  .nav-split .brand { min-height: 44px; display: flex; align-items: center; }
+  .nav-split .nav-toggle { display: inline-flex !important; align-items: center; justify-content: center;
+    width: 44px; height: 44px; margin-left: auto; padding: 0; font-size: 22px; background: var(--primary, #c9a24b); border: 0; border-radius: 10px; color: #111; }
+  .nav-split .nav-toggle.active { background: #fff; }
+}
+@media (max-width: 768px) {
+    .nav-split .split-menu { background: var(--dark, #11141a); border-left-color: rgba(255,255,255,.12); }
+  .nav-split .split-menu {
+    position: fixed !important; top: 0; z-index: 1001; right: 0; left: auto !important;
+    width: min(84vw, 320px); height: 100dvh; margin: 0 !important;
+    padding: 76px 8px 24px; overflow-y: auto;
+    display: flex !important; flex-direction: column; gap: 0;
+    background: var(--surface, #fff);
+    border-left: 1px solid var(--border, rgba(0,0,0,.1));
+    box-shadow: -8px 0 28px rgba(0,0,0,.18);
+    transform: translateX(105%); transition: transform .28s ease;
+  }
+  .nav-split .split-menu.open { transform: translateX(0); }
+  .nav-split .split-menu a {
+    display: flex; align-items: center; min-height: 52px;
+    padding: 0 16px; font-size: 16px; font-weight: 500;
+    color: var(--text, #1a1a1a); border-bottom: 1px solid var(--border, rgba(0,0,0,.08));
+    border-radius: 10px;
+  }
+  .nav-split .split-menu a:hover, .nav-split .split-menu a.active { color: #fff !important; background: var(--primary, #0B0C10) !important; }
+  /* AURAS V5-08 DARKFIX: 深色主题抽屉文字对比度修复 */
+  .nav-split .split-menu a { color: var(--text, #F0EEE8) !important; }
+  .nav-split .split-menu a:hover, .nav-split .split-menu a.active { color: #fff !important; background: var(--primary, #0B0C10) !important; }
+  /* AURAS V5-08 COLFIX: 抽屉内菜单行改为纵向单列，禁止横向溢出 */
+  .nav-split .split-menu ul.row1, .nav-split .split-menu ul { display: flex !important; flex-direction: column !important; flex-wrap: nowrap !important; width: 100% !important; max-width: 100% !important; min-width: 0 !important; }
+}
+
+
+/* ===== AURAS MOBILE REWRITE V5-MODAL FIX ===== */
+@media (max-width: 768px) {
+  .modal-mask { position: fixed !important; inset: 0 !important; width: 100% !important;
+    max-width: 100% !important; min-width: 0 !important; height: 100% !important;
+    display: flex !important; align-items: center; justify-content: center; }
+  .modal-mask .modal { position: relative !important; width: 100% !important;
+    max-width: 92vw !important; min-width: 0 !important; margin: 0 !important;
+    border-radius: 16px; }
+  .modal-mask .modal-body { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+@media (max-width: 480px) {
+  .modal-mask { align-items: stretch; }
+  .modal-mask .modal { max-width: 100% !important; height: 100dvh !important;
+    max-height: 100dvh !important; border-radius: 0 !important; }
+  .modal-mask .modal-body { overflow-y: auto; }
+}
+
+
+/* ===== AURAS MOBILE REWRITE V5-NARROW FIX (08) ===== */
+@media (max-width: 768px) {
+  .news-grid .news-item, .news-grid .card-body { min-width: 0 !important; width: 100% !important; max-width: 100% !important; }
+  .news-item h3, .news-item p, .news-meta { min-width: 0 !important; }
+}
+@media (max-width: 320px) {
+  .news-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
+  .news-item { margin: 0 !important; }
+}
+
+
+/* AURAS V5-ADMIN-TABLE FIX ===== */
+@media (max-width:768px){
+  .table thead { display:none !important; }
+  .table tr { display:block !important; margin:0 0 14px !important; padding:10px 12px !important; background:var(--surface,#fff) !important; border:1px solid var(--border,rgba(0,0,0,.12)) !important; border-radius:12px !important; }
+  .table td { display:flex !important; justify-content:space-between; align-items:center; gap:12px; padding:9px 2px !important; border:0 !important; font-size:14px; min-height:44px; }
+  .table td::before { content:attr(data-label); flex:0 0 56px; font-weight:600; color:var(--text-muted,#666); }
+  .table td:nth-child(1)::before { content:"标题"; }
+  .table td:nth-child(2)::before { content:"分类"; }
+  .table td:nth-child(3)::before { content:"日期"; }
+  .table td:nth-child(4)::before { content:"操作"; }
+  .table td:last-child { justify-content:flex-end; }
+  .table td:last-child::before { display:none; }
+  .table td a, .table td button { min-height:44px; display:inline-flex; align-items:center; }
+  .table { display:block; overflow-x:hidden; }
+}
+/* ===== AURAS V5-ADMIN-TABLE FIX END */

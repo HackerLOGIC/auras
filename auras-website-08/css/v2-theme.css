@@ -7,51 +7,51 @@
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
 :root {
-  /* palette */
-  --primary: #D9A441;
-  --primary-2: #E4B85E;
-  --primary-3: #C2903A;
+  /* palette - MIDNIGHT GOLD BUSINESS v4 */
+  --primary: #0B0C10;
+  --primary-2: #1A1C23;
+  --primary-3: #2A2D37;
   --accent: #D9A441;
-  --accent-dark: #B8892F;
-  --link: #8F6B1D;
-  --warn: #C0392B;
-  --success: #157A45;
-  --bg: #F7F8FA;
-  --bg-alt: #EEF1F5;
-  --surface: #FFFFFF;
-  --surface-alt: #F2F4F7;
-  --text: #1C1F26;
-  --text-muted: #4E5661;
-  --text-on-dark: #E8E4DC;
-  --muted-on-dark: #A6A29A;
-  --border: rgba(20,24,33,0.10);
-  --border-dark: rgba(255,255,255,0.12);
-  --dark: #0B0C10;
-  --dark-2: #07080B;
-  --dark-text: #E8E4DC;
-  /* font system */
-  --font-head: 'Archivo', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
+  --accent-dark: #B4872F;
+  --link: #D9A441;
+  --warn: #B4553C;
+  --success: #3FA47A;
+  --bg: #0B0C10;
+  --bg-alt: #12141B;
+  --surface: #1A1C23;
+  --surface-alt: #232630;
+  --text: #F0EEE8;
+  --text-muted: #A4A9B4;
+  --text-on-dark: #F0EEE8;
+  --muted-on-dark: #A4A9B4;
+  --border: rgba(217,164,65,0.16);
+  --border-dark: rgba(217,164,65,0.24);
+  --dark: #05060A;
+  --dark-2: #0B0C10;
+  --dark-text: #F0EEE8;
+  /* font system - black tie */
+  --font-head: 'Playfair Display', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  --font-mono: 'IBM Plex Mono', Consolas, monospace;
-  /* radius */
-  --r-card: 6px;
-  --r-btn: 4px;
-  --r-input: 8px;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+  /* radius - sharp luxury */
+  --r-card: 2px;
+  --r-btn: 2px;
+  --r-input: 2px;
   --r-pill: 999px;
-  /* elevation */
-  --shadow: 0 8px 30px rgba(0,0,0,0.5);
-  --shadow-lg: 0 20px 60px rgba(0,0,0,0.6);
+  /* elevation - deep shadow */
+  --shadow: 0 16px 40px rgba(0,0,0,0.5);
+  --shadow-lg: 0 28px 72px rgba(0,0,0,0.6);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
-  /* motion */
-  --dur-fast: 220ms; --dur: 360ms; --dur-slow: 500ms;
-  --ease: cubic-bezier(.25, .8, .3, 1);
-  /* legacy aliases so style.css vars keep working */
-  --navy: #D9A441; --navy-2: #E4B85E; --navy-3: #C2903A;
-  --blue: #E4B85E; --sky: #C2903A;
+  /* motion - slow opulent */
+  --dur-fast: 380ms; --dur: 600ms; --dur-slow: 900ms;
+  --ease: cubic-bezier(.16,.6,.2,1);
+  /* legacy aliases */
+  --navy: #0B0C10; --navy-2: #1A1C23; --navy-3: #2A2D37;
+  --blue: #1A1C23; --sky: #2A2D37;
   --gold: #D9A441; --gold-2: #D9A441;
-  --orange: #E8765A; --green: #3DD68C;
-  --light: #F7F8FA; --gray: #5B616E; --border2: rgba(0,0,0,0.10); --text2: #1C1F26;
+  --orange: #B4553C; --green: #3FA47A;
+  --light: #12141B; --gray: #A4A9B4; --border2: rgba(217,164,65,0.16); --text2: #F0EEE8;
 }
 
 /* ---------- base typography ---------- */

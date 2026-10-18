@@ -7,7 +7,7 @@
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
 :root {
-  /* palette */
+  /* palette - IVORY & UMBER EDITORIAL v4 */
   --primary: #2A241D;
   --primary-2: #3A3229;
   --primary-3: #4A4134;
@@ -16,42 +16,42 @@
   --link: #6F5334;
   --warn: #A2503C;
   --success: #3E6B4F;
-  --bg: #F6F2EA;
-  --bg-alt: #EFEAE0;
-  --surface: #FFFFFF;
+  --bg: #F7F3EC;
+  --bg-alt: #EFE9DE;
+  --surface: #FFFDF8;
   --surface-alt: #F0EBE1;
-  --text: #232019;
-  --text-muted: #4F4A40;
+  --text: #2B241C;
+  --text-muted: #6B6255;
   --text-on-dark: #F4F0E8;
   --muted-on-dark: #B7AFA0;
-  --border: #E4DCCB;
+  --border: #E0D6C4;
   --border-dark: rgba(255,255,255,0.16);
   --dark: #201C15;
   --dark-2: #16130E;
   --dark-text: #F4F0E8;
-  /* font system */
+  /* font system - editorial serif */
   --font-head: 'Cormorant Garamond', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Source Sans 3', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   --font-mono: 'Source Code Pro', Consolas, monospace;
-  /* radius */
-  --r-card: 4px;
-  --r-btn: 999px;
-  --r-input: 4px;
+  /* radius - crisp paper */
+  --r-card: 2px;
+  --r-btn: 2px;
+  --r-input: 2px;
   --r-pill: 999px;
-  /* elevation */
-  --shadow: 0 4px 20px rgba(42,36,29,0.07);
-  --shadow-lg: 0 14px 40px rgba(42,36,29,0.12);
+  /* elevation - flat paper */
+  --shadow: 0 1px 0 rgba(42,36,29,0.06);
+  --shadow-lg: 0 8px 24px rgba(42,36,29,0.08);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
-  /* motion */
-  --dur-fast: 220ms; --dur: 360ms; --dur-slow: 500ms;
-  --ease: cubic-bezier(.25, .8, .3, 1);
-  /* legacy aliases so style.css vars keep working */
+  /* motion - graceful slow */
+  --dur-fast: 320ms; --dur: 500ms; --dur-slow: 760ms;
+  --ease: cubic-bezier(.25,.6,.25,1);
+  /* legacy aliases */
   --navy: #2A241D; --navy-2: #3A3229; --navy-3: #4A4134;
   --blue: #3A3229; --sky: #4A4134;
   --gold: #8A6A45; --gold-2: #8A6A45;
   --orange: #A2503C; --green: #3E6B4F;
-  --light: #EFEAE0; --gray: #4D4A40; --border2: #E4DCCB; --text2: #232019;
+  --light: #EFE9DE; --gray: #6B6255; --border2: #E0D6C4; --text2: #2B241C;
 }
 
 /* ---------- base typography ---------- */

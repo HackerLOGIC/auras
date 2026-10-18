@@ -7,13 +7,13 @@
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
 :root {
-  /* palette */
+  /* palette - ROYAL NAVY & GOLD v4 */
   --primary: #0F2B46;
   --primary-2: #143A5E;
   --primary-3: #1B4B7A;
-  --accent: #C19A5B;
+  --accent: #C9A15B;
   --accent-dark: #9A7B3F;
-  --link: #1D6FB8;
+  --link: #9A7B3F;
   --warn: #B4542E;
   --success: #1E7A4A;
   --bg: #F4F2EE;
@@ -31,25 +31,25 @@
   --dark-text: #E9EFF6;
   /* font system */
   --font-head: 'Playfair Display', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
-  --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-body: 'Source Sans 3', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   --font-mono: 'IBM Plex Mono', Consolas, monospace;
   /* radius */
-  --r-card: 10px;
-  --r-btn: 8px;
+  --r-card: 14px;
+  --r-btn: 10px;
   --r-input: 8px;
   --r-pill: 999px;
   /* elevation */
-  --shadow: 0 4px 24px rgba(15,43,70,0.08);
-  --shadow-lg: 0 16px 48px rgba(15,43,70,0.14);
+  --shadow: 0 10px 30px rgba(15,43,70,0.10);
+  --shadow-lg: 0 22px 56px rgba(15,43,70,0.18);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
-  /* motion */
-  --dur-fast: 220ms; --dur: 360ms; --dur-slow: 500ms;
-  --ease: cubic-bezier(.25, .8, .3, 1);
-  /* legacy aliases so style.css vars keep working */
+  /* motion - stately */
+  --dur-fast: 260ms; --dur: 420ms; --dur-slow: 620ms;
+  --ease: cubic-bezier(.22,.68,.3,1);
+  /* legacy aliases */
   --navy: #0F2B46; --navy-2: #143A5E; --navy-3: #1B4B7A;
   --blue: #143A5E; --sky: #1B4B7A;
-  --gold: #C19A5B; --gold-2: #C19A5B;
+  --gold: #C9A15B; --gold-2: #C9A15B;
   --orange: #B4542E; --green: #1E7A4A;
   --light: #E9E5DE; --gray: #5B6B7C; --border2: #E2E8F0; --text2: #1F2A37;
 }

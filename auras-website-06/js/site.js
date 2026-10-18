@@ -116,3 +116,61 @@
     }
   };
 })();
+
+
+/* ===== AURAS MOBILE REWRITE V5: 汉堡/抽屉/全屏菜单 通用绑定 ===== */
+(function () {
+  function onReady(fn) { if (document.readyState !== 'loading') fn(); else document.addEventListener('DOMContentLoaded', fn); }
+  onReady(function () {
+    var SCOPES = '.side,.navbar,.nav-top,.nav-float,.nav-panel,.nav-radial,.nav-mini,.nav-split,.nav-market';
+    function closeAll(except) {
+      document.querySelectorAll('.nav-links.open,.split-menu.open,.fullmenu.open').forEach(function (el) {
+        if (except && el === except) return;
+        el.classList.remove('open');
+      });
+      document.querySelectorAll(SCOPES).forEach(function (sc) { sc.classList.remove('open'); });
+      document.body.classList.remove('nav-open');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('#navToggle, [data-nav-toggle]').forEach(function (btn) {
+      if (btn.getAttribute('data-v5-bound')) return;
+      btn.setAttribute('data-v5-bound', '1');
+      btn.addEventListener('click', function (e) {
+        e.preventDefault(); e.stopPropagation();
+        var scope = btn.closest(SCOPES) || document.body;
+        var links = scope.querySelectorAll('.nav-links, .split-menu');
+        var willOpen = !scope.classList.contains('open');
+        scope.classList.toggle('open', willOpen);
+        btn.classList.toggle('active', willOpen);
+        scope.classList.toggle('open', willOpen);
+        btn.classList.toggle('active', willOpen);
+        links.forEach(function (ul) { ul.classList.toggle('open', willOpen); });
+        if (willOpen) { document.body.classList.add('nav-open'); document.body.style.overflow = 'hidden'; }
+        else { document.body.classList.remove('nav-open'); document.body.style.overflow = ''; }
+      });
+    });
+    var fmBtn = document.querySelector('[data-fullmenu]');
+    var fm = document.getElementById('fullMenu');
+    if (fmBtn && fm) {
+      if (!fmBtn.getAttribute('data-v5-bound')) {
+        fmBtn.setAttribute('data-v5-bound', '1');
+        fmBtn.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          var open = !fm.classList.contains('open');
+          fm.classList.toggle('open', open);
+          document.body.classList.toggle('nav-open', open);
+          document.body.style.overflow = open ? 'hidden' : '';
+        });
+      }
+      var fmc = document.querySelector('[data-fullmenu-close]');
+      if (fmc && !fmc.getAttribute('data-v5-bound')) {
+        fmc.setAttribute('data-v5-bound', '1');
+        fmc.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); closeAll(); });
+      }
+    }
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.nav-links,.split-menu,.fullmenu,.nav-toggle,.burger-open,#navToggle,.fm-close')) closeAll();
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
+  });
+})();
