@@ -1,0 +1,69 @@
+/* ============================================================
+   V2 VISUAL UPGRADE — 01 Corporate (商务稳重)
+   精致化：衬线标题、金色细节、舒缓动效、稳健阴影
+   ============================================================ */
+:root {
+  --v2-serif: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+  --v2-accent: #c9a15a;
+  --v2-accent-dark: #a9853f;
+  --v2-dur: .95s;
+  --v2-ease: cubic-bezier(.22, .61, .36, 1);
+}
+/* Typography refinement */
+body { letter-spacing: .1px; }
+.section-title, .hero-content h1, .banner h1, h2, h3 {
+  font-family: var(--v2-serif);
+  letter-spacing: .4px;
+}
+.section-title { font-weight: 600; }
+.eyebrow { letter-spacing: 3px; text-transform: uppercase; }
+.eyebrow::after {
+  content: ""; display: inline-block; width: 34px; height: 1px;
+  background: var(--v2-accent); margin-left: 12px; vertical-align: middle;
+}
+/* Reveal motion (slow, refined) */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity var(--v2-dur) var(--v2-ease), transform var(--v2-dur) var(--v2-ease); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1 !important; transform: none !important; transition: none !important; } }
+/* Navbar scrolled */
+.navbar { transition: background .4s var(--v2-ease), box-shadow .4s, padding .4s; }
+.navbar.scrolled {
+  background: rgba(255,255,255,.97);
+  box-shadow: 0 6px 24px rgba(11,42,74,.10);
+  border-bottom: 1px solid rgba(201,161,90,.35);
+}
+.navbar.scrolled .nav-links a { color: #22303e; }
+.navbar.scrolled .brand span { color: #22303e; }
+.navbar.scrolled .brand small { color: #6b7a8d; }
+.navbar.scrolled .nav-links a:hover { color: var(--v2-accent-dark); }
+/* Hero: slow Ken Burns + gold veil */
+.hero-bg { animation: v2Kb 18s var(--v2-ease) infinite alternate; }
+@keyframes v2Kb { from { transform: scale(1); } to { transform: scale(1.08); } }
+.hero::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(11,42,74,.15) 0%, rgba(11,42,74,.45) 100%);
+  pointer-events: none;
+}
+.hero-content { position: relative; z-index: 2; }
+/* Cards: lift + gold edge */
+.card { transition: transform .5s var(--v2-ease), box-shadow .5s, border-color .5s; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 18px 44px rgba(11,42,74,.16); }
+.card .card-img, .card img, .img-frame img { transition: transform .9s var(--v2-ease); }
+.card:hover .card-img, .card:hover > img, .img-frame:hover img { transform: scale(1.05); }
+/* Stat numbers */
+.stat-box .num, .count-up { font-variant-numeric: tabular-nums; color: var(--v2-accent-dark); font-family: var(--v2-serif); }
+/* Buttons */
+.btn { transition: transform .35s var(--v2-ease), box-shadow .35s, background .35s, color .35s; }
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0) scale(.97); }
+.btn-gold { box-shadow: 0 8px 22px rgba(201,161,90,.28); }
+.btn-gold:hover { box-shadow: 0 12px 30px rgba(201,161,90,.40); }
+/* Back to top */
+#backTop { background: var(--v2-accent); color: #fff; box-shadow: 0 6px 18px rgba(11,42,74,.28); }
+#backTop:hover { background: var(--v2-accent-dark); transform: translateY(-3px); }
+/* Language selector */
+.lang-select { border-color: rgba(255,255,255,.4); color: inherit; background: transparent; border-radius: 999px; padding: 6px 12px; font-size: 12.5px; cursor: pointer; transition: border-color .3s, background .3s; }
+.navbar.scrolled .lang-select { border-color: rgba(11,42,74,.35); }
+.lang-select option { color: #22303e; }
+/* Timeline / rows spacing refinement */
+.tl-item { border-left: 1px solid rgba(201,161,90,.4); padding-left: 1.2rem; }

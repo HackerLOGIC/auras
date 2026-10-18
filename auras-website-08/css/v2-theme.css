@@ -1,8 +1,8 @@
-/* ============================================================
-   AURAS REDESIGN THEME — 视频驱动 · 电影/发布会官网
-   Reference: Film / launch site — dark stage + gold, restrained timecode motifs
-   Design language: 8pt grid · unified radius/shadow · WCAG AA
-   Fonts: Head: Archivo 700;800;900 · Body: Inter 400;500;600;700 · Mono: IBM Plex Mono
+﻿/* ============================================================
+   AURAS REDESIGN THEME 鈥?瑙嗛椹卞姩 路 鐢靛奖/鍙戝竷浼氬畼缃?
+   Reference: Film / launch site 鈥?dark stage + gold, restrained timecode motifs
+   Design language: 8pt grid 路 unified radius/shadow 路 WCAG AA
+   Fonts: Head: Archivo 700;800;900 路 Body: Inter 400;500;600;700 路 Mono: IBM Plex Mono
    Motion: 200-500ms restrained (reveal, scrolled nav, hero zoom,
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
@@ -295,7 +295,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 /* ============================================================ */
 
 /* ============================================================
-   WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
+   WCAG AA OVERRIDE 鈥?verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
   --btn-bg: #D9A441; --btn-fg: #0B0C10;
@@ -310,3 +310,6 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 .btn-navy { border: 1px solid var(--border-dark); }
 .eyebrow { color: var(--eyebrow-fg) !important; }
 .hero .subtitle { color: var(--hero-sub-fg) !important; }
+
+/* AURAS LOGO */
+.brand .brand-logo{display:inline-block;height:34px;width:auto;vertical-align:middle;flex:0 0 auto;opacity:.98}

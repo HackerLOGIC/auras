@@ -1,0 +1,134 @@
+{
+  "360x640": {
+    "pageHScroll": false,
+    "sw_d": 360,
+    "cw_d": 360,
+    "badCount": 0,
+    "badOverflow": [],
+    "menu": {
+      "clickOk": true,
+      "navOpenCount": 2,
+      "bodyNavOpen": true,
+      "drawers": [
+        {
+          "cls": "nav-market open",
+          "l": 0,
+          "r": 360,
+          "w": 360,
+          "open": true
+        },
+        {
+          "cls": "nav-links open",
+          "l": 58,
+          "r": 360,
+          "w": 302,
+          "open": true
+        }
+      ],
+      "badCount": 0,
+      "badOverflow": []
+    },
+    "full": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_360x640_full.png",
+    "menu_png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_360x640_menu.png",
+    "pass": true
+  },
+  "390x844": {
+    "pageHScroll": false,
+    "sw_d": 390,
+    "cw_d": 390,
+    "badCount": 0,
+    "badOverflow": [],
+    "menu": {
+      "clickOk": true,
+      "navOpenCount": 2,
+      "bodyNavOpen": true,
+      "drawers": [
+        {
+          "cls": "nav-market open",
+          "l": 0,
+          "r": 390,
+          "w": 390,
+          "open": true
+        },
+        {
+          "cls": "nav-links open",
+          "l": 70,
+          "r": 390,
+          "w": 320,
+          "open": true
+        }
+      ],
+      "badCount": 0,
+      "badOverflow": []
+    },
+    "full": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_390x844_full.png",
+    "menu_png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_390x844_menu.png",
+    "pass": true
+  },
+  "270x600": {
+    "pageHScroll": false,
+    "sw_d": 270,
+    "cw_d": 270,
+    "badCount": 0,
+    "badOverflow": [],
+    "menu": {
+      "clickOk": true,
+      "navOpenCount": 2,
+      "bodyNavOpen": true,
+      "drawers": [
+        {
+          "cls": "nav-market open",
+          "l": 0,
+          "r": 270,
+          "w": 270,
+          "open": true
+        },
+        {
+          "cls": "nav-links open",
+          "l": 43,
+          "r": 270,
+          "w": 227,
+          "open": true
+        }
+      ],
+      "badCount": 0,
+      "badOverflow": []
+    },
+    "full": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_270x600_full.png",
+    "menu_png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_270x600_menu.png",
+    "pass": true
+  },
+  "768x1024": {
+    "pageHScroll": false,
+    "sw_d": 768,
+    "cw_d": 768,
+    "badCount": 0,
+    "badOverflow": [],
+    "menu": {
+      "clickOk": true,
+      "navOpenCount": 2,
+      "bodyNavOpen": true,
+      "drawers": [
+        {
+          "cls": "nav-market open",
+          "l": 0,
+          "r": 768,
+          "w": 768,
+          "open": true
+        },
+        {
+          "cls": "nav-links open",
+          "l": 448,
+          "r": 768,
+          "w": 320,
+          "open": true
+        }
+      ],
+      "badCount": 0,
+      "badOverflow": []
+    },
+    "full": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_768x1024_full.png",
+    "menu_png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_768x1024_menu.png",
+    "pass": true
+  }
+}

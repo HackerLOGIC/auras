@@ -1,8 +1,8 @@
-/* ============================================================
-   AURAS REDESIGN THEME — 国际化多语言 · 联合国
-   Reference: United Nations / international org — UN blue + white, clear grid, multilingual-ready
-   Design language: 8pt grid · unified radius/shadow · WCAG AA
-   Fonts: Head: Source Sans 3 600;700 · Body: Source Sans 3 400;600;700 · Mono: IBM Plex Mono
+﻿/* ============================================================
+   AURAS REDESIGN THEME 鈥?鍥介檯鍖栧璇█ 路 鑱斿悎鍥?
+   Reference: United Nations / international org 鈥?UN blue + white, clear grid, multilingual-ready
+   Design language: 8pt grid 路 unified radius/shadow 路 WCAG AA
+   Fonts: Head: Source Sans 3 600;700 路 Body: Source Sans 3 400;600;700 路 Mono: IBM Plex Mono
    Motion: 200-500ms restrained (reveal, scrolled nav, hero zoom,
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
@@ -292,7 +292,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 /* ============================================================ */
 
 /* ============================================================
-   WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
+   WCAG AA OVERRIDE 鈥?verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
   --btn-bg: #1D5AA8; --btn-fg: #FFFFFF;
@@ -307,3 +307,6 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 .btn-navy { border: 1px solid var(--border-dark); }
 .eyebrow { color: var(--eyebrow-fg) !important; }
 .hero .subtitle { color: var(--hero-sub-fg) !important; }
+
+/* AURAS LOGO */
+.brand .brand-logo{display:inline-block;height:34px;width:auto;vertical-align:middle;flex:0 0 auto;opacity:.98}

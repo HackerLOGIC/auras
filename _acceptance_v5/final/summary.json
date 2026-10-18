@@ -1,0 +1,682 @@
+[
+ {
+  "site": "auras-website-01",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-01",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-01",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-01",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-02",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 0,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 0,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-02",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 0,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 0,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-02",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 22,
+   "menuOpen": 0,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 2,
+   "menuOpen": 0,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-02",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 0,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 0,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-03",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-03",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-03",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-03",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-04",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 34,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 14,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-04",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 32,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 12,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-04",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 36,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 16,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-04",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 32,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 12,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-05",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-05",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-05",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-05",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-06",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-06",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-06",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-06",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-07",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-07",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-07",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-07",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-08",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 45,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 23,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-08",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 36,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 18,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-08",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 46,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 24,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-08",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 29,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 11,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-09",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-09",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-09",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-09",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 20,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-10",
+  "vw": "360x640",
+  "state_full": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-10",
+  "vw": "390x844",
+  "state_full": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-10",
+  "vw": "270x600",
+  "state_full": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ },
+ {
+  "site": "auras-website-10",
+  "vw": "768x1024",
+  "state_full": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": false
+  },
+  "menu_click": "clicked",
+  "state_menu": {
+   "hscroll": false,
+   "bad": 0,
+   "menuOpen": 1,
+   "bodyOpen": true
+  }
+ }
+]

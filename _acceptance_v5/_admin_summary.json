@@ -1,0 +1,332 @@
+{
+  "auras-website-01": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-01_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-01_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-01_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-01_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  },
+  "auras-website-02": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-02_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-02_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-02_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-02_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  },
+  "auras-website-03": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-03_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-03_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-03_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"no\",\"panel\":\"none\",\"rows\":0}",
+      "card": "{\"thead\":\"yes\",\"td\":\"no\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-03_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  },
+  "auras-website-04": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-04_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-04_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-04_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-04_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  },
+  "auras-website-05": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-05_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-05_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-05_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-05_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  },
+  "auras-website-06": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-06_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-06_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-06_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-06_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  },
+  "auras-website-07": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-07_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-07_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-07_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-07_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  },
+  "auras-website-08": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-08_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-08_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-08_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-08_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  },
+  "auras-website-09": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-09_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  },
+  "auras-website-10": {
+    "360x640": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-10_admin_360x640.png"
+    },
+    "390x844": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-10_admin_390x844.png"
+    },
+    "270x600": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-10_admin_270x600.png"
+    },
+    "768x1024": {
+      "login": "dispatched",
+      "state": "{\"auth\":\"ok\",\"panel\":\"block\",\"rows\":8}",
+      "card": "{\"theadDisplay\":\"none\",\"tdBeforeContent\":\"\\\"标题\\\"\"}",
+      "png": "C:\\Users\\Admin\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2acwygPS0xfDZtAjSCeAPTU\\workspace\\conv_e7b9c838c08a4c18bc2c0ab11f50611d\\output\\_acceptance_v5\\auras-website-10_admin_768x1024.png"
+    },
+    "crud_360": {
+      "init_rows": 8,
+      "created_id": 9,
+      "mid_rows": 9,
+      "leftover": 1,
+      "final_rows": 8
+    }
+  }
+}

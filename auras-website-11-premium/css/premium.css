@@ -1,0 +1,349 @@
+/* =========================================================
+   AURAS Premium — "手机发布会宣传页"级视觉层
+   (基于 style.css + v2-theme.css 之上，仅做视觉/动效增强)
+   ========================================================= */
+:root {
+  --pr-bg: #04070f;
+  --pr-bg2: #0a1022;
+  --pr-ink: #eaf2ff;
+  --pr-muted: #9fb0cd;
+  --pr-cyan: #38e8ff;
+  --pr-blue: #5b8cff;
+  --pr-violet: #8b6cff;
+  --pr-gold: #f8c95c;
+  --pr-gold2: #ff9d5c;
+  --pr-line: rgba(148, 190, 255, 0.16);
+  --pr-glass: rgba(10, 18, 38, 0.62);
+  --pr-shadow: 0 24px 70px rgba(2, 6, 18, 0.55);
+}
+
+/* ---------- 整站底色与渐变氛围 ---------- */
+html { scroll-behavior: smooth; }
+body {
+  background:
+    radial-gradient(1200px 700px at 85% -10%, rgba(56, 108, 255, 0.16), transparent 60%),
+    radial-gradient(1000px 600px at -10% 15%, rgba(56, 232, 255, 0.10), transparent 55%),
+    radial-gradient(900px 700px at 50% 120%, rgba(139, 108, 255, 0.10), transparent 60%),
+    var(--pr-bg) !important;
+  color: var(--pr-ink);
+}
+body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    linear-gradient(115deg, transparent 0%, rgba(56,232,255,0.05) 25%, transparent 50%,
+      rgba(139,108,255,0.05) 75%, transparent 100%);
+  background-size: 320% 320%;
+  animation: pr-flow 18s ease-in-out infinite;
+}
+body::after {
+  content: "";
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(600px 600px at var(--mx, 30%) var(--my, 20%),
+    rgba(56, 232, 255, 0.10), transparent 70%);
+  opacity: 0; transition: opacity .6s;
+}
+body.glow-on::after { opacity: 1; }
+@keyframes pr-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ---------- 玻璃拟态吸顶导航 ---------- */
+.navbar {
+  background: linear-gradient(180deg, rgba(4,7,15,0.85), rgba(4,7,15,0.35)) !important;
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid transparent;
+  transition: background .45s, box-shadow .45s, border-color .45s;
+}
+.navbar.scrolled {
+  background: var(--pr-glass) !important;
+  border-bottom: 1px solid var(--pr-line);
+  box-shadow: 0 10px 34px rgba(2, 6, 18, 0.45);
+}
+.navbar .brand { color: #fff; }
+.navbar .brand small { color: var(--pr-muted); }
+.logo-mark {
+  background: linear-gradient(135deg, var(--pr-cyan), var(--pr-blue), var(--pr-violet)) !important;
+  box-shadow: 0 0 22px rgba(56, 140, 255, 0.45);
+}
+.nav-links a {
+  color: #c8d6ef;
+  position: relative;
+  transition: color .3s, text-shadow .3s;
+}
+.nav-links a::after {
+  content: ""; position: absolute; left: 50%; bottom: -4px;
+  width: 0; height: 2px; border-radius: 2px;
+  background: linear-gradient(90deg, var(--pr-cyan), var(--pr-gold));
+  transform: translateX(-50%); transition: width .35s;
+}
+.nav-links a:hover { color: #fff; text-shadow: 0 0 14px rgba(56,232,255,0.6); }
+.nav-links a:hover::after { width: 70%; }
+
+/* ---------- 全屏 Hero：发布会开场 ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #04070f;
+}
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(4,7,15,0.25) 0%, rgba(4,7,15,0.15) 40%, rgba(4,7,15,0.82) 88%, #04070f 100%),
+    radial-gradient(900px 500px at 70% 20%, rgba(56,232,255,0.14), transparent 60%);
+  pointer-events: none;
+}
+/* 发布会光晕层 */
+.hero .pr-orb {
+  position: absolute; z-index: 1; border-radius: 50%;
+  filter: blur(70px); pointer-events: none; will-change: transform;
+  opacity: .55;
+}
+.hero .pr-orb.o1 {
+  width: 460px; height: 460px; left: -120px; top: 8%;
+  background: radial-gradient(circle, rgba(56,108,255,0.85), transparent 70%);
+  animation: pr-orb-drift 11s ease-in-out infinite alternate;
+}
+.hero .pr-orb.o2 {
+  width: 520px; height: 520px; right: -160px; top: 24%;
+  background: radial-gradient(circle, rgba(56,232,255,0.75), transparent 70%);
+  animation: pr-orb-drift 13s ease-in-out infinite alternate-reverse;
+}
+.hero .pr-orb.o3 {
+  width: 380px; height: 380px; left: 42%; bottom: -140px;
+  background: radial-gradient(circle, rgba(248,201,92,0.5), transparent 70%);
+  animation: pr-orb-drift 9s ease-in-out infinite alternate;
+}
+@keyframes pr-orb-drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(40px, -30px, 0) scale(1.12); }
+}
+.hero .hero-bg { will-change: transform; }
+.hero .container { position: relative; z-index: 2; }
+
+/* 逐行渐入（发布会式文案） */
+.hero .subtitle,
+.hero h1,
+.hero p,
+.hero .btn-row {
+  opacity: 0;
+  animation: pr-rise 1s cubic-bezier(.16, 1, .3, 1) forwards;
+}
+.hero .subtitle { animation-delay: .25s; }
+.hero h1 { animation-delay: .45s; }
+.hero p { animation-delay: .70s; }
+.hero .btn-row { animation-delay: .95s; }
+@keyframes pr-rise {
+  from { opacity: 0; transform: translateY(46px) scale(.98); filter: blur(6px); }
+  to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+/* ---------- 页面横幅统一质感 ---------- */
+.page-banner {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(700px 400px at 20% 0%, rgba(56,108,255,0.22), transparent 60%),
+    radial-gradient(700px 400px at 85% 20%, rgba(56,232,255,0.16), transparent 60%),
+    linear-gradient(135deg, #070d1f, #0a1226) !important;
+  border-bottom: 1px solid var(--pr-line);
+}
+.page-banner::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.06) 48%, transparent 62%);
+  background-size: 250% 250%; animation: pr-flow 10s ease-in-out infinite;
+  pointer-events: none;
+}
+.breadcrumb { color: var(--pr-muted); }
+.breadcrumb a { color: var(--pr-cyan); }
+
+/* ---------- 标题与文字 ---------- */
+.eyebrow {
+  color: var(--pr-cyan);
+  letter-spacing: .32em;
+  text-shadow: 0 0 18px rgba(56,232,255,0.55);
+}
+.section-title {
+  background: linear-gradient(92deg, #fff 20%, var(--pr-cyan) 55%, var(--pr-blue) 90%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+.section-sub { color: var(--pr-muted); }
+.section p, .section li, .footer, .card-body, .timeline { color: #b9c8e4; }
+
+/* ---------- 流光辉光按钮 ---------- */
+.btn {
+  position: relative; overflow: hidden;
+  border-radius: 999px;
+  z-index: 1;
+}
+.btn-gold, .btn-navy, .btn-outline {
+  transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+.btn-gold {
+  background: linear-gradient(120deg, var(--pr-gold), var(--pr-gold2)) !important;
+  color: #17120a !important;
+  box-shadow: 0 8px 30px rgba(248, 201, 92, 0.35);
+}
+.btn-gold::before {
+  content: ""; position: absolute; top: 0; left: -80%; width: 55%; height: 100%;
+  background: linear-gradient(105deg, transparent, rgba(255,255,255,0.85), transparent);
+  transform: skewX(-18deg);
+  animation: pr-sheen 3.2s ease-in-out infinite;
+  z-index: 0;
+}
+.btn-gold:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 14px 42px rgba(248,201,92,0.5); }
+@keyframes pr-sheen {
+  0% { left: -80%; }
+  45%, 100% { left: 140%; }
+}
+.btn-navy {
+  background: linear-gradient(120deg, #12315e, #0e3f8f) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 28px rgba(14, 63, 143, 0.4);
+}
+.btn-navy:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(56,108,255,0.55); }
+.btn-outline {
+  border: 1px solid var(--pr-line) !important;
+  color: #dbe7ff !important;
+  background: rgba(255,255,255,0.03) !important;
+  backdrop-filter: blur(8px);
+}
+.btn-outline:hover { border-color: var(--pr-cyan) !important; box-shadow: 0 0 24px rgba(56,232,255,0.35); }
+
+/* ---------- 卡片：3D tilt + 光晕描边 ---------- */
+.card, .news-card, .service-card, .product-card, .value-card {
+  position: relative;
+  background: linear-gradient(160deg, rgba(20, 32, 60, 0.7), rgba(10, 16, 34, 0.85)) !important;
+  border: 1px solid var(--pr-line) !important;
+  border-radius: 20px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s, border-color .35s;
+}
+.card:hover, .news-card:hover, .service-card:hover, .product-card:hover, .value-card:hover {
+  border-color: rgba(56, 232, 255, 0.55) !important;
+  box-shadow: 0 18px 50px rgba(2, 6, 18, 0.6), 0 0 34px rgba(56, 140, 255, 0.25);
+}
+.card::after, .news-card::after, .service-card::after, .product-card::after, .value-card::after {
+  content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background: radial-gradient(520px 300px at var(--cx, 50%) var(--cy, 0%),
+    rgba(255,255,255,0.10), transparent 60%);
+  opacity: 0; transition: opacity .4s;
+}
+.card:hover::after, .news-card:hover::after, .service-card:hover::after,
+.product-card:hover::after, .value-card:hover::after { opacity: 1; }
+.card-img, .img-frame, .card img { will-change: transform; }
+.card-img img, .card img { transition: transform .8s cubic-bezier(.16,1,.3,1); }
+.card:hover .card-img img, .card:hover img, .img-frame:hover img { transform: scale(1.08); }
+.card-body { color: #b9c8e4; }
+
+/* ---------- 图片滚动缩放错落（由 premium.js 驱动 transform） ---------- */
+.pr-zoom {
+  will-change: transform;
+  transition: transform .15s linear;
+}
+
+/* ---------- 数字滚动 ---------- */
+.pr-stat { font-variant-numeric: tabular-nums; }
+
+/* ---------- 交错 reveal ---------- */
+.pr-reveal {
+  opacity: 0;
+  transform: translateY(38px);
+  transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1);
+  will-change: opacity, transform;
+}
+.pr-reveal.in { opacity: 1; transform: translateY(0); }
+
+/* ---------- 回顶按钮 ---------- */
+.pr-top {
+  position: fixed; right: 26px; bottom: 26px; z-index: 99;
+  width: 48px; height: 48px; border-radius: 50%;
+  border: 1px solid var(--pr-line);
+  background: var(--pr-glass);
+  color: #dbe7ff; font-size: 20px; line-height: 1;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  backdrop-filter: blur(10px);
+  opacity: 0; visibility: hidden; transform: translateY(14px);
+  transition: opacity .35s, transform .35s, visibility .35s, box-shadow .35s;
+}
+.pr-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.pr-top:hover { box-shadow: 0 0 26px rgba(56,232,255,0.5); color: var(--pr-cyan); }
+
+/* ---------- 页面过渡 ---------- */
+body.pr-leave { opacity: 0; transform: translateY(10px); }
+body { transition: opacity .28s ease, transform .28s ease; }
+
+/* ---------- 时间线/列表增强 ---------- */
+.timeline { border-color: var(--pr-line); }
+.timeline::before { background: linear-gradient(var(--pr-cyan), var(--pr-violet)); }
+
+/* ---------- 页脚 ---------- */
+.footer {
+  background: linear-gradient(180deg, #050a18, #03050c) !important;
+  border-top: 1px solid var(--pr-line);
+}
+.footer h4 { color: #fff; }
+
+/* ---------- 喜讯弹窗 ---------- */
+.modal {
+  border: 1px solid var(--pr-line);
+  box-shadow: 0 30px 80px rgba(2, 6, 18, 0.7), 0 0 50px rgba(56,140,255,0.18);
+  background: linear-gradient(160deg, #101a38, #0a1126) !important;
+  border-radius: 22px;
+}
+.modal .badge { background: linear-gradient(120deg, var(--pr-gold), var(--pr-gold2)) !important; }
+
+/* ---------- 动效降级 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hero .subtitle, .hero h1, .hero p, .hero .btn-row { opacity: 1; transform: none; filter: none; }
+  .pr-reveal { opacity: 1; transform: none; }
+}
+
+/* ---------- 移动端适配 ---------- */
+@media (max-width: 768px) {
+  .hero .pr-orb.o1 { width: 260px; height: 260px; }
+  .hero .pr-orb.o2 { width: 300px; height: 300px; }
+  .pr-top { right: 16px; bottom: 16px; width: 42px; height: 42px; }
+}
+
+/* ---------- ui.js 回顶按钮 premium 化 ---------- */
+#backTop {
+  background: var(--pr-glass) !important;
+  border: 1px solid var(--pr-line) !important;
+  color: #dbe7ff !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 26px rgba(2, 6, 18, 0.45);
+}
+#backTop:hover { color: var(--pr-cyan) !important; box-shadow: 0 0 26px rgba(56,232,255,0.5) !important; }
+
+/* ---------- 后台（admin）深色高级质感适配 ---------- */
+.admin-nav { background: linear-gradient(120deg, #0a1634, #0b2a5c) !important; border-bottom: 1px solid var(--pr-line); }
+.admin-nav span { color: var(--pr-muted) !important; }
+.login-wrap { background: radial-gradient(700px 420px at 50% -10%, rgba(56,108,255,0.18), transparent 65%), #04070f !important; }
+.login-card, .panel, .admin-panel {
+  background: linear-gradient(160deg, rgba(20, 32, 60, 0.85), rgba(10, 16, 34, 0.92)) !important;
+  border: 1px solid var(--pr-line) !important;
+  box-shadow: var(--pr-shadow) !important;
+  color: var(--pr-ink) !important;
+}
+.login-card h2, .panel h2, .admin-panel h2, .admin-panel h3 { color: #fff !important; }
+.login-card .hint, .panel p, .admin-panel p, .admin-panel td, .admin-panel label { color: var(--pr-muted) !important; }
+.login-card input, .admin-panel input, .admin-panel textarea, .admin-panel select {
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid var(--pr-line) !important;
+  color: #eaf2ff !important;
+  border-radius: 10px !important;
+}
+.admin-panel th { color: #fff !important; background: rgba(56,108,255,0.12) !important; }
+.admin-panel tr:nth-child(even) { background: rgba(255,255,255,0.03) !important; }

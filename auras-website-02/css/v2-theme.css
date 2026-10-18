@@ -1,8 +1,8 @@
-/* ============================================================
-   AURAS REDESIGN THEME — 现代科技 · Linear / Vercel
-   Reference: Linear / Vercel — dark canvas, restrained purple-blue gradient, subtle glass nav
-   Design language: 8pt grid · unified radius/shadow · WCAG AA
-   Fonts: Head: Space Grotesk 500;600;700 · Body: Inter 400;500;600;700 · Mono: JetBrains Mono
+﻿/* ============================================================
+   AURAS REDESIGN THEME 鈥?鐜颁唬绉戞妧 路 Linear / Vercel
+   Reference: Linear / Vercel 鈥?dark canvas, restrained purple-blue gradient, subtle glass nav
+   Design language: 8pt grid 路 unified radius/shadow 路 WCAG AA
+   Fonts: Head: Space Grotesk 500;600;700 路 Body: Inter 400;500;600;700 路 Mono: JetBrains Mono
    Motion: 200-500ms restrained (reveal, scrolled nav, hero zoom,
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
@@ -291,7 +291,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 /* ============================================================
 
 /* ============================================================
-   WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
+   WCAG AA OVERRIDE 鈥?verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
   --btn-bg: #7B6CF6; --btn-fg: #08090C;
@@ -488,7 +488,7 @@ body.auras-no-motion .auras-reveal, body.auras-no-motion .auras-reveal.in {
 
 
 /* ===== AURAS MOBILE REWRITE V5 ===== */
-/* 移动端独立重写覆盖层：仅作用于竖屏窄视口，桌面端/横屏样式与结构保持不变 */
+/* 绉诲姩绔嫭绔嬮噸鍐欒鐩栧眰锛氫粎浣滅敤浜庣珫灞忕獎瑙嗗彛锛屾闈㈢/妯睆鏍峰紡涓庣粨鏋勪繚鎸佷笉鍙?*/
 @media (max-width: 768px) {
   html { -webkit-text-size-adjust: 100%; }
   html, body { overflow-x: clip; }
@@ -547,12 +547,12 @@ body.auras-no-motion .auras-reveal, body.auras-no-motion .auras-reveal.in {
   .admin-table tr { display: block; margin: 0 0 14px; padding: 10px 12px; background: var(--surface, #fff); border: 1px solid var(--border, rgba(0,0,0,.12)); border-radius: 12px; }
   .admin-table td { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 9px 2px; border: 0; font-size: 14px; min-height: 44px; }
   .admin-table td::before { content: attr(data-label); flex: 0 0 56px; font-weight: 600; color: var(--text-muted, #666); }
-  .admin-table td:nth-child(1)::before { content: "标题"; }
-  .admin-table td:nth-child(2)::before { content: "分类"; }
-  .admin-table td:nth-child(3)::before { content: "日期"; }
-  .admin-table td:nth-child(4)::before { content: "摘要"; }
-  .admin-table td:nth-child(5)::before { content: "封面"; }
-  .admin-table td:nth-child(6)::before { content: "操作"; }
+  .admin-table td:nth-child(1)::before { content: "鏍囬"; }
+  .admin-table td:nth-child(2)::before { content: "鍒嗙被"; }
+  .admin-table td:nth-child(3)::before { content: "鏃ユ湡"; }
+  .admin-table td:nth-child(4)::before { content: "鎽樿"; }
+  .admin-table td:nth-child(5)::before { content: "灏侀潰"; }
+  .admin-table td:nth-child(6)::before { content: "鎿嶄綔"; }
   .admin-table td:last-child { justify-content: flex-start; }
 }
 
@@ -634,13 +634,16 @@ body.auras-no-motion .auras-reveal, body.auras-no-motion .auras-reveal.in {
   .table tr { display:block !important; margin:0 0 14px !important; padding:10px 12px !important; background:var(--surface,#fff) !important; border:1px solid var(--border,rgba(0,0,0,.12)) !important; border-radius:12px !important; }
   .table td { display:flex !important; justify-content:space-between; align-items:center; gap:12px; padding:9px 2px !important; border:0 !important; font-size:14px; min-height:44px; }
   .table td::before { content:attr(data-label); flex:0 0 56px; font-weight:600; color:var(--text-muted,#666); }
-  .table td:nth-child(1)::before { content:"标题"; }
-  .table td:nth-child(2)::before { content:"分类"; }
-  .table td:nth-child(3)::before { content:"日期"; }
-  .table td:nth-child(4)::before { content:"操作"; }
+  .table td:nth-child(1)::before { content:"鏍囬"; }
+  .table td:nth-child(2)::before { content:"鍒嗙被"; }
+  .table td:nth-child(3)::before { content:"鏃ユ湡"; }
+  .table td:nth-child(4)::before { content:"鎿嶄綔"; }
   .table td:last-child { justify-content:flex-end; }
   .table td:last-child::before { display:none; }
   .table td a, .table td button { min-height:44px; display:inline-flex; align-items:center; }
   .table { display:block; overflow-x:hidden; }
 }
 /* ===== AURAS V5-ADMIN-TABLE FIX END */
+
+/* AURAS LOGO */
+.brand .brand-logo{display:inline-block;height:34px;width:auto;vertical-align:middle;flex:0 0 auto;opacity:.98}

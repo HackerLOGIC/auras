@@ -1,34 +1,34 @@
-/* ============================================================
-   AURAS REDESIGN THEME — 商务稳重 · Stripe / McKinsey
-   Reference: Stripe / McKinsey — deep navy + warm grey, restrained gold accent, serif display
-   Design language: 8pt grid · unified radius/shadow · WCAG AA
-   Fonts: Head: Playfair Display 500;600;700 · Body: Inter 400;500;600;700 · Mono: IBM Plex Mono
+﻿/* ============================================================
+   AURAS REDESIGN THEME 鈥?鍟嗗姟绋抽噸 路 Stripe / McKinsey
+   Reference: Stripe / McKinsey 鈥?deep navy + warm grey, restrained gold accent, serif display
+   Design language: 8pt grid 路 unified radius/shadow 路 WCAG AA
+   Fonts: Head: Playfair Display 500;600;700 路 Body: Inter 400;500;600;700 路 Mono: IBM Plex Mono
    Motion: 200-500ms restrained (reveal, scrolled nav, hero zoom,
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
 :root {
-  /* palette - ROYAL NAVY & GOLD v4 */
-  --primary: #0F2B46;
-  --primary-2: #143A5E;
-  --primary-3: #1B4B7A;
-  --accent: #C9A15B;
-  --accent-dark: #9A7B3F;
-  --link: #9A7B3F;
+  /* palette - BRAND BLUE #008CD6 v5 */
+  --primary: #0A3E5C;
+  --primary-2: #0C5B87;
+  --primary-3: #0E74A8;
+  --accent: #008CD6;
+  --accent-dark: #006DA8;
+  --link: #006DA8;
   --warn: #B4542E;
   --success: #1E7A4A;
-  --bg: #F4F2EE;
-  --bg-alt: #E9E5DE;
+  --bg: #F3F7FB;
+  --bg-alt: #E4EDF5;
   --surface: #FFFFFF;
-  --surface-alt: #E2DED5;
-  --text: #1F2A37;
-  --text-muted: #46525F;
-  --text-on-dark: #E9EFF6;
-  --muted-on-dark: #A9BBD0;
-  --border: #E2E8F0;
+  --surface-alt: #D9E6F1;
+  --text: #12263A;
+  --text-muted: #3D5268;
+  --text-on-dark: #EAF3FB;
+  --muted-on-dark: #A8C3DA;
+  --border: #DCE6F0;
   --border-dark: rgba(255,255,255,0.14);
-  --dark: #0F2B46;
-  --dark-2: #0A1F36;
-  --dark-text: #E9EFF6;
+  --dark: #0A3E5C;
+  --dark-2: #06293E;
+  --dark-text: #EAF3FB;
   /* font system */
   --font-head: 'Playfair Display', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Source Sans 3', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -39,19 +39,19 @@
   --r-input: 8px;
   --r-pill: 999px;
   /* elevation */
-  --shadow: 0 10px 30px rgba(15,43,70,0.10);
-  --shadow-lg: 0 22px 56px rgba(15,43,70,0.18);
+  --shadow: 0 10px 30px rgba(10,62,92,0.10);
+  --shadow-lg: 0 22px 56px rgba(10,62,92,0.18);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
   /* motion - stately */
   --dur-fast: 260ms; --dur: 420ms; --dur-slow: 620ms;
   --ease: cubic-bezier(.22,.68,.3,1);
   /* legacy aliases */
-  --navy: #0F2B46; --navy-2: #143A5E; --navy-3: #1B4B7A;
-  --blue: #143A5E; --sky: #1B4B7A;
-  --gold: #C9A15B; --gold-2: #C9A15B;
+  --navy: #0A3E5C; --navy-2: #0C5B87; --navy-3: #0E74A8;
+  --blue: #008CD6; --sky: #0E74A8;
+  --gold: #008CD6; --gold-2: #5BB8E8;
   --orange: #B4542E; --green: #1E7A4A;
-  --light: #E9E5DE; --gray: #5B6B7C; --border2: #E2E8F0; --text2: #1F2A37;
+  --light: #E4EDF5; --gray: #5B6B7C; --border2: #DCE6F0; --text2: #12263A;
 }
 
 /* ---------- base typography ---------- */
@@ -78,6 +78,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); color: var(--text); line-height:
 .navbar .container { height: 72px; display: flex; align-items: center; justify-content: space-between; }
 .brand { font-family: var(--font-head); font-weight: 700; letter-spacing: 1px; color: var(--text-on-dark); display: flex; align-items: center; gap: 10px; }
 .brand .logo-mark { display: inline-flex; width: 34px; height: 34px; border-radius: var(--r-btn); background: linear-gradient(135deg, var(--accent), var(--accent-dark)); color: #fff; align-items: center; justify-content: center; font-weight: 800; font-size: 15px; }
+.brand .brand-logo { display: inline-block; height: 34px; width: auto; vertical-align: middle; flex: 0 0 auto; }
 .brand small { letter-spacing: 2px; color: var(--muted-on-dark); font-size: 11px; font-weight: 500; }
 .nav-links { display: flex; gap: 4px; }
 .nav-links a { color: var(--muted-on-dark); font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: var(--r-btn); text-transform: none; letter-spacing: .2px; transition: color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease); }
@@ -289,13 +290,13 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 /* ============================================================ */
 
 /* ============================================================
-   WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
+   WCAG AA OVERRIDE 鈥?verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
-  --btn-bg: #C19A5B; --btn-fg: #0F2B46;
-  --btn-hover-bg: #B58F4A; --btn-hover-fg: #0F2B46;
-  --out-fg: #0F2B46; --out-hover-bg: #0F2B46; --out-hover-fg: #FFFFFF;
-  --eyebrow-fg: #0F2B46; --hero-sub-fg: #D9B36A;
+  --btn-bg: #0077B8; --btn-fg: #FFFFFF;
+  --btn-hover-bg: #00609A; --btn-hover-fg: #FFFFFF;
+  --out-fg: #006DA8; --out-hover-bg: #006DA8; --out-hover-fg: #FFFFFF;
+  --eyebrow-fg: #006DA8; --hero-sub-fg: #006DA8;
 }
 .btn-gold, .btn-add { background: var(--btn-bg); color: var(--btn-fg); }
 .btn-gold:hover, .btn-add:hover { background: var(--btn-hover-bg); color: var(--btn-hover-fg); box-shadow: var(--shadow); }
@@ -304,3 +305,8 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 .btn-navy { border: 1px solid var(--border-dark); }
 .eyebrow { color: var(--eyebrow-fg) !important; }
 .hero .subtitle { color: var(--hero-sub-fg) !important; }
+
+/* ============ AURAS BRAND BLUE ACCENT : #008CD6 ============ */
+.news-meta .cat, .card-body .tag, .breadcrumb a, .footer a:hover { color: #006DA8 !important; }
+.modal-head .badge { background: #0077B8 !important; color: #fff !important; }
+.navbar .nav-links a:hover, .navbar .nav-links a.active { background: rgba(0,140,214,.18); color: #fff !important; }

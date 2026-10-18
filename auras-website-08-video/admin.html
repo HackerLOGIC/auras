@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<title>AURAS 员工后台 - 网站内容管理</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/v2-theme.css">
+<style>
+  body { background: #eef2f7; }
+  .admin-nav { background: var(--navy); color: #fff; padding: 14px 0; }
+  .admin-nav .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .admin-nav h2 { color: #fff; font-size: 20px; }
+  .admin-nav span { color: #9fc0e8; font-size: 13px; }
+  .login-wrap { min-height: 70vh; display: flex; align-items: center; justify-content: center; }
+  .login-card { background: #fff; border-radius: 12px; box-shadow: var(--shadow-lg); padding: 34px; width: 360px; max-width: 92%; }
+  .login-card h2 { color: var(--navy); text-align: center; margin-bottom: 4px; }
+  .login-card .hint { text-align: center; color: #7b8ba1; font-size: 13px; margin-bottom: 20px; }
+  .panel { display: none; }
+  .admin-section { background: #fff; border-radius: 12px; box-shadow: var(--shadow-lg); padding: 24px; margin-bottom: 22px; }
+  .admin-section h3 { color: var(--navy); margin-bottom: 14px; font-size: 18px; border-left: 4px solid var(--gold); padding-left: 10px; }
+  .admin-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+  .admin-tabs .tab { padding: 8px 16px; border-radius: 6px; border: 1px solid #c9d6e4; background: #fff; cursor: pointer; color: var(--navy); font-weight: 600; }
+  .admin-tabs .tab.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+  .table { width: 100%; border-collapse: collapse; }
+  .table th, .table td { border-bottom: 1px solid #e3e9f0; padding: 10px 8px; text-align: left; font-size: 14px; vertical-align: top; }
+  .table th { color: #5b6b7f; font-weight: 600; background: #f5f8fc; }
+  .btn-sm { padding: 5px 12px; font-size: 13px; border-radius: 5px; border: none; cursor: pointer; }
+  .btn-edit { background: #e8f1fb; color: var(--navy); }
+  .btn-del { background: #fdeaea; color: #c0392b; }
+  .btn-add { background: var(--gold); color: var(--navy); border: none; padding: 8px 16px; border-radius: 6px; font-weight: 700; cursor: pointer; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 18px; }
+  .form-grid label { display: block; font-size: 13px; font-weight: 600; color: #3f5064; }
+  .form-grid input, .form-grid select, .form-grid textarea { width: 100%; margin-top: 4px; padding: 9px 10px; border: 1px solid #cfdae6; border-radius: 6px; font-size: 14px; }
+  .form-grid .full { grid-column: 1 / -1; }
+  .ok-msg { color: #0a7a3c; font-weight: 600; }
+  .err-msg { color: #c0392b; font-weight: 600; }
+  .toggle { display: inline-block; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<nav class="navbar" style="position:static">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="logo-mark">A</span><span>AURAS<small>INTERNATIONAL LIMITED</small></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">返回前台首页</a></li>
+      <li><a href="admin.html">员工后台</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 登录区 -->
+<div class="login-wrap" id="loginWrap">
+  <div class="login-card">
+    <h2>AURAS 员工后台</h2>
+    <div class="hint">默认账号：admin &nbsp;|&nbsp; 默认密码：auras2026</div>
+    <label style="font-size:14px;font-weight:600;color:#3f5064">账号</label>
+    <input id="inUser" style="width:100%;margin:6px 0 14px;padding:10px;border:1px solid #cfdae6;border-radius:6px" placeholder="admin">
+    <label style="font-size:14px;font-weight:600;color:#3f5064">密码</label>
+    <input id="inPass" type="password" style="width:100%;margin:6px 0 16px;padding:10px;border:1px solid #cfdae6;border-radius:6px" placeholder="auras2026">
+    <button class="btn btn-gold" id="btnLogin" style="width:100%">登录</button>
+    <div id="loginMsg" class="err-msg" style="margin-top:10px"></div>
+  </div>
+</div>
+
+<!-- 管理面板 -->
+<div class="panel" id="panel">
+  <div class="admin-nav">
+    <div class="container">
+      <h2>AURAS 网站内容管理后台</h2>
+      <span id="who"></span> <button class="btn-sm btn-edit" id="logoutBtn">退出登录</button>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="admin-tabs">
+        <button class="tab active" data-tab="news">新闻管理</button>
+        <button class="tab" data-tab="ann">重大喜讯弹窗</button>
+        <button class="tab" data-tab="ms">历程时间线</button>
+        <button class="tab" data-tab="page">板块内容编辑说明</button>
+      </div>
+
+      <!-- 新闻管理 -->
+      <div class="tab-pane" id="tab-news">
+        <div class="admin-section">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+            <h3 style="margin:0">新闻列表（含增删改查）</h3>
+            <button class="btn-add" id="btnNewNews">+ 新增新闻</button>
+          </div>
+          <table class="table" id="newsTable">
+            <thead><tr><th>标题</th><th>分类</th><th>日期</th><th>摘要</th><th>封面</th><th style="width:150px">操作</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="admin-section" id="newsFormBox" style="display:none">
+          <h3 id="newsFormTitle">新增新闻</h3>
+          <div class="form-grid">
+            <label class="full">标题 *<input id="fTitle" placeholder="新闻标题"></label>
+            <label>分类 *
+              <select id="fCat">
+                <option>Announcement</option>
+                <option>Exhibition</option>
+                <option>Corporate</option>
+                <option>New Business</option>
+              </select>
+            </label>
+            <label>日期 *<input id="fDate" type="date"></label>
+            <label class="full">摘要 *<textarea id="fSummary" rows="2" placeholder="一句话摘要"></textarea></label>
+            <label class="full">正文 *<textarea id="fBody" rows="6" placeholder="新闻正文，支持多段落，用换行分隔"></textarea></label>
+            <label class="full">封面图（可选，可填 assets/images/page_XX/img_N.jpg 或粘贴图片路径）<input id="fImage" placeholder="assets/images/page_10/img_1.jpg"></label>
+            <div class="full" style="display:flex;gap:10px">
+              <button class="btn btn-gold" id="btnSaveNews">保存新闻</button>
+              <button class="btn btn-outline" id="btnCancelNews" style="border-color:#8b9bb0;color:#5b6b7f">取消</button>
+            </div>
+            <div class="full ok-msg" id="newsMsg"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 喜讯弹窗管理 -->
+      <div class="tab-pane" id="tab-ann" style="display:none">
+        <div class="admin-section">
+          <h3>重大喜讯弹窗</h3>
+          <p style="font-size:14px;color:#5b6b7f;margin-bottom:14px">首页加载时会弹出启用的喜讯（默认已预置一条中标喜讯示例，可修改或关闭）。</p>
+          <div class="form-grid">
+            <label class="full">弹窗标题 *<input id="aTitle" placeholder="如：热烈祝贺 AURAS 中标海外充电桩项目"></label>
+            <label style="display:flex;align-items:center;gap:8px;font-size:14px">启用开关
+              <input id="aEnabled" type="checkbox" style="width:auto;margin:0;transform:scale(1.3)"> 启用时首页加载自动弹出
+            </label>
+            <label>发布日期<input id="aDate" type="date"></label>
+            <label class="full">弹窗内容 *<textarea id="aBody" rows="4" placeholder="喜讯内容"></textarea></label>
+            <div class="full" style="display:flex;gap:10px">
+              <button class="btn btn-gold" id="btnSaveAnn">保存喜讯</button>
+            </div>
+            <div class="full ok-msg" id="annMsg"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 历程时间线管理 -->
+      <div class="tab-pane" id="tab-ms" style="display:none">
+        <div class="admin-section">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+            <h3 style="margin:0">发展历程时间线（前台 Milestones 页展示）</h3>
+            <button class="btn-add" id="btnNewMs">+ 新增历程</button>
+          </div>
+          <table class="table" id="msTable">
+            <thead><tr><th>年份</th><th>标题</th><th>描述</th><th style="width:150px">操作</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="admin-section" id="msFormBox" style="display:none">
+          <h3 id="msFormTitle">新增历程</h3>
+          <div class="form-grid">
+            <label>年份 *<input id="mYear" placeholder="如 2026"></label>
+            <label>标题 *<input id="mTitle" placeholder="历程标题"></label>
+            <label class="full">描述<textarea id="mDesc" rows="3" placeholder="简要描述"></textarea></label>
+            <div class="full" style="display:flex;gap:10px">
+              <button class="btn btn-gold" id="btnSaveMs">保存历程</button>
+              <button class="btn btn-outline" id="btnCancelMs" style="border-color:#8b9bb0;color:#5b6b7f">取消</button>
+            </div>
+            <div class="full ok-msg" id="msMsg"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 板块编辑说明 -->
+      <div class="tab-pane" id="tab-page" style="display:none">
+        <div class="admin-section">
+          <h3>板块内容编辑入口说明</h3>
+          <p style="font-size:14px;color:#5b6b7f;margin-bottom:12px">以下静态板块内容存放在对应 HTML 文件中，可通过编辑器直接维护；新闻、喜讯、历程时间线已实现后台可视化管理。</p>
+          <table class="table">
+            <thead><tr><th>板块</th><th>页面文件</th><th>维护方式</th></tr></thead>
+            <tbody>
+              <tr><td>公司介绍 / 价值观 / 团队 / 合作伙伴 / 证书</td><td>about.html</td><td>编辑 HTML 文本与图片引用</td></tr>
+              <tr><td>发展历程时间线</td><td>milestones.html（数据在 js/data.js）</td><td>后台"历程时间线"规划位；当前可由技术编辑 js/data.js 的 AURAS_TL 数组</td></tr>
+              <tr><td>服务与物流</td><td>services.html</td><td>编辑 HTML 文本</td></tr>
+              <tr><td>产品线</td><td>products.html</td><td>编辑 HTML 卡片</td></tr>
+              <tr><td>新能源与新业务</td><td>new-energy.html</td><td>编辑 HTML 卡片</td></tr>
+              <tr><td>项目案例</td><td>projects.html</td><td>编辑 HTML 卡片</td></tr>
+              <tr><td>新闻</td><td>news.html / news-detail.html</td><td>本后台"新闻管理"标签（localStorage 持久化）</td></tr>
+              <tr><td>重大喜讯弹窗</td><td>index.html</td><td>本后台"重大喜讯弹窗"标签</td></tr>
+              <tr><td>联系信息 / 询盘</td><td>contact.html</td><td>编辑 HTML；询盘记录存 localStorage（key: auras_inquiries）</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/site.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

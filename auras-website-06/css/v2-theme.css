@@ -1,8 +1,8 @@
-/* ============================================================
-   AURAS REDESIGN THEME — 新能源 · Tesla Energy / Ørsted
-   Reference: Tesla Energy / Ørsted — deep green + white + aqua, restrained glow
-   Design language: 8pt grid · unified radius/shadow · WCAG AA
-   Fonts: Head: Manrope 600;700;800 · Body: Inter 400;500;600;700 · Mono: IBM Plex Mono
+﻿/* ============================================================
+   AURAS REDESIGN THEME 鈥?鏂拌兘婧?路 Tesla Energy / 脴rsted
+   Reference: Tesla Energy / 脴rsted 鈥?deep green + white + aqua, restrained glow
+   Design language: 8pt grid 路 unified radius/shadow 路 WCAG AA
+   Fonts: Head: Manrope 600;700;800 路 Body: Inter 400;500;600;700 路 Mono: IBM Plex Mono
    Motion: 200-500ms restrained (reveal, scrolled nav, hero zoom,
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
@@ -292,7 +292,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 /* ============================================================ */
 
 /* ============================================================
-   WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
+   WCAG AA OVERRIDE 鈥?verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
   --btn-bg: #2FC49A; --btn-fg: #082E22;
@@ -307,3 +307,6 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 .btn-navy { border: 1px solid var(--border-dark); }
 .eyebrow { color: var(--eyebrow-fg) !important; }
 .hero .subtitle { color: var(--hero-sub-fg) !important; }
+
+/* AURAS LOGO */
+.brand .brand-logo{display:inline-block;height:34px;width:auto;vertical-align:middle;flex:0 0 auto;opacity:.98}

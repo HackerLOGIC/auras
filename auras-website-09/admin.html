@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,64 +14,64 @@
 </head>
 <body>
 
-<div class="promo">AURAS INTERNATIONAL LIMITED · Global Trade, Logistics, Production Lines &amp; New Energy</div>
+<div class="promo">AURAS INTERNATIONAL LIMITED 路 Global Trade, Logistics, Production Lines &amp; New Energy</div>
 <nav class="nav-market">
   <div class="nm-in">
-    <a class="brand" href="index.html"><span class="logo-mark">A</span><span>AURAS<small>INTERNATIONAL LIMITED</small></span></a>
-    <button class="nav-toggle" id="navToggle" data-nav-toggle aria-label="Menu">☰</button>
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo/logo-blue.png" alt="AURAS"><span>AURAS<small>INTERNATIONAL LIMITED</small></span></a>
+    <button class="nav-toggle" id="navToggle" data-nav-toggle aria-label="Menu">鈽?/button>
     <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="milestones.html">Milestones</a></li><li><a href="services.html">Services</a></li><li><a href="products.html">Products</a></li><li><a href="new-energy.html">New Energy</a></li><li><a href="projects.html">Projects</a></li><li><a href="news.html">News</a></li><li><a href="leisure.html">Leisure</a></li><li><a href="contact.html">Contact</a></li></ul>
   </div>
 </nav>
-<!-- 登录区 -->
+<!-- 鐧诲綍鍖?-->
 <div class="login-wrap" id="loginWrap">
   <div class="login-card">
-    <h2>AURAS 员工后台</h2>
-    <div class="hint">默认账号：admin &nbsp;|&nbsp; 默认密码：auras2026</div>
-    <label style="font-size:14px;font-weight:600;color:#3f5064">账号</label>
+    <h2>AURAS 鍛樺伐鍚庡彴</h2>
+    <div class="hint">榛樿璐﹀彿锛歛dmin &nbsp;|&nbsp; 榛樿瀵嗙爜锛歛uras2026</div>
+    <label style="font-size:14px;font-weight:600;color:#3f5064">璐﹀彿</label>
     <input id="inUser" style="width:100%;margin:6px 0 14px;padding:10px;border:1px solid #cfdae6;border-radius:6px" placeholder="admin">
-    <label style="font-size:14px;font-weight:600;color:#3f5064">密码</label>
+    <label style="font-size:14px;font-weight:600;color:#3f5064">瀵嗙爜</label>
     <input id="inPass" type="password" style="width:100%;margin:6px 0 16px;padding:10px;border:1px solid #cfdae6;border-radius:6px" placeholder="auras2026">
-    <button class="btn btn-gold" id="btnLogin" style="width:100%">登录</button>
+    <button class="btn btn-gold" id="btnLogin" style="width:100%">鐧诲綍</button>
     <div id="loginMsg" class="err-msg" style="margin-top:10px"></div>
   </div>
 </div>
 
-<!-- 管理面板 -->
+<!-- 绠＄悊闈㈡澘 -->
 <div class="panel" id="panel">
   <div class="admin-nav">
     <div class="container">
-      <h2>AURAS 网站内容管理后台</h2>
-      <span id="who"></span> <button class="btn-sm btn-edit" id="logoutBtn">退出登录</button>
+      <h2>AURAS 缃戠珯鍐呭绠＄悊鍚庡彴</h2>
+      <span id="who"></span> <button class="btn-sm btn-edit" id="logoutBtn">閫€鍑虹櫥褰?/button>
     </div>
   </div>
 
   <section class="section">
     <div class="container">
       <div class="admin-tabs">
-        <button class="tab active" data-tab="news">新闻管理</button>
-        <button class="tab" data-tab="ann">重大喜讯弹窗</button>
-        <button class="tab" data-tab="ms">历程时间线</button>
-        <button class="tab" data-tab="page">板块内容编辑说明</button>
+        <button class="tab active" data-tab="news">鏂伴椈绠＄悊</button>
+        <button class="tab" data-tab="ann">閲嶅ぇ鍠滆寮圭獥</button>
+        <button class="tab" data-tab="ms">鍘嗙▼鏃堕棿绾?/button>
+        <button class="tab" data-tab="page">鏉垮潡鍐呭缂栬緫璇存槑</button>
       </div>
 
-      <!-- 新闻管理 -->
+      <!-- 鏂伴椈绠＄悊 -->
       <div class="tab-pane" id="tab-news">
         <div class="admin-section">
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px">
-            <h3 style="margin:0">新闻列表（含增删改查）</h3>
-            <button class="btn-add" id="btnNewNews">+ 新增新闻</button>
+            <h3 style="margin:0">鏂伴椈鍒楄〃锛堝惈澧炲垹鏀规煡锛?/h3>
+            <button class="btn-add" id="btnNewNews">+ 鏂板鏂伴椈</button>
           </div>
           <table class="table" id="newsTable">
-            <thead><tr><th>标题</th><th>分类</th><th>日期</th><th>摘要</th><th>封面</th><th style="width:150px">操作</th></tr></thead>
+            <thead><tr><th>鏍囬</th><th>鍒嗙被</th><th>鏃ユ湡</th><th>鎽樿</th><th>灏侀潰</th><th style="width:150px">鎿嶄綔</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
 
         <div class="admin-section" id="newsFormBox" style="display:none">
-          <h3 id="newsFormTitle">新增新闻</h3>
+          <h3 id="newsFormTitle">鏂板鏂伴椈</h3>
           <div class="form-grid">
-            <label class="full">标题 *<input id="fTitle" placeholder="新闻标题"></label>
-            <label>分类 *
+            <label class="full">鏍囬 *<input id="fTitle" placeholder="鏂伴椈鏍囬"></label>
+            <label>鍒嗙被 *
               <select id="fCat">
                 <option>Announcement</option>
                 <option>Exhibition</option>
@@ -79,83 +79,83 @@
                 <option>New Business</option>
               </select>
             </label>
-            <label>日期 *<input id="fDate" type="date"></label>
-            <label class="full">摘要 *<textarea id="fSummary" rows="2" placeholder="一句话摘要"></textarea></label>
-            <label class="full">正文 *<textarea id="fBody" rows="6" placeholder="新闻正文，支持多段落，用换行分隔"></textarea></label>
-            <label class="full">封面图（可选，可填 assets/images/page_XX/img_N.jpg 或粘贴图片路径）<input id="fImage" placeholder="assets/images/page_10/img_1.jpg"></label>
+            <label>鏃ユ湡 *<input id="fDate" type="date"></label>
+            <label class="full">鎽樿 *<textarea id="fSummary" rows="2" placeholder="涓€鍙ヨ瘽鎽樿"></textarea></label>
+            <label class="full">姝ｆ枃 *<textarea id="fBody" rows="6" placeholder="鏂伴椈姝ｆ枃锛屾敮鎸佸娈佃惤锛岀敤鎹㈣鍒嗛殧"></textarea></label>
+            <label class="full">灏侀潰鍥撅紙鍙€夛紝鍙～ assets/images/page_XX/img_N.jpg 鎴栫矘璐村浘鐗囪矾寰勶級<input id="fImage" placeholder="assets/images/page_10/img_1.jpg"></label>
             <div class="full" style="display:flex;gap:10px">
-              <button class="btn btn-gold" id="btnSaveNews">保存新闻</button>
-              <button class="btn btn-outline" id="btnCancelNews" style="border-color:#8b9bb0;color:#5b6b7f">取消</button>
+              <button class="btn btn-gold" id="btnSaveNews">淇濆瓨鏂伴椈</button>
+              <button class="btn btn-outline" id="btnCancelNews" style="border-color:#8b9bb0;color:#5b6b7f">鍙栨秷</button>
             </div>
             <div class="full ok-msg" id="newsMsg"></div>
           </div>
         </div>
       </div>
 
-      <!-- 喜讯弹窗管理 -->
+      <!-- 鍠滆寮圭獥绠＄悊 -->
       <div class="tab-pane" id="tab-ann" style="display:none">
         <div class="admin-section">
-          <h3>重大喜讯弹窗</h3>
-          <p style="font-size:14px;color:#5b6b7f;margin-bottom:14px">首页加载时会弹出启用的喜讯（默认已预置一条中标喜讯示例，可修改或关闭）。</p>
+          <h3>閲嶅ぇ鍠滆寮圭獥</h3>
+          <p style="font-size:14px;color:#5b6b7f;margin-bottom:14px">棣栭〉鍔犺浇鏃朵細寮瑰嚭鍚敤鐨勫枩璁紙榛樿宸查缃竴鏉′腑鏍囧枩璁ず渚嬶紝鍙慨鏀规垨鍏抽棴锛夈€?/p>
           <div class="form-grid">
-            <label class="full">弹窗标题 *<input id="aTitle" placeholder="如：热烈祝贺 AURAS 中标海外充电桩项目"></label>
-            <label style="display:flex;align-items:center;gap:8px;font-size:14px">启用开关
-              <input id="aEnabled" type="checkbox" style="width:auto;margin:0;transform:scale(1.3)"> 启用时首页加载自动弹出
+            <label class="full">寮圭獥鏍囬 *<input id="aTitle" placeholder="濡傦細鐑儓绁濊春 AURAS 涓爣娴峰鍏呯數妗╅」鐩?></label>
+            <label style="display:flex;align-items:center;gap:8px;font-size:14px">鍚敤寮€鍏?
+              <input id="aEnabled" type="checkbox" style="width:auto;margin:0;transform:scale(1.3)"> 鍚敤鏃堕椤靛姞杞借嚜鍔ㄥ脊鍑?
             </label>
-            <label>发布日期<input id="aDate" type="date"></label>
-            <label class="full">弹窗内容 *<textarea id="aBody" rows="4" placeholder="喜讯内容"></textarea></label>
+            <label>鍙戝竷鏃ユ湡<input id="aDate" type="date"></label>
+            <label class="full">寮圭獥鍐呭 *<textarea id="aBody" rows="4" placeholder="鍠滆鍐呭"></textarea></label>
             <div class="full" style="display:flex;gap:10px">
-              <button class="btn btn-gold" id="btnSaveAnn">保存喜讯</button>
+              <button class="btn btn-gold" id="btnSaveAnn">淇濆瓨鍠滆</button>
             </div>
             <div class="full ok-msg" id="annMsg"></div>
           </div>
         </div>
       </div>
 
-      <!-- 历程时间线管理 -->
+      <!-- 鍘嗙▼鏃堕棿绾跨鐞?-->
       <div class="tab-pane" id="tab-ms" style="display:none">
         <div class="admin-section">
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px">
-            <h3 style="margin:0">发展历程时间线（前台 Milestones 页展示）</h3>
-            <button class="btn-add" id="btnNewMs">+ 新增历程</button>
+            <h3 style="margin:0">鍙戝睍鍘嗙▼鏃堕棿绾匡紙鍓嶅彴 Milestones 椤靛睍绀猴級</h3>
+            <button class="btn-add" id="btnNewMs">+ 鏂板鍘嗙▼</button>
           </div>
           <table class="table" id="msTable">
-            <thead><tr><th>年份</th><th>标题</th><th>描述</th><th style="width:150px">操作</th></tr></thead>
+            <thead><tr><th>骞翠唤</th><th>鏍囬</th><th>鎻忚堪</th><th style="width:150px">鎿嶄綔</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
         <div class="admin-section" id="msFormBox" style="display:none">
-          <h3 id="msFormTitle">新增历程</h3>
+          <h3 id="msFormTitle">鏂板鍘嗙▼</h3>
           <div class="form-grid">
-            <label>年份 *<input id="mYear" placeholder="如 2026"></label>
-            <label>标题 *<input id="mTitle" placeholder="历程标题"></label>
-            <label class="full">描述<textarea id="mDesc" rows="3" placeholder="简要描述"></textarea></label>
+            <label>骞翠唤 *<input id="mYear" placeholder="濡?2026"></label>
+            <label>鏍囬 *<input id="mTitle" placeholder="鍘嗙▼鏍囬"></label>
+            <label class="full">鎻忚堪<textarea id="mDesc" rows="3" placeholder="绠€瑕佹弿杩?></textarea></label>
             <div class="full" style="display:flex;gap:10px">
-              <button class="btn btn-gold" id="btnSaveMs">保存历程</button>
-              <button class="btn btn-outline" id="btnCancelMs" style="border-color:#8b9bb0;color:#5b6b7f">取消</button>
+              <button class="btn btn-gold" id="btnSaveMs">淇濆瓨鍘嗙▼</button>
+              <button class="btn btn-outline" id="btnCancelMs" style="border-color:#8b9bb0;color:#5b6b7f">鍙栨秷</button>
             </div>
             <div class="full ok-msg" id="msMsg"></div>
           </div>
         </div>
       </div>
 
-      <!-- 板块编辑说明 -->
+      <!-- 鏉垮潡缂栬緫璇存槑 -->
       <div class="tab-pane" id="tab-page" style="display:none">
         <div class="admin-section">
-          <h3>板块内容编辑入口说明</h3>
-          <p style="font-size:14px;color:#5b6b7f;margin-bottom:12px">以下静态板块内容存放在对应 HTML 文件中，可通过编辑器直接维护；新闻、喜讯、历程时间线已实现后台可视化管理。</p>
+          <h3>鏉垮潡鍐呭缂栬緫鍏ュ彛璇存槑</h3>
+          <p style="font-size:14px;color:#5b6b7f;margin-bottom:12px">浠ヤ笅闈欐€佹澘鍧楀唴瀹瑰瓨鏀惧湪瀵瑰簲 HTML 鏂囦欢涓紝鍙€氳繃缂栬緫鍣ㄧ洿鎺ョ淮鎶わ紱鏂伴椈銆佸枩璁€佸巻绋嬫椂闂寸嚎宸插疄鐜板悗鍙板彲瑙嗗寲绠＄悊銆?/p>
           <table class="table">
-            <thead><tr><th>板块</th><th>页面文件</th><th>维护方式</th></tr></thead>
+            <thead><tr><th>鏉垮潡</th><th>椤甸潰鏂囦欢</th><th>缁存姢鏂瑰紡</th></tr></thead>
             <tbody>
-              <tr><td>公司介绍 / 价值观 / 团队 / 合作伙伴 / 证书</td><td>about.html</td><td>编辑 HTML 文本与图片引用</td></tr>
-              <tr><td>发展历程时间线</td><td>milestones.html（数据在 js/data.js）</td><td>后台"历程时间线"规划位；当前可由技术编辑 js/data.js 的 AURAS_TL 数组</td></tr>
-              <tr><td>服务与物流</td><td>services.html</td><td>编辑 HTML 文本</td></tr>
-              <tr><td>产品线</td><td>products.html</td><td>编辑 HTML 卡片</td></tr>
-              <tr><td>新能源与新业务</td><td>new-energy.html</td><td>编辑 HTML 卡片</td></tr>
-              <tr><td>项目案例</td><td>projects.html</td><td>编辑 HTML 卡片</td></tr>
-              <tr><td>新闻</td><td>news.html / news-detail.html</td><td>本后台"新闻管理"标签（localStorage 持久化）</td></tr>
-              <tr><td>重大喜讯弹窗</td><td>index.html</td><td>本后台"重大喜讯弹窗"标签</td></tr>
-              <tr><td>联系信息 / 询盘</td><td>contact.html</td><td>编辑 HTML；询盘记录存 localStorage（key: auras_inquiries）</td></tr>
+              <tr><td>鍏徃浠嬬粛 / 浠峰€艰 / 鍥㈤槦 / 鍚堜綔浼欎即 / 璇佷功</td><td>about.html</td><td>缂栬緫 HTML 鏂囨湰涓庡浘鐗囧紩鐢?/td></tr>
+              <tr><td>鍙戝睍鍘嗙▼鏃堕棿绾?/td><td>milestones.html锛堟暟鎹湪 js/data.js锛?/td><td>鍚庡彴"鍘嗙▼鏃堕棿绾?瑙勫垝浣嶏紱褰撳墠鍙敱鎶€鏈紪杈?js/data.js 鐨?AURAS_TL 鏁扮粍</td></tr>
+              <tr><td>鏈嶅姟涓庣墿娴?/td><td>services.html</td><td>缂栬緫 HTML 鏂囨湰</td></tr>
+              <tr><td>浜у搧绾?/td><td>products.html</td><td>缂栬緫 HTML 鍗＄墖</td></tr>
+              <tr><td>鏂拌兘婧愪笌鏂颁笟鍔?/td><td>new-energy.html</td><td>缂栬緫 HTML 鍗＄墖</td></tr>
+              <tr><td>椤圭洰妗堜緥</td><td>projects.html</td><td>缂栬緫 HTML 鍗＄墖</td></tr>
+              <tr><td>鏂伴椈</td><td>news.html / news-detail.html</td><td>鏈悗鍙?鏂伴椈绠＄悊"鏍囩锛坙ocalStorage 鎸佷箙鍖栵級</td></tr>
+              <tr><td>閲嶅ぇ鍠滆寮圭獥</td><td>index.html</td><td>鏈悗鍙?閲嶅ぇ鍠滆寮圭獥"鏍囩</td></tr>
+              <tr><td>鑱旂郴淇℃伅 / 璇㈢洏</td><td>contact.html</td><td>缂栬緫 HTML锛涜鐩樿褰曞瓨 localStorage锛坘ey: auras_inquiries锛?/td></tr>
             </tbody>
           </table>
         </div>
@@ -167,9 +167,9 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="index.html"><span class="logo-mark">A</span><span>AURAS<small>INTERNATIONAL LIMITED</small></span></a>
+        <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo/logo-white.png" alt="AURAS"><span>AURAS<small>INTERNATIONAL LIMITED</small></span></a>
         <p style="font-size:14px">Comprehensive international trade group: trade services, logistics, own brands, production lines and new energy solutions for global partners.</p>
-        <p style="font-size:14px;margin-top:10px"><a href="https://www.aurasgroup.com" target="_blank" rel="noopener">www.aurasgroup.com</a> · <a href="https://www.aurasgo.com" target="_blank" rel="noopener">www.aurasgo.com</a></p>
+        <p style="font-size:14px;margin-top:10px"><a href="https://www.aurasgroup.com" target="_blank" rel="noopener">www.aurasgroup.com</a> 路 <a href="https://www.aurasgo.com" target="_blank" rel="noopener">www.aurasgo.com</a></p>
       </div>
       <div>
         <h4>Quick Links</h4>
@@ -199,7 +199,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">© 2026 AURAS INTERNATIONAL LIMITED. All rights reserved. | <a href="admin.html" style="color:#8fa8c2">Staff Portal</a></div>
+    <div class="footer-bottom">漏 2026 AURAS INTERNATIONAL LIMITED. All rights reserved. | <a href="admin.html" style="color:#8fa8c2">Staff Portal</a></div>
   </div>
 </footer>
 
