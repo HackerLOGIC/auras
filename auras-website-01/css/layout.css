@@ -440,3 +440,18 @@ body.auras-ready .auras-reveal.in{transition:opacity .72s var(--ease),transform 
   .hero { padding: 40px 0 30px; }
 }
 /* ===== AURAS V5 NAV-FINETUNE END (01) ===== */
+
+
+/* ===== AURAS V5 MOBILE TOPBAR: BLUE LOGO + DARK TEXT ON LIGHT (01) ===== */
+@media (max-width: 768px) {
+  .side { background: var(--surface, #fff); }
+  .side .brand { color: #0A3E5C; }
+  .side .brand small { color: #0A3E5C; opacity: .92; }
+  .side .brand .brand-logo { content: url("../assets/logo/logo-blue.png"); }
+  .side .nav-links { background: var(--surface, #fff); }
+  .side .nav-links a { color: #0A3E5C; }
+  .side .nav-links a:hover, .side .nav-links a.active { color: var(--accent, #008CD6); background: rgba(0,140,214,.08); }
+  .side .nav-toggle { color: #0A3E5C; border-color: rgba(10,62,92,.45); background: rgba(10,62,92,.08); }
+  .side .nav-toggle.active { background: #0A3E5C; color: #fff; border-color: #0A3E5C; }
+}
+/* ===== AURAS V5 MOBILE TOPBAR FIX END (01) ===== */
