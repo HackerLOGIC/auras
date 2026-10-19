@@ -1,8 +1,8 @@
-﻿/* ============================================================
-   AURAS REDESIGN THEME 鈥?鏋佺畝鐣欑櫧 路 Apple / Google
-   Reference: Apple / Google 鈥?white + black, huge whitespace, single accent
-   Design language: 8pt grid 路 unified radius/shadow 路 WCAG AA
-   Fonts: Head: Inter 600;700;800 路 Body: Inter 400;500;600;700 路 Mono: SF Mono
+/* ============================================================
+   AURAS REDESIGN THEME — 极简留白 · Apple / Google
+   Reference: Apple / Google — white + black, huge whitespace, single accent
+   Design language: 8pt grid · unified radius/shadow · WCAG AA
+   Fonts: Head: Inter 600;700;800 · Body: Inter 400;500;600;700 · Mono: SF Mono
    Motion: 200-500ms restrained (reveal, scrolled nav, hero zoom,
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
@@ -295,7 +295,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 /* ============================================================ */
 
 /* ============================================================
-   WCAG AA OVERRIDE 鈥?verified foregrounds (all pairs >= 4.5:1)
+   WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
   --btn-bg: #1A73E8; --btn-fg: #FFFFFF;

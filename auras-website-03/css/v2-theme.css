@@ -1,8 +1,8 @@
-﻿/* ============================================================
-   AURAS REDESIGN THEME 鈥?绠€绾︽潅蹇?路 Aesop / Kinfolk
-   Reference: Aesop / Kinfolk 鈥?cream + ink, serif editorial with generous whitespace
-   Design language: 8pt grid 路 unified radius/shadow 路 WCAG AA
-   Fonts: Head: Cormorant Garamond 500;600;700 路 Body: Source Sans 3 400;600;700 路 Mono: Source Code Pro
+/* ============================================================
+   AURAS REDESIGN THEME — 简约杂志风 · Aesop / Kinfolk
+   Reference: Aesop / Kinfolk — cream + ink, serif editorial with generous whitespace
+   Design language: 8pt grid · unified radius/shadow · WCAG AA
+   Fonts: Head: Cormorant Garamond 500;600;700 · Body: Source Sans 3 400;600;700 · Mono: Source Code Pro
    Motion: 200-500ms restrained (reveal, scrolled nav, hero zoom,
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
@@ -291,7 +291,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 /* ============================================================ */
 
 /* ============================================================
-   WCAG AA OVERRIDE 鈥?verified foregrounds (all pairs >= 4.5:1)
+   WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
   --btn-bg: #8A6A45; --btn-fg: #FFFFFF;

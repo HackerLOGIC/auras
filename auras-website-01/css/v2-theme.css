@@ -1,8 +1,8 @@
-﻿/* ============================================================
-   AURAS REDESIGN THEME 鈥?鍟嗗姟绋抽噸 路 Stripe / McKinsey
-   Reference: Stripe / McKinsey 鈥?deep navy + warm grey, restrained gold accent, serif display
-   Design language: 8pt grid 路 unified radius/shadow 路 WCAG AA
-   Fonts: Head: Playfair Display 500;600;700 路 Body: Inter 400;500;600;700 路 Mono: IBM Plex Mono
+/* ============================================================
+   AURAS REDESIGN THEME — 商务稳重 · Stripe / McKinsey
+   Reference: Stripe / McKinsey — deep navy + warm grey, restrained gold accent, serif display
+   Design language: 8pt grid · unified radius/shadow · WCAG AA
+   Fonts: Head: Playfair Display 500;600;700 · Body: Inter 400;500;600;700 · Mono: IBM Plex Mono
    Motion: 200-500ms restrained (reveal, scrolled nav, hero zoom,
            card hover, count-up, back-top) with reduced-motion fallback
    ============================================================ */
@@ -290,7 +290,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 /* ============================================================ */
 
 /* ============================================================
-   WCAG AA OVERRIDE 鈥?verified foregrounds (all pairs >= 4.5:1)
+   WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
   --btn-bg: #0077B8; --btn-fg: #FFFFFF;
