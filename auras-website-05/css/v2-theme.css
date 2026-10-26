@@ -8,27 +8,27 @@
    ============================================================ */
 :root {
   /* palette - INDUSTRIAL ORANGE & GRAPHITE v4 */
-  --primary: #E87722;
-  --primary-2: #F08A3C;
-  --primary-3: #C96A18;
-  --accent: #E87722;
-  --accent-dark: #C45A10;
-  --link: #C45A10;
+  --primary: #277DF4;
+  --primary-2: #3F8FF5;
+  --primary-3: #5FA3F8;
+  --accent: #277DF4;
+  --accent-dark: #1E5FB8;
+  --link: #1E5FB8;
   --warn: #D6452A;
   --success: #2E9E6B;
-  --bg: #F0F1F3;
-  --bg-alt: #E4E6EA;
+  --bg: #F3F7FD;
+  --bg-alt: #E8F1FC;
   --surface: #FFFFFF;
-  --surface-alt: #DBDFE3;
-  --text: #1B1E24;
-  --text-muted: #5C6670;
-  --text-on-dark: #ECEEF1;
-  --muted-on-dark: #A8B0B8;
-  --border: #C9CDD4;
+  --surface-alt: #DEEAF9;
+  --text: #1A2438;
+  --text-muted: #3D5268;
+  --text-on-dark: #EAF3FE;
+  --muted-on-dark: #A9C8F2;
+  --border: #D9E4F5;
   --border-dark: rgba(255,255,255,0.14);
-  --dark: #131619;
-  --dark-2: #0C0F11;
-  --dark-text: #ECEEF1;
+  --dark: #164A96;
+  --dark-2: #0E356F;
+  --dark-text: #EAF3FE;
   /* font system - heavy industrial */
   --font-head: 'Archivo', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'IBM Plex Sans', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -39,19 +39,19 @@
   --r-input: 0px;
   --r-pill: 999px;
   /* elevation - hard shadow */
-  --shadow: 0 4px 0 rgba(19,22,25,0.10);
-  --shadow-lg: 0 10px 0 rgba(19,22,25,0.14);
+  --shadow: 0 10px 30px rgba(39,125,244,0.10);
+  --shadow-lg: 0 22px 56px rgba(30,95,184,0.18);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
   /* motion - snappy mechanical */
   --dur-fast: 140ms; --dur: 200ms; --dur-slow: 320ms;
   --ease: cubic-bezier(.5,0,.3,1);
   /* legacy aliases */
-  --navy: #E87722; --navy-2: #F08A3C; --navy-3: #C96A18;
-  --blue: #F08A3C; --sky: #C96A18;
-  --gold: #E87722; --gold-2: #E87722;
+  --navy: #277DF4; --navy-2: #3f8ff5; --navy-3: #5fa3f8;
+  --blue: #3F8FF5; --sky: #5fa3f8;
+  --gold: #277DF4; --gold-2: #277df4;
   --orange: #D6452A; --green: #2E9E6B;
-  --light: #E4E6EA; --gray: #5C6670; --border2: #C9CDD4; --text2: #1B1E24;
+  --light: #E8F1FC; --gray: #3d5268; --border2: #d9e4f5; --text2: #1a2438;
 }
 
 /* ---------- base typography ---------- */
@@ -293,10 +293,10 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
-  --btn-bg: #E87722; --btn-fg: #131619;
-  --btn-hover-bg: #D96B14; --btn-hover-fg: #131619;
-  --out-fg: #131619; --out-hover-bg: #E87722; --out-hover-fg: #131619;
-  --eyebrow-fg: #131619; --hero-sub-fg: #E87722;
+  --btn-bg: #277df4; --btn-fg: #164a96;
+  --btn-hover-bg: #D96B14; --btn-hover-fg: #164a96;
+  --out-fg: #164a96; --out-hover-bg: #277df4; --out-hover-fg: #164a96;
+  --eyebrow-fg: #164a96; --hero-sub-fg: #277df4;
 }
 .btn-gold, .btn-add { background: var(--btn-bg); color: var(--btn-fg); }
 .btn-gold:hover, .btn-add:hover { background: var(--btn-hover-bg); color: var(--btn-hover-fg); box-shadow: var(--shadow); }

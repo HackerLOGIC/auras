@@ -8,27 +8,27 @@
    ============================================================ */
 :root {
   /* palette - NORDIC MIST BLUE v4 */
-  --primary: #1D5AA8;
-  --primary-2: #2E6FBE;
-  --primary-3: #3F87D6;
-  --accent: #3F87D6;
-  --accent-dark: #1D5AA8;
-  --link: #1D5AA8;
+  --primary: #277DF4;
+  --primary-2: #3F8FF5;
+  --primary-3: #5FA3F8;
+  --accent: #277DF4;
+  --accent-dark: #1E5FB8;
+  --link: #1E5FB8;
   --warn: #B4582C;
   --success: #1E7A6A;
-  --bg: #F2F5F9;
-  --bg-alt: #E7EDF5;
+  --bg: #F3F7FD;
+  --bg-alt: #E8F1FC;
   --surface: #FFFFFF;
-  --surface-alt: #EEF3F9;
-  --text: #22344A;
-  --text-muted: #5C6F85;
-  --text-on-dark: #F2F6FB;
-  --muted-on-dark: #A8BFD8;
-  --border: #DCE5F0;
+  --surface-alt: #DEEAF9;
+  --text: #1A2438;
+  --text-muted: #3D5268;
+  --text-on-dark: #EAF3FE;
+  --muted-on-dark: #A9C8F2;
+  --border: #D9E4F5;
   --border-dark: rgba(255,255,255,0.14);
-  --dark: #14294A;
-  --dark-2: #0E1D35;
-  --dark-text: #F2F6FB;
+  --dark: #164A96;
+  --dark-2: #0E356F;
+  --dark-text: #EAF3FE;
   /* font system - light nordic */
   --font-head: 'Source Sans 3', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Source Sans 3', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -39,19 +39,19 @@
   --r-input: 6px;
   --r-pill: 999px;
   /* elevation - light as paper */
-  --shadow: 0 2px 10px rgba(29,90,168,0.05);
-  --shadow-lg: 0 12px 32px rgba(29,90,168,0.10);
+  --shadow: 0 10px 30px rgba(39,125,244,0.10);
+  --shadow-lg: 0 22px 56px rgba(30,95,184,0.18);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
   /* motion - restrained */
   --dur-fast: 200ms; --dur: 280ms; --dur-slow: 440ms;
   --ease: cubic-bezier(.3,.5,.3,1);
   /* legacy aliases */
-  --navy: #1D5AA8; --navy-2: #2E6FBE; --navy-3: #3F87D6;
-  --blue: #2E6FBE; --sky: #3F87D6;
-  --gold: #3F87D6; --gold-2: #3F87D6;
+  --navy: #277DF4; --navy-2: #3f8ff5; --navy-3: #5fa3f8;
+  --blue: #3F8FF5; --sky: #5fa3f8;
+  --gold: #277DF4; --gold-2: #5fa3f8;
   --orange: #C07A4A; --green: #1E7A6A;
-  --light: #E7EDF5; --gray: #5C6F85; --border2: #DCE5F0; --text2: #22344A;
+  --light: #E8F1FC; --gray: #3d5268; --border2: #d9e4f5; --text2: #1a2438;
 }
 
 /* ---------- base typography ---------- */
@@ -295,10 +295,10 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
-  --btn-bg: #1D5AA8; --btn-fg: #FFFFFF;
+  --btn-bg: #277df4; --btn-fg: #FFFFFF;
   --btn-hover-bg: #164B8C; --btn-hover-fg: #FFFFFF;
-  --out-fg: #1D5AA8; --out-hover-bg: #1D5AA8; --out-hover-fg: #FFFFFF;
-  --eyebrow-fg: #1D5AA8; --hero-sub-fg: #AEC6E0;
+  --out-fg: #277df4; --out-hover-bg: #277df4; --out-hover-fg: #FFFFFF;
+  --eyebrow-fg: #277df4; --hero-sub-fg: #AEC6E0;
 }
 .btn-gold, .btn-add { background: var(--btn-bg); color: var(--btn-fg); }
 .btn-gold:hover, .btn-add:hover { background: var(--btn-hover-bg); color: var(--btn-hover-fg); box-shadow: var(--shadow); }

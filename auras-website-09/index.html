@@ -121,7 +121,21 @@
   </section>
 
   <section class="section"><div class="container">
-    <h2 class="section-title" style="text-align:center">Latest News</h2>
+    
+<section class="news-portal" id="newsPortal" aria-label="News Center">
+  <div class="np-head">
+    <span class="np-flag">NEWS</span>
+    <span class="np-title">新闻资讯 &middot; News Center</span>
+    <a class="np-more" href="news.html">All News &rarr;</a>
+  </div>
+  <div class="np-body">
+    <div class="np-col"><h3 class="np-col-title">公司动态 Corporate</h3><ul class="np-list" id="npCompany"></ul></div>
+    <div class="np-col"><h3 class="np-col-title">行业资讯 Industry</h3><ul class="np-list" id="npIndustry"></ul></div>
+    <div class="np-col"><h3 class="np-col-title">媒体报道 Media</h3><ul class="np-list" id="npMedia"></ul></div>
+  </div>
+</section>
+
+<h2 class="section-title" style="text-align:center">Latest News</h2>
     <div class="news-grid" id="newsHome" style="margin-top:24px"></div>
   </div></section>
   <section class="section"><div class="container"><div class="subscribe">
@@ -174,9 +188,34 @@
 <script src="js/site.js"></script>
 <script>
   AURAS.renderNewsCards('newsHome', AURAS.getNews().slice(0, 3));
-  AURAS.initAnnouncement();
+AURAS.initAnnouncement();
 </script>
 <script src="js/ui.js"></script>
 <script src="js/premium.js"></script>
+
+<script>
+(function(){
+  function s(x){return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+  function fd(d){if(!d)return '';var t=new Date(d);if(isNaN(t.getTime()))return d;var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[t.getMonth()]+' '+t.getDate()+', '+t.getFullYear();}
+  function renderPortal(){
+    var list=(window.AURAS&&AURAS.getNews)?AURAS.getNews():[];
+    if(!list||!list.length)return;
+    var cols={
+      company:{el:document.getElementById('npCompany'),rules:['corporate','company']},
+      industry:{el:document.getElementById('npIndustry'),rules:['exhibition','industry','fair','general','trade']},
+      media:{el:document.getElementById('npMedia'),rules:['media','press','report','announcement','new business','news','interview']}
+    };
+    Object.keys(cols).forEach(function(k){
+      var c=cols[k],el=c.el;if(!el)return;
+      var items=list.filter(function(n){return c.rules.indexOf(String(n.category||'').toLowerCase())>-1;})
+        .sort(function(a,b){return (b.date||'').localeCompare(a.date||'');}).slice(0,4);
+      if(!items.length){el.innerHTML='<li class="np-item"><span class="np-empty">No updates yet. Check back soon.</span></li>';return;}
+      el.innerHTML=items.map(function(n){return '<li class="np-item"><a href="news-detail.html?id='+n.id+'"><span class="np-dot"></span><span class="np-item-title">'+s(n.title)+'</span><span class="np-item-date">'+fd(n.date)+'</span></a></li>';}).join('');
+    });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderPortal);}else{renderPortal();}
+})();
+</script>
+
 </body>
 </html>

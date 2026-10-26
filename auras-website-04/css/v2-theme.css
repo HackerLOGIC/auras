@@ -8,27 +8,27 @@
    ============================================================ */
 :root {
   /* palette - APPLE MINIMAL BLUE v4 */
-  --primary: #0071E3;
-  --primary-2: #2997FF;
-  --primary-3: #56B4FF;
-  --accent: #0071E3;
-  --accent-dark: #005BB8;
-  --link: #0071E3;
+  --primary: #277DF4;
+  --primary-2: #3F8FF5;
+  --primary-3: #5FA3F8;
+  --accent: #277DF4;
+  --accent-dark: #1E5FB8;
+  --link: #1E5FB8;
   --warn: #C0392B;
   --success: #157A45;
-  --bg: #FFFFFF;
-  --bg-alt: #F4F6FA;
+  --bg: #F3F7FD;
+  --bg-alt: #E8F1FC;
   --surface: #FFFFFF;
-  --surface-alt: #F0F3F7;
-  --text: #1F2A37;
-  --text-muted: #5B616E;
-  --text-on-dark: #F5F5F7;
-  --muted-on-dark: #A1A1A6;
-  --border: rgba(0,0,0,0.10);
+  --surface-alt: #DEEAF9;
+  --text: #1A2438;
+  --text-muted: #3D5268;
+  --text-on-dark: #EAF3FE;
+  --muted-on-dark: #A9C8F2;
+  --border: #D9E4F5;
   --border-dark: rgba(255,255,255,0.16);
-  --dark: #000000;
-  --dark-2: #0A0A0C;
-  --dark-text: #F5F5F7;
+  --dark: #164A96;
+  --dark-2: #0E356F;
+  --dark-text: #EAF3FE;
   /* font system - Inter all */
   --font-head: 'Inter', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -39,19 +39,19 @@
   --r-input: 12px;
   --r-pill: 999px;
   /* elevation - light airy */
-  --shadow: 0 12px 40px rgba(0,0,0,0.06);
-  --shadow-lg: 0 24px 80px rgba(0,0,0,0.10);
+  --shadow: 0 10px 30px rgba(39,125,244,0.12);
+  --shadow-lg: 0 22px 56px rgba(30,95,184,0.20);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
   /* motion - springy fast */
   --dur-fast: 200ms; --dur: 300ms; --dur-slow: 460ms;
   --ease: cubic-bezier(.25,.1,.25,1);
   /* legacy aliases */
-  --navy: #0071E3; --navy-2: #2997FF; --navy-3: #56B4FF;
-  --blue: #2997FF; --sky: #56B4FF;
-  --gold: #0071E3; --gold-2: #0071E3;
+  --navy: #277DF4; --navy-2: #3f8ff5; --navy-3: #5fa3f8;
+  --blue: #3F8FF5; --sky: #5fa3f8;
+  --gold: #277DF4; --gold-2: #277df4;
   --orange: #E8765A; --green: #34C97B;
-  --light: #F4F6FA; --gray: #5B616E; --border2: rgba(0,0,0,0.10); --text2: #1F2A37;
+  --light: #E8F1FC; --gray: #3d5268; --border2: rgba(22,74,150,0.10); --text2: #1a2438;
 }
 
 /* ---------- base typography ---------- */
@@ -102,7 +102,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); color: var(--text); line-height:
 .btn:hover { transform: translateY(-1px); }
 .btn:active { transform: translateY(0); }
 .btn-gold { background: var(--accent); color: #fff; }
-.btn-gold:hover { background: var(--accent-dark); color: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
+.btn-gold:hover { background: var(--accent-dark); color: #fff; box-shadow: 0 8px 24px rgba(22,74,150,0.18); }
 .btn-outline { border-color: var(--accent); color: var(--accent); background: transparent; }
 .btn-outline:hover { background: var(--accent); color: #fff; }
 .btn-navy { background: var(--dark); color: var(--text-on-dark); }
@@ -175,7 +175,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); color: var(--text); line-height:
 .form-group { display: flex; flex-direction: column; gap: 6px; }
 .form-group label { font-size: 14px; font-weight: 600; color: var(--text); }
 .form-control { font-family: var(--font-body); font-size: 15px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-input); padding: 12px 14px; transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease); }
-.form-control:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,0,0,0.06); }
+.form-control:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(22,74,150,0.06); }
 textarea.form-control { min-height: 120px; }
 select.form-control { cursor: pointer; }
 .form-note { font-size: 13px; color: var(--text-muted); margin-top: 6px; }
@@ -286,7 +286,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   .card { background: var(--surface); border: 1px solid var(--border); }
   .section-title { font-weight: 700; letter-spacing: -0.02em; }
   .eyebrow { color: var(--muted_on_dark); letter-spacing: 2px; }
-  .navbar { background: rgba(0,0,0,0.72); backdrop-filter: saturate(1.4) blur(18px); -webkit-backdrop-filter: saturate(1.4) blur(18px); border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .navbar { background: rgba(22,74,150,0.72); backdrop-filter: saturate(1.4) blur(18px); -webkit-backdrop-filter: saturate(1.4) blur(18px); border-bottom: 1px solid rgba(255,255,255,0.08); }
 
 /* ============================================================ */
 
@@ -296,10 +296,10 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
-  --btn-bg: #0071E3; --btn-fg: #FFFFFF;
+  --btn-bg: #277df4; --btn-fg: #FFFFFF;
   --btn-hover-bg: #0066CC; --btn-hover-fg: #FFFFFF;
-  --out-fg: #2997FF; --out-hover-bg: #0071E3; --out-hover-fg: #FFFFFF;
-  --eyebrow-fg: #2997FF; --hero-sub-fg: #2997FF;
+  --out-fg: #3f8ff5; --out-hover-bg: #277df4; --out-hover-fg: #FFFFFF;
+  --eyebrow-fg: #3f8ff5; --hero-sub-fg: #3f8ff5;
 }
 .btn-gold, .btn-add { background: var(--btn-bg); color: var(--btn-fg); }
 .btn-gold:hover, .btn-add:hover { background: var(--btn-hover-bg); color: var(--btn-hover-fg); box-shadow: var(--shadow); }

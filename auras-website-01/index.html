@@ -59,7 +59,21 @@
     <div class="s7-list"><article class="alt-row"><div class="card-img" style="background:url('assets/images/page_04/img_1.jpg') center/cover no-repeat"></div><div class="card-body"><h3>Company Profile</h3><p>Values, people power, management systems, partners, global layout and certificates.</p><a class="btn" href="about.html">About Us →</a></div></article><article class="alt-row"><div class="card-img" style="background:url('assets/images/page_11/img_1.jpg') center/cover no-repeat"></div><div class="card-body"><h3>AURAS Through the Time</h3><p>Our journey: Canton Fair, Yiwu Fair, Algeria Fair, annual meetings and global cooperation.</p><a class="btn" href="milestones.html">Milestones →</a></div></article><article class="alt-row"><div class="card-img" style="background:url('assets/images/page_18/img_1.jpg') center/cover no-repeat"></div><div class="card-body"><h3>Our Services</h3><p>Complete trade services and logistics solutions for overseas clients.</p><a class="btn" href="services.html">Services →</a></div></article><article class="alt-row"><div class="card-img" style="background:url('assets/images/page_19/img_1.jpg') center/cover no-repeat"></div><div class="card-body"><h3>AURAS in the Market</h3><p>Stationery, food, homeware, auto parts, metal, radiators, valves, housing and fuel dispensers.</p><a class="btn" href="products.html">Products →</a></div></article><article class="alt-row"><div class="card-img" style="background:url('assets/images/page_24/img_1.jpg') center/cover no-repeat"></div><div class="card-body"><h3>New Business Lines</h3><p>Construction, EV charging, solar, green hydrogen, crude oil, natural gas, medicine and car export.</p><a class="btn" href="new-energy.html">New Energy →</a></div></article><article class="alt-row"><div class="card-img" style="background:url('assets/images/page_35/img_1.jpg') center/cover no-repeat"></div><div class="card-body"><h3>Project Done by AURAS</h3><p>More than 40 industrial production lines delivered worldwide.</p><a class="btn" href="projects.html">Projects →</a></div></article><article class="alt-row"><div class="card-img" style="background:url('assets/images/page_52/img_1.jpg') center/cover no-repeat"></div><div class="card-body"><h3>Business & Pleasure</h3><p>Team travel, cultural activities and the work-life spirit behind our global trade group.</p><a class="btn" href="leisure.html">Life & Fun →</a></div></article></div>
   </div></section>
   <section class="section"><div class="container">
-    <h2 class="section-title">Latest News</h2>
+    
+<section class="news-portal" id="newsPortal" aria-label="News Center">
+  <div class="np-head">
+    <span class="np-flag">NEWS</span>
+    <span class="np-title">新闻资讯 &middot; News Center</span>
+    <a class="np-more" href="news.html">All News &rarr;</a>
+  </div>
+  <div class="np-body">
+    <div class="np-col"><h3 class="np-col-title">公司动态 Corporate</h3><ul class="np-list" id="npCompany"></ul></div>
+    <div class="np-col"><h3 class="np-col-title">行业资讯 Industry</h3><ul class="np-list" id="npIndustry"></ul></div>
+    <div class="np-col"><h3 class="np-col-title">媒体报道 Media</h3><ul class="np-list" id="npMedia"></ul></div>
+  </div>
+</section>
+
+<h2 class="section-title">Latest News</h2>
     <div class="news-grid" id="newsHome"></div>
   </div></section>
 </main>
@@ -109,9 +123,34 @@
 <script src="js/site.js"></script>
 <script>
   AURAS.renderNewsCards('newsHome', AURAS.getNews().slice(0, 3));
-  AURAS.initAnnouncement();
+AURAS.initAnnouncement();
 </script>
 <script src="js/ui.js"></script>
 <script src="js/premium.js"></script>
+
+<script>
+(function(){
+  function s(x){return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+  function fd(d){if(!d)return '';var t=new Date(d);if(isNaN(t.getTime()))return d;var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[t.getMonth()]+' '+t.getDate()+', '+t.getFullYear();}
+  function renderPortal(){
+    var list=(window.AURAS&&AURAS.getNews)?AURAS.getNews():[];
+    if(!list||!list.length)return;
+    var cols={
+      company:{el:document.getElementById('npCompany'),rules:['corporate','company']},
+      industry:{el:document.getElementById('npIndustry'),rules:['exhibition','industry','fair','general','trade']},
+      media:{el:document.getElementById('npMedia'),rules:['media','press','report','announcement','new business','news','interview']}
+    };
+    Object.keys(cols).forEach(function(k){
+      var c=cols[k],el=c.el;if(!el)return;
+      var items=list.filter(function(n){return c.rules.indexOf(String(n.category||'').toLowerCase())>-1;})
+        .sort(function(a,b){return (b.date||'').localeCompare(a.date||'');}).slice(0,4);
+      if(!items.length){el.innerHTML='<li class="np-item"><span class="np-empty">No updates yet. Check back soon.</span></li>';return;}
+      el.innerHTML=items.map(function(n){return '<li class="np-item"><a href="news-detail.html?id='+n.id+'"><span class="np-dot"></span><span class="np-item-title">'+s(n.title)+'</span><span class="np-item-date">'+fd(n.date)+'</span></a></li>';}).join('');
+    });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',renderPortal);}else{renderPortal();}
+})();
+</script>
+
 </body>
 </html>

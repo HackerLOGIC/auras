@@ -284,7 +284,7 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 /* ================= THEME 10 : MINIMAL 极简留白 =================
    白/浅灰 + 黑 + 单一品牌蓝 / 超大字号 / 强留白 / 隐藏式导航 */
 :root {
-  --navy: #111111; --navy-2: #1a1a1a; --navy-3: #242424;
+  --navy: #111111; --navy-2: #1a2438; --navy-3: #242424;
   --blue: #2f6fed; --sky: #5b8def;
   --gold: #2f6fed; --orange: #2f6fed; --green: #2f6fed;
   --light: #ffffff; --gray: #8a8a8a; --border: #ececec;

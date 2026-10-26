@@ -8,27 +8,27 @@
    ============================================================ */
 :root {
   /* palette - FOREST ORGANIC GREEN v4 */
-  --primary: #0E5C45;
-  --primary-2: #157A5C;
-  --primary-3: #1F9E77;
-  --accent: #2FC49A;
-  --accent-dark: #0E5C45;
-  --link: #0E5C45;
+  --primary: #277DF4;
+  --primary-2: #3F8FF5;
+  --primary-3: #5FA3F8;
+  --accent: #277DF4;
+  --accent-dark: #1E5FB8;
+  --link: #1E5FB8;
   --warn: #C05B2B;
   --success: #2E9E6B;
-  --bg: #F1F6F2;
-  --bg-alt: #E4EEE8;
+  --bg: #F3F7FD;
+  --bg-alt: #E8F1FC;
   --surface: #FFFFFF;
-  --surface-alt: #EAF3EC;
-  --text: #1C2E26;
-  --text-muted: #5A7368;
-  --text-on-dark: #F0F6F2;
-  --muted-on-dark: #9FB8AC;
-  --border: #D3E5DC;
+  --surface-alt: #DEEAF9;
+  --text: #1A2438;
+  --text-muted: #3D5268;
+  --text-on-dark: #EAF3FE;
+  --muted-on-dark: #A9C8F2;
+  --border: #D9E4F5;
   --border-dark: rgba(255,255,255,0.14);
-  --dark: #0A3B2C;
-  --dark-2: #062E22;
-  --dark-text: #F0F6F2;
+  --dark: #164A96;
+  --dark-2: #0E356F;
+  --dark-text: #EAF3FE;
   /* font system */
   --font-head: 'Inter', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -39,19 +39,19 @@
   --r-input: 12px;
   --r-pill: 999px;
   /* elevation - soft green */
-  --shadow: 0 12px 28px rgba(14,92,69,0.10);
-  --shadow-lg: 0 24px 56px rgba(14,92,69,0.16);
+  --shadow: 0 10px 30px rgba(39,125,244,0.10);
+  --shadow-lg: 0 22px 56px rgba(30,95,184,0.18);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
   /* motion - soft flowing */
   --dur-fast: 300ms; --dur: 480ms; --dur-slow: 680ms;
   --ease: cubic-bezier(.28,.6,.3,1);
   /* legacy aliases */
-  --navy: #0E5C45; --navy-2: #157A5C; --navy-3: #1F9E77;
-  --blue: #157A5C; --sky: #1F9E77;
-  --gold: #2FC49A; --gold-2: #2FC49A;
+  --navy: #277DF4; --navy-2: #3f8ff5; --navy-3: #5fa3f8;
+  --blue: #3F8FF5; --sky: #5fa3f8;
+  --gold: #277DF4; --gold-2: #277df4;
   --orange: #C05B2B; --green: #2E9E6B;
-  --light: #E4EEE8; --gray: #5A7368; --border2: #D3E5DC; --text2: #1C2E26;
+  --light: #E8F1FC; --gray: #3d5268; --border2: #d9e4f5; --text2: #1a2438;
 }
 
 /* ---------- base typography ---------- */
@@ -295,10 +295,10 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
-  --btn-bg: #2FC49A; --btn-fg: #082E22;
+  --btn-bg: #277df4; --btn-fg: #082E22;
   --btn-hover-bg: #26B58D; --btn-hover-fg: #06241B;
-  --out-fg: #0E5C45; --out-hover-bg: #0E5C45; --out-hover-fg: #FFFFFF;
-  --eyebrow-fg: #0E5C45; --hero-sub-fg: #2FC49A;
+  --out-fg: #277df4; --out-hover-bg: #277df4; --out-hover-fg: #FFFFFF;
+  --eyebrow-fg: #277df4; --hero-sub-fg: #277df4;
 }
 .btn-gold, .btn-add { background: var(--btn-bg); color: var(--btn-fg); }
 .btn-gold:hover, .btn-add:hover { background: var(--btn-hover-bg); color: var(--btn-hover-fg); box-shadow: var(--shadow); }

@@ -8,27 +8,27 @@
    ============================================================ */
 :root {
   /* palette - MIDNIGHT GOLD BUSINESS v4 */
-  --primary: #0B0C10;
-  --primary-2: #1A1C23;
-  --primary-3: #2A2D37;
-  --accent: #D9A441;
-  --accent-dark: #B4872F;
-  --link: #D9A441;
+  --primary: #277DF4;
+  --primary-2: #4D96F6;
+  --primary-3: #77B1F8;
+  --accent: #4D96F6;
+  --accent-dark: #277DF4;
+  --link: #77B1F8;
   --warn: #B4553C;
   --success: #3FA47A;
-  --bg: #0B0C10;
-  --bg-alt: #12141B;
-  --surface: #1A1C23;
-  --surface-alt: #232630;
-  --text: #F0EEE8;
-  --text-muted: #A4A9B4;
-  --text-on-dark: #F0EEE8;
-  --muted-on-dark: #A4A9B4;
-  --border: rgba(217,164,65,0.16);
-  --border-dark: rgba(217,164,65,0.24);
-  --dark: #05060A;
-  --dark-2: #0B0C10;
-  --dark-text: #F0EEE8;
+  --bg: #0A0E18;
+  --bg-alt: #101523;
+  --surface: #141B2B;
+  --surface-alt: #1B2438;
+  --text: #EDF1F8;
+  --text-muted: #A3B1C9;
+  --text-on-dark: #EDF1F8;
+  --muted-on-dark: #A3B1C9;
+  --border: rgba(77,150,246,0.18);
+  --border-dark: rgba(77,150,246,0.28);
+  --dark: #060A14;
+  --dark-2: #0A0E18;
+  --dark-text: #EDF1F8;
   /* font system - black tie */
   --font-head: 'Playfair Display', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -39,19 +39,19 @@
   --r-input: 2px;
   --r-pill: 999px;
   /* elevation - deep shadow */
-  --shadow: 0 16px 40px rgba(0,0,0,0.5);
-  --shadow-lg: 0 28px 72px rgba(0,0,0,0.6);
+  --shadow: 0 10px 30px rgba(39,125,244,0.20);
+  --shadow-lg: 0 22px 56px rgba(39,125,244,0.30);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
   /* motion - slow opulent */
   --dur-fast: 380ms; --dur: 600ms; --dur-slow: 900ms;
   --ease: cubic-bezier(.16,.6,.2,1);
   /* legacy aliases */
-  --navy: #0B0C10; --navy-2: #1A1C23; --navy-3: #2A2D37;
-  --blue: #1A1C23; --sky: #2A2D37;
-  --gold: #D9A441; --gold-2: #D9A441;
+  --navy: #277DF4; --navy-2: #141b2b; --navy-3: #2A2D37;
+  --blue: #4D96F6; --sky: #2A2D37;
+  --gold: #4D96F6; --gold-2: #4d96f6;
   --orange: #B4553C; --green: #3FA47A;
-  --light: #12141B; --gray: #A4A9B4; --border2: rgba(217,164,65,0.16); --text2: #F0EEE8;
+  --light: #101523; --gray: #a3b1c9; --border2: rgba(77,150,246,0.16); --text2: #edf1f8;
 }
 
 /* ---------- base typography ---------- */
@@ -284,11 +284,11 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
   .section-title { font-weight: 800; letter-spacing: -0.02em; }
   .card { background: var(--surface); border: 1px solid var(--border); }
   .stat-box .num { font-family: var(--font-mono); color: var(--accent); }
-  .btn-gold { background: var(--accent); color: #0B0C10; font-weight: 700; }
+  .btn-gold { background: var(--accent); color: #0a0e18; font-weight: 700; }
   .btn-outline { border-color: var(--accent); color: var(--accent); }
-  .btn-outline:hover { background: var(--accent); color: #0B0C10; }
+  .btn-outline:hover { background: var(--accent); color: #0a0e18; }
   .modal { border-top: 3px solid var(--accent); }
-  .footer { border-top: 1px solid rgba(217,164,65,0.3); }
+  .footer { border-top: 1px solid rgba(77,150,246,0.3); }
 
 /* ============================================================ */
 
@@ -298,10 +298,10 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
-  --btn-bg: #D9A441; --btn-fg: #0B0C10;
+  --btn-bg: #4d96f6; --btn-fg: #0a0e18;
   --btn-hover-bg: #E4B85E; --btn-hover-fg: #07080B;
-  --out-fg: #D9A441; --out-hover-bg: #D9A441; --out-hover-fg: #0B0C10;
-  --eyebrow-fg: #D9A441; --hero-sub-fg: #D9A441;
+  --out-fg: #4d96f6; --out-hover-bg: #4d96f6; --out-hover-fg: #0a0e18;
+  --eyebrow-fg: #4d96f6; --hero-sub-fg: #4d96f6;
 }
 .btn-gold, .btn-add { background: var(--btn-bg); color: var(--btn-fg); }
 .btn-gold:hover, .btn-add:hover { background: var(--btn-hover-bg); color: var(--btn-hover-fg); box-shadow: var(--shadow); }

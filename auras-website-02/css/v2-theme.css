@@ -8,27 +8,27 @@
    ============================================================ */
 :root {
   /* palette */
-  --primary: #5E6AD2;
-  --primary-2: #7B6CF6;
-  --primary-3: #9D8CFF;
-  --accent: #7B6CF6;
-  --accent-dark: #5E6AD2;
-  --link: #8B9CF8;
+  --primary: #277DF4;
+  --primary-2: #3F8FF5;
+  --primary-3: #77B1F8;
+  --accent: #3F8FF5;
+  --accent-dark: #277DF4;
+  --link: #77B1F8;
   --warn: #E27C5A;
   --success: #3DD68C;
-  --bg: #08090C;
-  --bg-alt: #0D0F14;
-  --surface: #12141A;
-  --surface-alt: #171A21;
-  --text: #E8EAEF;
-  --text-muted: #9AA2B1;
-  --text-on-dark: #E8EAEF;
-  --muted-on-dark: #9AA2B1;
+  --bg: #0A1020;
+  --bg-alt: #0E1527;
+  --surface: #131B30;
+  --surface-alt: #182238;
+  --text: #E9F0FB;
+  --text-muted: #9FB3D4;
+  --text-on-dark: #E9F0FB;
+  --muted-on-dark: #9FB3D4;
   --border: rgba(255,255,255,0.10);
   --border-dark: rgba(255,255,255,0.12);
-  --dark: #08090C;
-  --dark-2: #0D0F14;
-  --dark-text: #E8EAEF;
+  --dark: #0A1020;
+  --dark-2: #060A16;
+  --dark-text: #E9F0FB;
   /* font system */
   --font-head: 'Space Grotesk', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
   --font-body: 'Inter', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -39,19 +39,19 @@
   --r-input: 10px;
   --r-pill: 999px;
   /* elevation */
-  --shadow: 0 8px 32px rgba(0,0,0,0.35);
-  --shadow-lg: 0 20px 64px rgba(0,0,0,0.45);
+  --shadow: 0 10px 30px rgba(39,125,244,0.14);
+  --shadow-lg: 0 22px 56px rgba(39,125,244,0.24);
   /* 8pt spacing scale */
   --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 32px; --s-5: 48px; --s-6: 64px; --s-7: 96px; --s-8: 128px;
   /* motion */
   --dur-fast: 220ms; --dur: 360ms; --dur-slow: 500ms;
   --ease: cubic-bezier(.25, .8, .3, 1);
   /* legacy aliases so style.css vars keep working */
-  --navy: #5E6AD2; --navy-2: #7B6CF6; --navy-3: #9D8CFF;
-  --blue: #7B6CF6; --sky: #9D8CFF;
-  --gold: #7B6CF6; --gold-2: #7B6CF6;
+  --navy: #277DF4; --navy-2: #3f8ff5; --navy-3: #77b1f8;
+  --blue: #3F8FF5; --sky: #77b1f8;
+  --gold: #3F8FF5; --gold-2: #3f8ff5;
   --orange: #E27C5A; --green: #3DD68C;
-  --light: #0D0F14; --gray: #9AA2B1; --border2: rgba(255,255,255,0.10); --text2: #E8EAEF;
+  --light: #0E1527; --gray: #9fb3d4; --border2: rgba(255,255,255,0.10); --text2: #e9f0fb;
 }
 
 /* ---------- base typography ---------- */
@@ -90,7 +90,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); color: var(--text); line-height:
 .hero { min-height: 620px; position: relative; display: flex; align-items: center; color: var(--text-on-dark); overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; animation: heroZoom 26s var(--ease) 200ms both; }
 @keyframes heroZoom { from { transform: scale(1); } to { transform: scale(1.07); } }
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,9,12,0.55) 0%, rgba(8,9,12,0.88) 100%); }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,16,32,0.55) 0%, rgba(10,16,32,0.88) 100%); }
 .hero .container { position: relative; z-index: 2; }
 .hero h1 { font-size: clamp(44px, 6vw, 66px); font-weight: 700; line-height: 1.08; color: #fff; margin: 0 0 var(--s-3); letter-spacing: -0.02em; }
 .hero p { font-size: 18px; line-height: 1.6; color: var(--muted-on-dark); max-width: 620px; }
@@ -278,13 +278,13 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
 }
 
   /* Restrained glassmorphism (nav only), subtle grid */
-  .navbar { background: rgba(8,9,12,0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .navbar.scrolled { background: rgba(8,9,12,0.88); box-shadow: 0 8px 32px rgba(0,0,0,0.35); }
-  body::before { content:""; position:fixed; inset:0; z-index:-1; background-image: radial-gradient(720px 420px at 78% -8%, rgba(123,108,246,0.14), transparent 65%), radial-gradient(560px 360px at 8% 12%, rgba(94,106,210,0.12), transparent 60%); }
+  .navbar { background: rgba(10,16,32,0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .navbar.scrolled { background: rgba(10,16,32,0.88); box-shadow: 0 8px 32px rgba(0,0,0,0.35); }
+  body::before { content:""; position:fixed; inset:0; z-index:-1; background-image: radial-gradient(720px 420px at 78% -8%, rgba(63,143,245,0.14), transparent 65%), radial-gradient(560px 360px at 8% 12%, rgba(39,125,244,0.12), transparent 60%); }
   .section.alt { background: rgba(255,255,255,0.02); }
-  .section-title { background: linear-gradient(92deg, #E8EAEF 0%, #B7BFFB 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+  .section-title { background: linear-gradient(92deg, #e9f0fb 0%, #B7BFFB 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
   .card { background: var(--surface); border: 1px solid var(--border); }
-  .btn-gold { background: linear-gradient(135deg, #6E5DE8, #5E6AD2); }
+  .btn-gold { background: linear-gradient(135deg, #6E5DE8, #277df4); }
 
 /* ============================================================
 
@@ -294,10 +294,10 @@ table.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
    WCAG AA OVERRIDE — verified foregrounds (all pairs >= 4.5:1)
    ============================================================ */
 :root {
-  --btn-bg: #7B6CF6; --btn-fg: #08090C;
-  --btn-hover-bg: #8B7CF7; --btn-hover-fg: #08090C;
-  --out-fg: #8B9CF8; --out-hover-bg: #7B6CF6; --out-hover-fg: #08090C;
-  --eyebrow-fg: #8B9CF8; --hero-sub-fg: #8B9CF8;
+  --btn-bg: #3f8ff5; --btn-fg: #0a1020;
+  --btn-hover-bg: #8B7CF7; --btn-hover-fg: #0a1020;
+  --out-fg: #77b1f8; --out-hover-bg: #3f8ff5; --out-hover-fg: #0a1020;
+  --eyebrow-fg: #77b1f8; --hero-sub-fg: #77b1f8;
 }
 .btn-gold, .btn-add { background: var(--btn-bg); color: var(--btn-fg); }
 .btn-gold:hover, .btn-add:hover { background: var(--btn-hover-bg); color: var(--btn-hover-fg); box-shadow: var(--shadow); }
@@ -420,7 +420,7 @@ body.auras-no-motion .auras-reveal, body.auras-no-motion .auras-reveal.in {
 /* AURAS V3 PREMIUM : 02 dark theme glass (Linear/Vercel style) */
 @media (prefers-reduced-motion: no-preference) {
   .navbar.auras-scrolled {
-    background: rgba(8,9,12,.72) !important;
+    background: rgba(10,16,32,.72) !important;
     -webkit-backdrop-filter: blur(22px) saturate(1.4);
     backdrop-filter: blur(22px) saturate(1.4);
     box-shadow: 0 8px 32px rgba(0,0,0,.35);
