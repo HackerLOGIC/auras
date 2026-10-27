@@ -1160,3 +1160,84 @@ body.auras-ready .auras-reveal.in{transition:opacity .38s var(--ease),transform 
 @media(max-width:375px){
   .hero .btn-gold{margin:0 auto 16px}
 }
+
+/* ============================================================
+   AURAS V14: FIX mobile nav-toggle vanishes after scroll-open
+   根因: 打开抽屉时 site.js 将 body.style.overflow 置为 hidden 锁滚动,
+   Chrome 中 body 变为非 visible 滚动容器后, .nav-float 的
+   position:sticky 粘性失效并弹回文档流位置; 页面已向下滚动时
+   整个顶栏(含汉堡按钮)被移出视口上方, 表现为"按钮消失",
+   滚动回顶部后 sticky 重新生效, 按钮又出现.
+   修复: 菜单打开态(body.nav-open 或 .nav-float.open)下把顶栏改为
+   position:fixed 钉住视口顶部, 使按钮与滚动位置无关、恒稳定可见;
+   同时将 .nav-toggle 提升到抽屉(z-index:1001)之上, 打开时按钮
+   保持可点击关闭, 行为一致. 仅影响移动断点, 桌面端零改动.
+   ============================================================ */
+@media (max-width: 768px) {
+  body.nav-open .nav-float,
+  .nav-float.open {
+    position: fixed !important;
+    top: 0; left: 0; right: 0;
+  }
+  .nav-float .nav-toggle {
+    position: relative;
+    z-index: 1002;
+  }
+}
+
+/* ============================================================
+   AURAS V15: FIX mobile page turns blue when menu opens
+   根因: 04站移动端抽屉菜单打开态无背景遮罩, 页面背景
+   (浅蓝 body #F3F7FD + hero 深蓝渐变区)在抽屉外完全裸露,
+   视觉上表现为"打开菜单后页面变蓝"。
+   修复: 菜单打开态(body.nav-open)插入 fixed 全屏半透明深色遮罩
+   rgba(10,20,40,.55), z-index 998 位于顶栏(.nav-float 999)之下、
+   抽屉(.nav-links 1001)之下; 顶栏与汉堡按钮保持可见可点(V14逻辑不受影响),
+   点击遮罩区域由 site.js 的 document click 兜底触发 closeAll 关闭菜单。
+   仅 @media(max-width:768px) 生效, 桌面端零改动。
+   ============================================================ */
+@media (max-width: 768px) {
+  body.nav-open::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 998;
+    background: rgba(10, 20, 40, 0.55);
+  }
+}
+
+/* ============================================================
+   AURAS V16: FIX mobile top blank band caused by lang bar in flow
+   根因: i18n.js 在当前站点找不到 .navbar .container 时, 将语言
+   下拉 #langSelect 插入 document.body 首子元素(文档流最顶部),
+   该控件高约 44px, 把 sticky 导航栏(.nav-float)顶到 y=44;
+   首屏在浏览器地址栏与导航栏之间出现一条浅色(浅蓝/浅灰)空白带,
+   真机视口较矮时占比可达屏高 10%~15%.
+   修复: 移动断点内将 #langSelect 移出文档流(position:fixed),
+   悬浮定位到导航栏右上、汉堡按钮左侧, 视觉上并入导航栏;
+   导航栏回到视口顶部 y=0, 空白带消除; 语言切换功能完整保留.
+   层级: 语言条 z-index 1000(顶栏 999 之上、抽屉 1001 之下),
+   菜单打开时抽屉右滑将其遮住, 关闭后恢复, 无交互冲突.
+   仅 @media(max-width:768px) 生效, 桌面端零改动, V14/V15 逻辑不受影响.
+   ============================================================ */
+@media (max-width: 768px) {
+  body > #langSelect.lang-select {
+    position: fixed !important;
+    top: 12px;
+    right: 62px;
+    z-index: 1000;
+    height: 36px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #1A2438;
+    background: rgba(39, 125, 244, 0.10) !important;
+    border: 1px solid rgba(22, 74, 150, 0.20) !important;
+    border-radius: 999px;
+    max-width: 116px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

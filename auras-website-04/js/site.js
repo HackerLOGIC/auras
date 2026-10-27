@@ -131,6 +131,12 @@
       document.querySelectorAll(SCOPES).forEach(function (sc) { sc.classList.remove('open'); });
       document.body.classList.remove('nav-open');
       document.body.style.overflow = '';
+      // V16: clean up nav-toggle active state on all close paths
+      document.querySelectorAll('#navToggle, [data-nav-toggle]').forEach(function (btn) {
+        if (!except || btn !== except.closest(SCOPES)) {
+          btn.classList.remove('active');
+        }
+      });
     }
     document.querySelectorAll('#navToggle, [data-nav-toggle]').forEach(function (btn) {
       if (btn.getAttribute('data-v5-bound')) return;

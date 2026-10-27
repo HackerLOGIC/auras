@@ -3,3 +3,6 @@ output.7z
 auras-website-10-templates.zip
 *.rar
 **/_v*_qa/
+node_modules/
+package.json
+package-lock.json
