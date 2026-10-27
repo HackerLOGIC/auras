@@ -1241,3 +1241,111 @@ body.auras-ready .auras-reveal.in{transition:opacity .38s var(--ease),transform 
     text-overflow: ellipsis;
   }
 }
+
+/* ============================================================
+   AURAS V17: brand-blue sub-headings + upgraded language pill
+   1) 浅色底内容区黑色小标题/子标题(h2/h3/h4 无自有颜色规则)
+      统一改为品牌蓝 #277DF4, 与 eyebrow/按钮/链接蓝色语言统一;
+      :not([class]) 只命中无 class 的裸标题, 有自有颜色规则的元素
+      (rail-body h3 / card-body h3 / ih-hl-body h3 / section-title
+       / footer h4 / admin 等) 保持原样, 深底白字不受影响.
+   2) 语言下拉 #langSelect 升级为"胶囊按钮": 桌面端 fixed 悬浮到
+      导航栏右上角(与品牌/链接同排), 深蓝渐变底白字带原生箭头,
+      hover 变亮蓝并有阴影/位移反馈; 导航链接右移 118px 避免重叠;
+      移动端沿用 V16 悬浮定位(top:12 right:62)但同步升级深蓝胶囊.
+   仅改本地 04 css/layout.css, 不推送; 桌面 1280 / 移动 375 验证.
+   ============================================================ */
+/* 浅色底内容区小标题/子标题 -> 品牌蓝（含被区块级规则置黑的标题） */
+.ih-company-body h4,
+.ih-subblock h4,
+.ih-tl-item h4,
+.ih-hl-body h3,
+section h2:not([class]),
+section h3:not([class]),
+section h4:not([class]) {
+  color: #277DF4;
+}
+
+@media (min-width: 769px) {
+  /* 为右上角语言胶囊让出空间 */
+  .nav-float .nav-links { margin-right: 118px; }
+
+  /* 桌面语言按钮：右上角胶囊，与导航同排 */
+  body > #langSelect.lang-select {
+    position: fixed !important;
+    top: 14px;
+    right: 36px;
+    z-index: 1001;
+    height: 38px;
+    padding: 0 14px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: #ffffff !important;
+    background: linear-gradient(180deg, #277DF4, #1E5FB8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.30) !important;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(22, 74, 150, 0.30);
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+  }
+  body > #langSelect.lang-select:hover,
+  body > #langSelect.lang-select:focus {
+    background: linear-gradient(180deg, #2E8BFF, #277DF4) !important;
+    box-shadow: 0 6px 18px rgba(39, 125, 244, 0.45);
+    transform: translateY(-1px);
+    outline: 2px solid rgba(39, 125, 244, 0.45);
+    outline-offset: 2px;
+  }
+  body > #langSelect.lang-select option { color: #111; background: #fff; }
+}
+
+@media (max-width: 768px) {
+  /* 移动端沿用 V16 悬浮定位，同步升级为深蓝胶囊白字；
+     右移 80px 拉开与汉堡(左缘约316)的间距，避免视觉重叠 */
+  body > #langSelect.lang-select {
+    right: 80px !important;
+    color: #ffffff !important;
+    background: linear-gradient(180deg, #277DF4, #1E5FB8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.30) !important;
+    box-shadow: 0 3px 12px rgba(22, 74, 150, 0.30);
+    font-weight: 700;
+  }
+}
+
+/* ============================================================
+   AURAS V18: white sub-headings + langSelect alignment
+   1) 按用户要求，将 V17 改为品牌蓝 #277DF4 的浅色底小标题/子标题
+      (.ih-company-body h4 / .ih-subblock h4 / .ih-tl-item h4 /
+      .ih-hl-body h3 及 section 裸 h2/h3/h4) 改回白色；
+      浅底上白色文字对比度有限，附加轻量深色文字阴影保障可辨识度。
+   2) 桌面端 #langSelect 垂直对齐左侧导航链接：top 14px -> 22px
+      (语言按钮中心由 y=33 对齐链接中心 y≈41)。
+   3) 移动端 #langSelect 与汉堡键 .nav-toggle 精确对齐：
+      top 12px -> 13.5px(中心线一致 y≈35.4)；
+      right 80px -> 66px(与汉堡左缘间距收紧至约 7px)。
+   仅改本地 04 css/layout.css，不推送。
+   ============================================================ */
+.ih-company-body h4,
+.ih-subblock h4,
+.ih-tl-item h4,
+.ih-hl-body h3,
+section h2:not([class]),
+section h3:not([class]),
+section h4:not([class]) {
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(10, 30, 60, 0.35), 0 0 14px rgba(10, 30, 60, 0.16);
+}
+
+@media (min-width: 769px) {
+  body > #langSelect.lang-select {
+    top: 22px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body > #langSelect.lang-select {
+    top: 13.5px !important;
+    right: 66px !important;
+  }
+}
