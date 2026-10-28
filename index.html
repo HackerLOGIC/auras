@@ -1,215 +1,226 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AURAS · 寰途贸易海外宣传站 — 站点导航</title>
-<meta name="description" content="AURAS 海外宣传网站集合导航首页：11 套主题站点（商务 / 科技 / 杂志 / 沉浸式 / 工业 / 绿能 / 全球化 / 视频 / 电商 / 极简 / 高端），点击进入各套站点。">
-<style>
-  :root {
-    --primary: #277DF4;
-    --primary-dark: #1E5FB8;
-    --bg: #0B1220;
-    --bg-soft: #111A2E;
-    --card: #151F36;
-    --line: #263350;
-    --text: #EAF1FB;
-    --muted: #9FB0C9;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
-    background: radial-gradient(1200px 600px at 80% -10%, rgba(39,125,244,.18), transparent 60%),
-                radial-gradient(900px 500px at 0% 110%, rgba(30,95,184,.14), transparent 55%),
-                var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-    line-height: 1.6;
-  }
-  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
-  /* ===== Hero ===== */
-  .hero { padding: 88px 0 56px; text-align: center; }
-  .badge {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 6px 14px; border-radius: 999px;
-    border: 1px solid var(--line); background: rgba(39,125,244,.08);
-    color: var(--muted); font-size: 13px; letter-spacing: 1px;
-  }
-  .hero h1 {
-    margin: 22px 0 14px; font-size: clamp(30px, 5vw, 52px); font-weight: 800;
-    letter-spacing: -0.5px;
-  }
-  .hero h1 span { color: var(--primary); }
-  .hero .sub { color: var(--muted); font-size: clamp(15px, 2vw, 18px); max-width: 720px; margin: 0 auto; }
-
-  /* ===== Grid ===== */
-  .grid {
-    display: grid; gap: 18px; padding: 24px 0 64px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-  .card {
-    position: relative; display: block; text-decoration: none;
-    background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0) 40%), var(--card);
-    border: 1px solid var(--line); border-radius: 16px; padding: 24px 22px;
-    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
-    overflow: hidden;
-  }
-  .card::before {
-    content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
-    background: var(--primary); opacity: 0; transition: opacity .25s ease;
-  }
-  .card:hover, .card:focus-visible {
-    transform: translateY(-4px);
-    border-color: rgba(39,125,244,.55);
-    box-shadow: 0 14px 36px rgba(0,0,0,.35), 0 0 0 1px rgba(39,125,244,.15);
-    outline: none;
-  }
-  .card:hover::before { opacity: 1; }
-  .card .num {
-    font-size: 13px; font-weight: 700; letter-spacing: 2px; color: var(--primary);
-  }
-  .card h2 { margin: 10px 0 6px; font-size: 21px; font-weight: 700; }
-  .card .en { color: var(--muted); font-size: 13px; letter-spacing: .5px; margin-bottom: 12px; }
-  .card p { color: var(--muted); font-size: 14px; }
-  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-  .tag {
-    padding: 3px 10px; border-radius: 999px; font-size: 12px;
-    background: rgba(39,125,244,.12); color: #8FBBF5; border: 1px solid rgba(39,125,244,.25);
-  }
-  .card .go { display: inline-block; margin-top: 16px; font-size: 14px; font-weight: 600; color: var(--primary); }
-
-  /* ===== Footer ===== */
-  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; text-align: center; color: var(--muted); font-size: 13px; }
-  footer a { color: var(--primary); text-decoration: none; }
-
-  @media (max-width: 640px) {
-    .hero { padding: 56px 0 32px; }
-    .grid { padding: 12px 0 48px; grid-template-columns: 1fr; }
-  }
-</style>
+<title>AURAS INTERNATIONAL LIMITED - Global Trade Partner</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="description" content="AURAS INTERNATIONAL LIMITED official site - AURAS INTERNATIONAL LIMITED">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=SF+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v5m=1">
+<link rel="stylesheet" href="css/v2-theme.css?v5m=1">
+<link rel="stylesheet" href="css/layout.css?v5m=1">
 </head>
 <body>
-
-<header class="hero">
-  <div class="wrap">
-    <span class="badge">AURAS · GitHub Pages 站点导航</span>
-    <h1>AURAS 海外宣传<span>网站集合</span></h1>
-    <p class="sub">寰途贸易海外宣传网站 11 套主题站点总览。点击卡片进入对应站点，全部入口使用相对路径，可直接部署于 GitHub Pages。</p>
+<!-- Announcement Modal -->
+<div class="modal-mask" id="announceModal">
+  <div class="modal">
+    <div class="modal-head">
+      <span class="badge">Good News</span>
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <h3 id="annTitle"></h3>
+      <div id="annDate" class="modal-note"></div>
+    </div>
+    <div class="modal-body" id="annContent"></div>
+    <div class="modal-foot">
+      <a class="btn btn-gold" data-close href="news.html">Read News</a>
+      <button class="btn btn-outline" data-close style="border-color:var(--navy);color:var(--navy)">Close</button>
+    </div>
   </div>
-</header>
-
-<main class="wrap">
-  <div class="grid">
-
-    <a class="card" href="auras-website-01-corporate/">
-      <span class="num">SITE 01</span>
-      <h2>Corporate</h2>
-      <div class="en">商务官网 · 稳重商务风</div>
-      <p>沉稳大气的企业形象站，深蓝与金色质感，面向 B 端客户与品牌信任感塑造。</p>
-      <div class="tags"><span class="tag">商务</span><span class="tag">企业形象</span><span class="tag">深蓝金</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-02-tech/">
-      <span class="num">SITE 02</span>
-      <h2>Tech</h2>
-      <div class="en">科技官网 · 现代科技风</div>
-      <p>前沿科技感产品站，深色底与紫蓝渐变、玻璃拟态，突出创新与产品力。</p>
-      <div class="tags"><span class="tag">科技</span><span class="tag">紫蓝渐变</span><span class="tag">玻璃拟态</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-03-magazine/">
-      <span class="num">SITE 03</span>
-      <h2>Magazine</h2>
-      <div class="en">杂志官网 · 简约杂志风</div>
-      <p>编辑式排版与留白，米白底墨黑字，优雅克制的杂志社风格。</p>
-      <div class="tags"><span class="tag">杂志</span><span class="tag">编辑排版</span><span class="tag">米白墨黑</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-04-immersive/">
-      <span class="num">SITE 04</span>
-      <h2>Immersive</h2>
-      <div class="en">沉浸式官网 · 大图沉浸风</div>
-      <p>全屏大图与暗角叙事，打造沉浸式品牌体验，视觉冲击力强。</p>
-      <div class="tags"><span class="tag">沉浸式</span><span class="tag">全屏大图</span><span class="tag">品牌蓝</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-05-industrial/">
-      <span class="num">SITE 05</span>
-      <h2>Industrial</h2>
-      <div class="en">工业官网 · 工业制造风</div>
-      <p>硬朗的工业制造站，炭黑与信号橙碰撞，传递可靠与实力。</p>
-      <div class="tags"><span class="tag">工业</span><span class="tag">制造</span><span class="tag">炭黑橙</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-06-greenenergy/">
-      <span class="num">SITE 06</span>
-      <h2>Green Energy</h2>
-      <div class="en">新能源官网 · 绿能环保风</div>
-      <p>新能源与可持续主题，深绿与青绿配色，清新而专业。</p>
-      <div class="tags"><span class="tag">绿能</span><span class="tag">新能源</span><span class="tag">深绿青</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-07-global/">
-      <span class="num">SITE 07</span>
-      <h2>Global</h2>
-      <div class="en">全球化官网 · 国际化风</div>
-      <p>面向全球市场的国际化站，蓝白栅格与多语言布局，开放通透。</p>
-      <div class="tags"><span class="tag">全球化</span><span class="tag">国际化</span><span class="tag">蓝白栅格</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-08-video/">
-      <span class="num">SITE 08</span>
-      <h2>Video</h2>
-      <div class="en">视频官网 · 视频驱动风</div>
-      <p>视频驱动的发布会式官网，暗调与金色点缀，极具表现力。</p>
-      <div class="tags"><span class="tag">视频</span><span class="tag">发布会</span><span class="tag">暗调金</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-09-ecommerce/">
-      <span class="num">SITE 09</span>
-      <h2>E-commerce</h2>
-      <div class="en">电商官网 · 电商导流风</div>
-      <p>高转化电商导流站，白底干净利落，品牌绿 CTA 引导清晰。</p>
-      <div class="tags"><span class="tag">电商</span><span class="tag">导流</span><span class="tag">白底绿CTA</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-10-minimal/">
-      <span class="num">SITE 10</span>
-      <h2>Minimal</h2>
-      <div class="en">极简官网 · 极简留白风</div>
-      <p>极致留白与克制排版，白底黑字加单一品牌蓝强调。</p>
-      <div class="tags"><span class="tag">极简</span><span class="tag">留白</span><span class="tag">白底黑字</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
-    <a class="card" href="auras-website-11-premium/">
-      <span class="num">SITE 11</span>
-      <h2>Premium</h2>
-      <div class="en">高端定制 · 奢华质感风</div>
-      <p>高端品牌定制站，精致细节与奢华质感，彰显尊贵调性。</p>
-      <div class="tags"><span class="tag">高端</span><span class="tag">定制</span><span class="tag">奢华质感</span></div>
-      <span class="go">进入站点 →</span>
-    </a>
-
+</div>
+<nav class="nav-float">
+  <div class="nav-in">
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo/logo-blue.png" alt="AURAS"><span>AURAS<small>INTERNATIONAL LIMITED</small></span></a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Menu">☰</button>
+    <ul class="nav-links"><li><a href="index.html" class="active">Home</a></li><li><a href="about.html">About</a></li><li><a href="milestones.html">Milestones</a></li><li><a href="services.html">Services</a></li><li><a href="products.html">Products</a></li><li><a href="new-energy.html">New Energy</a></li><li><a href="projects.html">Projects</a></li><li><a href="news.html">News</a></li><li><a href="leisure.html">Leisure</a></li><li><a href="contact.html">Contact</a></li></ul>
   </div>
+</nav>
+<main>
+  <section class="hero"><div class="hero-bg" style="background-image:url('assets/images/page_02/img_1.jpg')"></div>
+    <div class="container"><span class="subtitle">Your Trusted Global Trade Partner</span><h1>Connecting Markets.<br>Delivering Excellence Worldwide.</h1><p style="max-width:640px;margin:14px auto 22px">Dear Friend, welcome to AURAS INTERNATIONAL LIMITED. From trade services and own-brand products to industrial production lines and new energy solutions, we turn your requirements into reliable results.</p>
+      <a class="btn btn-gold" href="services.html">Explore Our Services</a> <a class="btn btn-outline" href="contact.html" style="border-color:#fff;color:#fff">Contact Us</a></div>
+    <div class="scroll-hint"></div>
+  </section>
+
+  <!-- ===== NEWS CENTER (core section, CMS-synced) ===== -->
+  <section class="section ih-news-section" aria-label="News Center">
+    <div class="container">
+      <div class="news-portal" id="newsPortal">
+        <div class="np-head">
+          <span class="np-flag">NEWS</span>
+          <span class="np-title">News Center</span>
+          <a class="np-more" href="news.html">All News &rarr;</a>
+        </div>
+        <div class="ih-news-grid">
+          <div class="ih-headline" id="npHeadline"></div>
+          <div class="ih-cols">
+            <div class="np-col"><h3 class="np-col-title">Company News</h3><ul class="np-list" id="npCompany"></ul></div>
+            <div class="np-col"><h3 class="np-col-title">Industry Updates</h3><ul class="np-list" id="npIndustry"></ul></div>
+            <div class="np-col"><h3 class="np-col-title">Media Coverage</h3><ul class="np-list" id="npMedia"></ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPANY PROFILE / PORTFOLIO ===== -->
+  <section class="section ih-section" aria-label="Company Profile">
+    <div class="container">
+      <span class="eyebrow">Who We Are</span>
+      <h2 class="section-title">Company Profile &amp; Portfolio</h2>
+      <div class="ih-company">
+        <div class="ih-company-media" style="background-image:url('assets/images/page_04/img_1.jpg')"></div>
+        <div class="ih-company-body">
+          <p class="section-sub">AURAS INTERNATIONAL LIMITED is a comprehensive international trade group built on values, people power, management systems, reliable partners and a global layout certified to serve worldwide clients.</p>
+          <p style="font-size:14.5px;color:var(--text-muted)">Our portfolio spans own-brand stationery, food, home &amp; office supplies and industrial solutions — each backed by rigorous quality control and end-to-end logistics.</p>
+          <h4 style="margin:22px 0 12px">Markets &amp; Portfolio</h4>
+          <div class="ih-tags"><span>Stationery</span><span>Food</span><span>Homeware</span><span>Auto Parts</span><span>Metal</span><span>Radiators</span><span>Valves</span><span>Housing</span><span>Fuel Dispensers</span></div>
+          <a class="btn btn-navy" href="about.html" style="margin-top:22px">About AURAS</a>
+        </div>
+      </div>
+      <div class="numwall"><div class="stat-box"><div class="num">20+</div><div>Years in Trade</div></div><div class="stat-box"><div class="num">40+</div><div>Production Lines Delivered</div></div><div class="stat-box"><div class="num">15+</div><div>Product Categories</div></div><div class="stat-box"><div class="num">7</div><div>Business &amp; Service Lines</div></div></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES (incl. New Business Lines) ===== -->
+  <section class="section ih-section alt" aria-label="Our Services">
+    <div class="container">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Complete trade services and logistics solutions for overseas clients — from sourcing to doorstep delivery.</p>
+      <div class="rail ih-rail"><article class="rail-card" style="background-image:url('assets/images/page_17/img_1.jpg')"><div class="rail-body"><h3>Trade Services</h3><p style="font-size:13px">Sourcing, transportation, QC, customs clearance, translation, negotiation and order management.</p></div></article><article class="rail-card" style="background-image:url('assets/images/page_18/img_1.jpg')"><div class="rail-body"><h3>Logistics</h3><p style="font-size:13px">Sea forwarding, air forwarding and complete logistics support for global shipments.</p></div></article><article class="rail-card" style="background-image:url('assets/images/page_19/img_1.jpg')"><div class="rail-body"><h3>Brands &amp; Products</h3><p style="font-size:13px">Stationery, food, home &amp; office supplies, auto parts, metal, radiators, valves, housing and fuel dispensers.</p></div></article><article class="rail-card" style="background-image:url('assets/images/page_24/img_1.jpg')"><div class="rail-body"><h3>New Energy</h3><p style="font-size:13px">EV charging stations, solar energy, green hydrogen, crude oil, natural gas, medicine and car export.</p></div></article></div>
+      <div class="ih-subblock">
+        <h4 style="margin:0 0 10px">New Business Lines</h4>
+        <p style="font-size:14px;color:var(--text-muted);margin:0 0 16px">Expanding into emerging sectors to power the next decade of trade.</p>
+        <div class="ih-tags"><span>Construction</span><span>EV Charging</span><span>Solar</span><span>Green Hydrogen</span><span>Crude Oil</span><span>Natural Gas</span><span>Medicine</span><span>Car Export</span></div>
+        <a class="btn btn-outline" href="new-energy.html" style="margin-top:18px">Explore New Energy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS DONE BY AURAS ===== -->
+  <section class="section ih-section" aria-label="Projects Done by AURAS">
+    <div class="container">
+      <span class="eyebrow">Our Track Record</span>
+      <h2 class="section-title">Projects Done by AURAS</h2>
+      <div class="ih-projects">
+        <div class="ih-projects-media" style="background-image:url('assets/images/page_35/img_1.jpg')"></div>
+        <div class="ih-projects-body">
+          <div class="ih-projects-stat"><span class="num">40+</span><span>Industrial Production Lines Delivered Worldwide</span></div>
+          <p style="font-size:14.5px;color:var(--text-muted);margin:14px 0 20px">From turnkey factories to complex assembly lines, AURAS delivers reliable industrial production solutions across markets — engineered, installed and handed over with full support.</p>
+          <a class="btn btn-navy" href="projects.html">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIMELINE ===== -->
+  <section class="section ih-section alt" aria-label="AURAS Through the Time">
+    <div class="container">
+      <span class="eyebrow">Our Journey</span>
+      <h2 class="section-title">AURAS Through the Time</h2>
+      <div class="ih-timeline">
+        <ol class="ih-tl">
+          <li><span class="ih-tl-dot"></span><div class="ih-tl-item"><h4>Canton Fair</h4><p>Global sourcing hub where AURAS connects buyers and manufacturers.</p></div></li>
+          <li><span class="ih-tl-dot"></span><div class="ih-tl-item"><h4>Yiwu Fair</h4><p>Everyday commodities and fast-moving consumer goods sourcing.</p></div></li>
+          <li><span class="ih-tl-dot"></span><div class="ih-tl-item"><h4>Algeria Fair</h4><p>Deepening partnerships across North Africa and the Mediterranean.</p></div></li>
+          <li><span class="ih-tl-dot"></span><div class="ih-tl-item"><h4>Annual Meetings</h4><p>Bringing global partners together to plan the year ahead.</p></div></li>
+          <li><span class="ih-tl-dot"></span><div class="ih-tl-item"><h4>Global Cooperation</h4><p>A growing network of factories, logistics and clients worldwide.</p></div></li>
+        </ol>
+        <div class="ih-tl-media" style="background-image:url('assets/images/page_11/img_1.jpg')"></div>
+      </div>
+      <a class="btn btn-outline" href="milestones.html" style="margin-top:28px">Full Milestones</a>
+    </div>
+  </section>
+
+  <div class="cta"><h2>Ready to grow with AURAS?</h2><p style="max-width:560px;margin:10px auto 22px">Let's talk about trade services, products, production lines or new energy projects.</p><a class="btn btn-gold" href="contact.html">Contact Us</a></div>
 </main>
-
-<footer>
-  <div class="wrap">
-    AURAS · 寰途贸易海外宣传网站集合 · 部署于 <a href="https://hackerlogic.github.io/auras/">GitHub Pages</a>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo/logo-white.png" alt="AURAS"><span>AURAS<small>INTERNATIONAL LIMITED</small></span></a>
+        <p style="font-size:14px">Comprehensive international trade group: trade services, logistics, own brands, production lines and new energy solutions for global partners.</p>
+        <p style="font-size:14px;margin-top:10px"><a href="https://www.aurasgroup.com" target="_blank" rel="noopener">www.aurasgroup.com</a> · <a href="https://www.aurasgo.com" target="_blank" rel="noopener">www.aurasgo.com</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="milestones.html">Milestones</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="new-energy.html">New Energy</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="admin.html">Employee Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Suite A6/F Ritz Plaza, 122 Austin Rd, TST, KL, HK</li>
+          <li>Email: ben@aurashk.com</li>
+          <li>Website: www.aurasgroup.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 AURAS INTERNATIONAL LIMITED. All rights reserved. | <a href="admin.html" style="color:#8fa8c2">Staff Portal</a></div>
   </div>
 </footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/site.js"></script>
+<script>
+AURAS.initAnnouncement();
+</script>
+<script src="js/ui.js"></script>
+<script src="js/premium.js"></script>
+
+<script>
+(function(){
+  function s(x){return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+  function fd(d){if(!d)return '';var t=new Date(d);if(isNaN(t.getTime()))return d;var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[t.getMonth()]+' '+t.getDate()+', '+t.getFullYear();}
+  function renderHeadline(){
+    var el=document.getElementById('npHeadline');
+    if(!el)return;
+    var list=(window.AURAS&&AURAS.getNews)?AURAS.getNews():[];
+    if(!list||!list.length){el.innerHTML='<div class="np-empty">No updates yet. Check back soon.</div>';return;}
+    var items=list.slice().sort(function(a,b){return (b.date||'').localeCompare(a.date||'');});
+    var n=items[0];
+    var cover=n.cover||'assets/images/page_02/img_1.jpg';
+    el.innerHTML='<article class="ih-hl-card"><a class="ih-hl-img" style="background-image:url(\''+s(cover)+'\')" href="news-detail.html?id='+n.id+'" aria-label="'+s(n.title)+'"></a><div class="ih-hl-body"><span class="ih-hl-meta"><span class="cat">'+s(n.category)+'</span><span>'+fd(n.date)+'</span></span><h3><a href="news-detail.html?id='+n.id+'">'+s(n.title)+'</a></h3><p>'+s(n.summary||'')+'</p><a class="btn btn-navy" href="news-detail.html?id='+n.id+'">'+AURAS_I18N.t('Read More →')+'</a></div></article>';
+  }
+  function renderPortal(){
+    var list=(window.AURAS&&AURAS.getNews)?AURAS.getNews():[];
+    if(!list||!list.length)return;
+    var cols={
+      company:{el:document.getElementById('npCompany'),rules:['corporate','company']},
+      industry:{el:document.getElementById('npIndustry'),rules:['exhibition','industry','fair','general','trade']},
+      media:{el:document.getElementById('npMedia'),rules:['media','press','report','announcement','new business','news','interview']}
+    };
+    Object.keys(cols).forEach(function(k){
+      var c=cols[k],el=c.el;if(!el)return;
+      var items=list.filter(function(n){return c.rules.indexOf(String(n.category||'').toLowerCase())>-1;})
+        .sort(function(a,b){return (b.date||'').localeCompare(a.date||'');}).slice(0,4);
+      if(!items.length){el.innerHTML='<li class="np-item"><span class="np-empty">No updates yet. Check back soon.</span></li>';return;}
+      el.innerHTML=items.map(function(n){return '<li class="np-item"><a href="news-detail.html?id='+n.id+'"><span class="np-dot"></span><span class="np-item-title">'+s(n.title)+'</span><span class="np-item-date">'+fd(n.date)+'</span></a></li>';}).join('');
+    });
+  }
+  function ready(fn){if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',fn);}else{fn();}}
+  ready(renderHeadline);
+  ready(renderPortal);
+})();
+</script>
 
 </body>
 </html>
