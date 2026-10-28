@@ -14,6 +14,13 @@
 <link rel="stylesheet" href="css/layout.css?v5m=1">
 </head>
 <body>
+<!-- Page Loader -->
+<div class="auras-loader" id="aurasLoader" aria-hidden="true">
+  <div class="auras-loader-inner">
+    <img class="auras-loader-logo" src="assets/logo/logo-blue.png" alt="AURAS">
+    <div class="auras-loader-bar"><span></span></div>
+  </div>
+</div>
 <!-- Announcement Modal -->
 <div class="modal-mask" id="announceModal">
   <div class="modal">
@@ -39,9 +46,45 @@
 </nav>
 <main>
   <section class="hero"><div class="hero-bg" style="background-image:url('assets/images/page_02/img_1.jpg')"></div>
-    <div class="container"><span class="subtitle">Your Trusted Global Trade Partner</span><h1>Connecting Markets.<br>Delivering Excellence Worldwide.</h1><p style="max-width:640px;margin:14px auto 22px">Dear Friend, welcome to AURAS INTERNATIONAL LIMITED. From trade services and own-brand products to industrial production lines and new energy solutions, we turn your requirements into reliable results.</p>
+    <div class="container"><span class="subtitle">Your Trusted Global Trade Partner</span><h1>Your Trusted Trade Services Partner.<br>From Sourcing to Doorstep, Worldwide.</h1><p style="max-width:640px;margin:14px auto 22px">From trade services and own-brand products to industrial production lines and new energy solutions — we turn your requirements into reliable results.</p>
       <a class="btn btn-gold" href="services.html">Explore Our Services</a> <a class="btn btn-outline" href="contact.html" style="border-color:#fff;color:#fff">Contact Us</a></div>
     <div class="scroll-hint"></div>
+  </section>
+
+  <!-- ===== CLIENT CASES (case wall, extracted from brochure) ===== -->
+  <section class="section ih-section case-wall-section" aria-label="Client Cases">
+    <div class="container">
+      <span class="eyebrow">Our Track Record</span>
+      <h2 class="section-title">Projects Done by AURAS</h2>
+      <p class="section-sub">Turnkey projects delivered for overseas clients — from sourcing and engineering to installation and commissioning.</p>
+      <div class="case-wall">
+        <article class="case-card">
+          <a class="case-media" href="projects.html" style="background-image:url('assets/images/page_35/img_1.jpg')" aria-label="Food &amp; Beverage Lines"></a>
+          <div class="case-body"><span class="case-tag">Food &amp; Beverage Lines</span><h3>Chocolate, juice, jam and food processing lines delivered worldwide.</h3></div>
+        </article>
+        <article class="case-card">
+          <a class="case-media" href="projects.html" style="background-image:url('assets/images/page_36/img_1.jpg')" aria-label="Packaging"></a>
+          <div class="case-body"><span class="case-tag">Packaging</span><h3>High-speed corrugated board, egg tray and automatic packaging lines.</h3></div>
+        </article>
+        <article class="case-card">
+          <a class="case-media" href="projects.html" style="background-image:url('assets/images/page_37/img_1.jpg')" aria-label="Building Materials"></a>
+          <div class="case-body"><span class="case-tag">Building Materials</span><h3>PVC doors, windows, pipes and injection molding lines.</h3></div>
+        </article>
+        <article class="case-card">
+          <a class="case-media" href="projects.html" style="background-image:url('assets/images/page_38/img_1.jpg')" aria-label="Mechanical &amp; Electronic Assembly"></a>
+          <div class="case-body"><span class="case-tag">Mechanical &amp; Electronic Assembly</span><h3>EV charger, meter, MCB breaker and SMT assembly lines.</h3></div>
+        </article>
+        <article class="case-card">
+          <a class="case-media" href="projects.html" style="background-image:url('assets/images/page_39/img_1.jpg')" aria-label="Automotive"></a>
+          <div class="case-body"><span class="case-tag">Automotive</span><h3>Tire, motorcycle and vehicle component production lines.</h3></div>
+        </article>
+        <article class="case-card">
+          <a class="case-media" href="projects.html" style="background-image:url('assets/images/page_40/img_1.jpg')" aria-label="Environmental &amp; Others"></a>
+          <div class="case-body"><span class="case-tag">Environmental &amp; Others</span><h3>Medical waste, consumables, soap and oil &amp; gas projects.</h3></div>
+        </article>
+      </div>
+      <div class="case-wall-cta"><a class="btn btn-navy" href="projects.html">View All Projects</a></div>
+    </div>
   </section>
 
   <!-- ===== NEWS CENTER (core section, CMS-synced) ===== -->
@@ -185,6 +228,7 @@ AURAS.initAnnouncement();
 </script>
 <script src="js/ui.js"></script>
 <script src="js/premium.js"></script>
+<script src="js/loader.js"></script>
 
 <script>
 (function(){

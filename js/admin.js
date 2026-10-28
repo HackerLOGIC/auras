@@ -126,17 +126,16 @@
       var news = getNews();
       tb.innerHTML = news.length ? news.map(function (n) {
         return '<tr>' +
-          '<td>#' + n.id + '</td>' +
           '<td><strong>' + esc(n.title) + '</strong></td>' +
           '<td>' + esc(n.category) + '</td>' +
           '<td>' + esc(n.date) + '</td>' +
           '<td style="max-width:220px">' + esc((n.summary || '').slice(0, 60)) + '</td>' +
           '<td>' + esc(n.cover || '') + '</td>' +
-          '<td>' +
-          '<button class="btn-sm btn-edit" onclick="openNewsForm(' + n.id + ')">编辑</button> ' +
+          '<td><span class="row-actions">' +
+          '<button class="btn-sm btn-edit" onclick="openNewsForm(' + n.id + ')">编辑</button>' +
           '<button class="btn-sm btn-del" onclick="deleteNews(' + n.id + ')">删除</button>' +
-          '</td></tr>';
-      }).join('') : '<tr><td colspan="7" style="text-align:center;color:#6b7a8d">暂无新闻，点击「+ 新增新闻」创建。</td></tr>';
+          '</span></td></tr>';
+      }).join('') : '<tr><td colspan="6" style="text-align:center;color:#6b7a8d">暂无新闻，点击「+ 新增新闻」创建。</td></tr>';
       var cnt = $('newsCount');
       if (cnt) cnt.textContent = '共 ' + news.length + ' 条新闻（前台 News 页与首页同步展示）';
     }
