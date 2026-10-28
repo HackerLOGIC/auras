@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURAS · 寰途贸易海外宣传站 — 站点导航</title>
+<meta name="description" content="AURAS 海外宣传网站集合导航首页：11 套主题站点（商务 / 科技 / 杂志 / 沉浸式 / 工业 / 绿能 / 全球化 / 视频 / 电商 / 极简 / 高端），点击进入各套站点。">
+<style>
+  :root {
+    --primary: #277DF4;
+    --primary-dark: #1E5FB8;
+    --bg: #0B1220;
+    --bg-soft: #111A2E;
+    --card: #151F36;
+    --line: #263350;
+    --text: #EAF1FB;
+    --muted: #9FB0C9;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+    background: radial-gradient(1200px 600px at 80% -10%, rgba(39,125,244,.18), transparent 60%),
+                radial-gradient(900px 500px at 0% 110%, rgba(30,95,184,.14), transparent 55%),
+                var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  /* ===== Hero ===== */
+  .hero { padding: 88px 0 56px; text-align: center; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; border-radius: 999px;
+    border: 1px solid var(--line); background: rgba(39,125,244,.08);
+    color: var(--muted); font-size: 13px; letter-spacing: 1px;
+  }
+  .hero h1 {
+    margin: 22px 0 14px; font-size: clamp(30px, 5vw, 52px); font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  .hero h1 span { color: var(--primary); }
+  .hero .sub { color: var(--muted); font-size: clamp(15px, 2vw, 18px); max-width: 720px; margin: 0 auto; }
+
+  /* ===== Grid ===== */
+  .grid {
+    display: grid; gap: 18px; padding: 24px 0 64px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .card {
+    position: relative; display: block; text-decoration: none;
+    background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0) 40%), var(--card);
+    border: 1px solid var(--line); border-radius: 16px; padding: 24px 22px;
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    overflow: hidden;
+  }
+  .card::before {
+    content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
+    background: var(--primary); opacity: 0; transition: opacity .25s ease;
+  }
+  .card:hover, .card:focus-visible {
+    transform: translateY(-4px);
+    border-color: rgba(39,125,244,.55);
+    box-shadow: 0 14px 36px rgba(0,0,0,.35), 0 0 0 1px rgba(39,125,244,.15);
+    outline: none;
+  }
+  .card:hover::before { opacity: 1; }
+  .card .num {
+    font-size: 13px; font-weight: 700; letter-spacing: 2px; color: var(--primary);
+  }
+  .card h2 { margin: 10px 0 6px; font-size: 21px; font-weight: 700; }
+  .card .en { color: var(--muted); font-size: 13px; letter-spacing: .5px; margin-bottom: 12px; }
+  .card p { color: var(--muted); font-size: 14px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .tag {
+    padding: 3px 10px; border-radius: 999px; font-size: 12px;
+    background: rgba(39,125,244,.12); color: #8FBBF5; border: 1px solid rgba(39,125,244,.25);
+  }
+  .card .go { display: inline-block; margin-top: 16px; font-size: 14px; font-weight: 600; color: var(--primary); }
+
+  /* ===== Footer ===== */
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; text-align: center; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--primary); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    .hero { padding: 56px 0 32px; }
+    .grid { padding: 12px 0 48px; grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">AURAS · GitHub Pages 站点导航</span>
+    <h1>AURAS 海外宣传<span>网站集合</span></h1>
+    <p class="sub">寰途贸易海外宣传网站 11 套主题站点总览。点击卡片进入对应站点，全部入口使用相对路径，可直接部署于 GitHub Pages。</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+
+    <a class="card" href="auras-website-01-corporate/">
+      <span class="num">SITE 01</span>
+      <h2>Corporate</h2>
+      <div class="en">商务官网 · 稳重商务风</div>
+      <p>沉稳大气的企业形象站，深蓝与金色质感，面向 B 端客户与品牌信任感塑造。</p>
+      <div class="tags"><span class="tag">商务</span><span class="tag">企业形象</span><span class="tag">深蓝金</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-02-tech/">
+      <span class="num">SITE 02</span>
+      <h2>Tech</h2>
+      <div class="en">科技官网 · 现代科技风</div>
+      <p>前沿科技感产品站，深色底与紫蓝渐变、玻璃拟态，突出创新与产品力。</p>
+      <div class="tags"><span class="tag">科技</span><span class="tag">紫蓝渐变</span><span class="tag">玻璃拟态</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-03-magazine/">
+      <span class="num">SITE 03</span>
+      <h2>Magazine</h2>
+      <div class="en">杂志官网 · 简约杂志风</div>
+      <p>编辑式排版与留白，米白底墨黑字，优雅克制的杂志社风格。</p>
+      <div class="tags"><span class="tag">杂志</span><span class="tag">编辑排版</span><span class="tag">米白墨黑</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-04-immersive/">
+      <span class="num">SITE 04</span>
+      <h2>Immersive</h2>
+      <div class="en">沉浸式官网 · 大图沉浸风</div>
+      <p>全屏大图与暗角叙事，打造沉浸式品牌体验，视觉冲击力强。</p>
+      <div class="tags"><span class="tag">沉浸式</span><span class="tag">全屏大图</span><span class="tag">品牌蓝</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-05-industrial/">
+      <span class="num">SITE 05</span>
+      <h2>Industrial</h2>
+      <div class="en">工业官网 · 工业制造风</div>
+      <p>硬朗的工业制造站，炭黑与信号橙碰撞，传递可靠与实力。</p>
+      <div class="tags"><span class="tag">工业</span><span class="tag">制造</span><span class="tag">炭黑橙</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-06-greenenergy/">
+      <span class="num">SITE 06</span>
+      <h2>Green Energy</h2>
+      <div class="en">新能源官网 · 绿能环保风</div>
+      <p>新能源与可持续主题，深绿与青绿配色，清新而专业。</p>
+      <div class="tags"><span class="tag">绿能</span><span class="tag">新能源</span><span class="tag">深绿青</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-07-global/">
+      <span class="num">SITE 07</span>
+      <h2>Global</h2>
+      <div class="en">全球化官网 · 国际化风</div>
+      <p>面向全球市场的国际化站，蓝白栅格与多语言布局，开放通透。</p>
+      <div class="tags"><span class="tag">全球化</span><span class="tag">国际化</span><span class="tag">蓝白栅格</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-08-video/">
+      <span class="num">SITE 08</span>
+      <h2>Video</h2>
+      <div class="en">视频官网 · 视频驱动风</div>
+      <p>视频驱动的发布会式官网，暗调与金色点缀，极具表现力。</p>
+      <div class="tags"><span class="tag">视频</span><span class="tag">发布会</span><span class="tag">暗调金</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-09-ecommerce/">
+      <span class="num">SITE 09</span>
+      <h2>E-commerce</h2>
+      <div class="en">电商官网 · 电商导流风</div>
+      <p>高转化电商导流站，白底干净利落，品牌绿 CTA 引导清晰。</p>
+      <div class="tags"><span class="tag">电商</span><span class="tag">导流</span><span class="tag">白底绿CTA</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-10-minimal/">
+      <span class="num">SITE 10</span>
+      <h2>Minimal</h2>
+      <div class="en">极简官网 · 极简留白风</div>
+      <p>极致留白与克制排版，白底黑字加单一品牌蓝强调。</p>
+      <div class="tags"><span class="tag">极简</span><span class="tag">留白</span><span class="tag">白底黑字</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+    <a class="card" href="auras-website-11-premium/">
+      <span class="num">SITE 11</span>
+      <h2>Premium</h2>
+      <div class="en">高端定制 · 奢华质感风</div>
+      <p>高端品牌定制站，精致细节与奢华质感，彰显尊贵调性。</p>
+      <div class="tags"><span class="tag">高端</span><span class="tag">定制</span><span class="tag">奢华质感</span></div>
+      <span class="go">进入站点 →</span>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    AURAS · 寰途贸易海外宣传网站集合 · 部署于 <a href="https://hackerlogic.github.io/auras/">GitHub Pages</a>
+  </div>
+</footer>
+
+</body>
+</html>
