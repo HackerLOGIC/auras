@@ -4,7 +4,15 @@
   'use strict';
   var LANG_KEY = 'auras_lang';
   var LANGS = ['en', 'zh', 'zh-TW', 'fr', 'es', 'de', 'ar', 'pt', 'ru', 'ja', 'ko', 'it'];
-  var LABELS = { en: '🇬🇧 EN', zh: '中文', 'zh-TW': '繁體', fr: '🇫🇷 FR', es: '🇪🇸 ES', de: '🇩🇪 DE', ar: '🇸🇦 AR', pt: '🇧🇷 PT', ru: '🇷🇺 RU', ja: '🇯🇵 日本語', ko: '🇰🇷 한국어', it: '🇮🇹 IT' };
+  /* Cross-platform flags via flagcdn.com image URLs (Windows cannot render emoji flag glyphs).
+     zh / zh-TW intentionally carry no flag. */
+  var FLAG_CODES = { en: 'gb', fr: 'fr', es: 'es', de: 'de', ar: 'sa', pt: 'br', ru: 'ru', ja: 'jp', ko: 'kr', it: 'it' };
+  var NATIVE_NAMES = { en: 'English', zh: '中文', 'zh-TW': '繁體中文', fr: 'Français', es: 'Español', de: 'Deutsch', ar: 'العربية', pt: 'Português', ru: 'Русский', ja: '日本語', ko: '한국어', it: 'Italiano' };
+  function flagHTML(l) {
+    var code = FLAG_CODES[l];
+    if (!code) return '';
+    return '<img class="lang-flag" src="https://flagcdn.com/w40/' + code + '.png" alt="" width="20" height="15" loading="lazy" onerror="this.style.display=\'none\'">';
+  }
 
   var DICT = {
     "Home": { en: "Home", zh: "首页", fr: "Accueil", es: "Inicio", de: "Startseite", 'zh-TW': "首頁", 'ar': "الرئيسية", 'pt': "Início", 'ru': "Главная", 'ja': "ホーム", 'ko': "홈", 'it': "Home" },
@@ -407,37 +415,76 @@
         node.nodeValue = t.replace(/All Rights Reserved\.?/i, COPYRIGHT[l] || 'All rights reserved.');
       }
     }
-    // 4) sync selector + persistence
-    var sel = document.getElementById('langSelect');
-    if (sel) sel.value = l;
+    // 4) sync language UI + persistence
+    updateLangBtn(l);
     document.documentElement.lang = l;
     document.documentElement.setAttribute('dir', 'ltr');
     try { localStorage.setItem(LANG_KEY, l); } catch (e) {}
   }
 
-  function init() {
-    var sel = document.getElementById('langSelect');
-    if (!sel) {
-      sel = document.createElement('select');
-      sel.id = 'langSelect';
-      sel.className = 'lang-select';
-      for (var i = 0; i < LANGS.length; i++) {
-        var o = document.createElement('option');
-        o.value = LANGS[i];
-        o.textContent = LABELS[LANGS[i]];
-        sel.appendChild(o);
-      }
-      var host = document.querySelector('.navbar .container, .nav-float .nav-in, .topnav .container, .nav .container');
-      if (host) {
-        var li = document.createElement('li');
-        li.className = 'lang-item';
-        li.appendChild(sel);
-        host.appendChild(li);
-      } else {
-        document.body.insertBefore(sel, document.body.firstChild);
-      }
+  function closeLangMenu() {
+    var m = document.getElementById('langMenu');
+    var b = document.getElementById('langBtn');
+    if (m) m.classList.remove('open');
+    if (b) b.setAttribute('aria-expanded', 'false');
+  }
+
+  function updateLangBtn(l) {
+    var b = document.getElementById('langBtn');
+    if (!b) return;
+    b.innerHTML = flagHTML(l) + '<span class="lang-name">' + NATIVE_NAMES[l] + '</span><span class="lang-caret">▾</span>';
+    var opts = document.querySelectorAll('.lang-opt');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].classList.toggle('active', opts[i].getAttribute('data-lang') === l);
     }
-    sel.addEventListener('change', function () { applyLang(this.value); });
+  }
+
+  function init() {
+    if (document.querySelector('.lang-custom')) return;
+    var wrap = document.createElement('div');
+    wrap.className = 'lang-custom';
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'lang-btn';
+    btn.id = 'langBtn';
+    btn.setAttribute('aria-haspopup', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+    var menu = document.createElement('ul');
+    menu.className = 'lang-menu';
+    menu.id = 'langMenu';
+    for (var i = 0; i < LANGS.length; i++) {
+      (function (lg) {
+        var li = document.createElement('li');
+        li.className = 'lang-opt';
+        li.setAttribute('data-lang', lg);
+        li.setAttribute('role', 'option');
+        li.innerHTML = flagHTML(lg) + '<span class="lang-name">' + NATIVE_NAMES[lg] + '</span>';
+        li.addEventListener('click', function () { applyLang(lg); closeLangMenu(); });
+        menu.appendChild(li);
+      })(LANGS[i]);
+    }
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    wrap.appendChild(btn);
+    wrap.appendChild(menu);
+    var host = document.querySelector('.navbar .container, .nav-float .nav-in, .topnav .container, .nav .container');
+    if (host) {
+      var li = document.createElement('li');
+      li.className = 'lang-item';
+      li.appendChild(wrap);
+      host.appendChild(li);
+    } else {
+      var li2 = document.createElement('li');
+      li2.className = 'lang-item';
+      li2.appendChild(wrap);
+      document.body.insertBefore(li2, document.body.firstChild);
+    }
+    document.addEventListener('click', function (e) {
+      if (!wrap.contains(e.target)) closeLangMenu();
+    });
     applyLang(lang);
   }
 
