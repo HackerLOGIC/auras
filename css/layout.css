@@ -1411,10 +1411,10 @@ section h4:not([class]) {
 body.auras-lock { overflow: hidden; }
 .auras-loader { position: fixed; inset: 0; z-index: 9999; background: #ffffff; display: flex; align-items: center; justify-content: center; transition: opacity 0.38s ease; }
 .auras-loader-inner { display: flex; flex-direction: column; align-items: center; gap: 18px; }
-.auras-loader-logo { height: 64px; width: auto; }
-.auras-loader-bar { width: 180px; height: 5px; border-radius: 999px; background: #E3E8F0; overflow: hidden; }
-.auras-loader-bar span { display: block; width: 0; height: 100%; border-radius: 999px; background: #B7C4D4; animation: auras-loader-grow 1.1s ease-in-out infinite; }
-@keyframes auras-loader-grow { 0% { width: 0; } 55% { width: 82%; } 100% { width: 0; } }
+.auras-loader-logo { height: 72px; width: auto; }
+.auras-loader-bar { width: 220px; height: 6px; border-radius: 999px; background: #E9EEF5; overflow: hidden; }
+.auras-loader-bar span { display: block; width: 0; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #008CD6, #00A6E6); animation: auras-loader-grow 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+@keyframes auras-loader-grow { from { width: 0; } to { width: 100%; } }
 .auras-loader-done { opacity: 0; pointer-events: none; visibility: hidden; }
 
 /* ---- 404 page ---- */
