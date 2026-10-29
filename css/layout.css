@@ -1513,3 +1513,17 @@ body > .lang-item { position: fixed; top: 14px; right: 14px; z-index: 1000; marg
 .case-wall-cta { text-align: center; }
 @media (max-width: 900px) { .case-wall { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .case-wall { grid-template-columns: 1fr; } }
+
+
+/* ============================================================
+   V20: SERVICES 深底卡片标题恢复白色
+   用户点名：蓝色科技背景卡片区 4 个卡片标题（Trade Services /
+   Logistics / Brands & Products / New Energy）当前被 V18 规则
+   (section h3:not([class]) color:#101828 !important) 置黑，
+   在深蓝渐变遮罩上对比度差。仅将 .ih-rail 卡片标题改回白色，
+   不影响其他浅底标题 / 导航 / 页脚 / New Business Lines。
+   ============================================================ */
+.ih-rail .rail-card .rail-body h3 {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(10, 30, 60, 0.35);
+}
