@@ -3,11 +3,11 @@
 (function () {
   'use strict';
   var LANG_KEY = 'auras_lang';
-  var LANGS = ['en', 'zh', 'zh-TW', 'fr', 'es', 'de', 'ar', 'pt', 'ru', 'ja', 'ko', 'it'];
+  var LANGS = ['en', 'zh-TW', 'fr', 'es', 'de', 'ar', 'pt', 'ru', 'ja', 'ko', 'it', 'zh'];
   /* Cross-platform flags via flagcdn.com image URLs (Windows cannot render emoji flag glyphs).
      zh / zh-TW intentionally carry no flag. */
   var FLAG_CODES = { en: 'gb', fr: 'fr', es: 'es', de: 'de', ar: 'sa', pt: 'br', ru: 'ru', ja: 'jp', ko: 'kr', it: 'it' };
-  var NATIVE_NAMES = { en: 'English', zh: '中文', 'zh-TW': '繁體中文', fr: 'Français', es: 'Español', de: 'Deutsch', ar: 'العربية', pt: 'Português', ru: 'Русский', ja: '日本語', ko: '한국어', it: 'Italiano' };
+  var NATIVE_NAMES = { en: 'English', zh: '简体中文', 'zh-TW': '繁體中文', fr: 'Français', es: 'Español', de: 'Deutsch', ar: 'العربية', pt: 'Português', ru: 'Русский', ja: '日本語', ko: '한국어', it: 'Italiano' };
   function flagHTML(l) {
     var code = FLAG_CODES[l];
     if (!code) return '';

@@ -448,3 +448,62 @@ body.auras-ready .auras-reveal.in{transition:opacity .22s var(--ease),transform 
 @media(max-width:992px){.np-body{grid-template-columns:repeat(3,1fr);gap:14px;padding:16px}.np-item-title{white-space:normal}}
 @media(max-width:768px){.np-head{flex-wrap:wrap}.np-flag{font-size:22px;padding:12px 16px}.np-title{font-size:17px;padding:0 12px}.np-more{padding:0 12px;font-size:13px}.np-body{grid-template-columns:1fr;gap:20px;padding:16px}.np-list{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:6px}.np-item{flex:0 0 86%;scroll-snap-align:start}.np-item a{white-space:normal}.np-col-title{margin-bottom:8px}}
 @media(max-width:480px){.np-item{flex:0 0 88%}.np-flag{font-size:19px;padding:10px 12px}.np-title{font-size:15px}.np-item-title{font-size:13.5px}.np-item-date{font-size:11.5px}.np-head{border-radius:10px}.np-body{padding:12px;gap:16px}}
+
+/* ============================================================
+   AURAS 5-site standard upgrade (v19 infra): page loader + language pill
+   Injected from root (04-standard) css/layout.css to keep all sites at
+   the same infrastructure level while preserving each site's own style.
+   ============================================================ */
+/* ---- page loader (white splash, blue logo & bar) ---- */
+body.auras-lock { overflow: hidden; }
+.auras-loader { position: fixed; inset: 0; z-index: 9999; background: #ffffff; display: flex; align-items: center; justify-content: center; transition: opacity 0.38s ease; }
+.auras-loader-inner { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.auras-loader-logo { height: 72px; width: auto; }
+.auras-loader-bar { width: 220px; height: 6px; border-radius: 999px; background: #E9EEF5; overflow: hidden; }
+.auras-loader-bar span { display: block; width: 0; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #008CD6, #00A6E6); animation: auras-loader-grow 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+@keyframes auras-loader-grow { from { width: 0; } to { width: 100%; } }
+.auras-loader-done { opacity: 0; pointer-events: none; visibility: hidden; }
+
+/* ---- v19: custom language dropdown (flagcdn images, cross-platform) ---- */
+.nav-float .lang-item { list-style: none; margin: 0 0 0 8px; padding: 0; flex: 0 0 auto; }
+.lang-custom { position: relative; display: inline-block; }
+.lang-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 38px; padding: 0 14px; font-size: 13px; font-weight: 700; letter-spacing: 0.4px;
+  color: #ffffff; text-shadow: 0 1px 1px rgba(10, 30, 60, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.32); border-radius: 999px;
+  background: linear-gradient(180deg, #277DF4, #1E5FB8);
+  box-shadow: 0 4px 14px rgba(22, 74, 150, 0.30);
+  cursor: pointer; transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+.lang-btn:hover, .lang-btn:focus {
+  box-shadow: 0 6px 18px rgba(39, 125, 244, 0.45);
+  transform: translateY(-1px);
+  outline: 2px solid rgba(39, 125, 244, 0.45); outline-offset: 2px;
+}
+.lang-flag { width: 20px; height: 15px; border-radius: 2px; object-fit: cover; box-shadow: 0 1px 2px rgba(0,0,0,0.25); }
+.lang-caret { font-size: 10px; opacity: 0.9; margin-left: 2px; }
+.lang-menu {
+  position: absolute; top: calc(100% + 8px); right: 0; z-index: 999;
+  min-width: 172px; margin: 0; padding: 6px; list-style: none;
+  background: #ffffff; border: 1px solid rgba(22, 74, 150, 0.14); border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(22, 74, 150, 0.18);
+  display: none;
+}
+.lang-menu.open { display: block; }
+.lang-opt {
+  display: flex; align-items: center; gap: 10px; padding: 8px 12px;
+  font-size: 13px; font-weight: 600; color: #1A2438; border-radius: 8px; cursor: pointer;
+}
+.lang-opt:hover, .lang-opt.active { background: rgba(39, 125, 244, 0.10); color: #164A96; }
+.lang-opt .lang-flag { width: 22px; height: 16px; }
+@media (min-width: 769px) {
+  .nav-float .nav-in .lang-item { margin-left: auto; }
+}
+@media (max-width: 768px) {
+  .nav-float .nav-in .lang-item { margin-left: 0; }
+  .lang-btn { height: 36px; padding: 0 12px; }
+  .lang-menu { right: 0; left: auto; min-width: 152px; }
+}
+/* fallback when no nav host found */
+body > .lang-item { position: fixed; top: 14px; right: 14px; z-index: 1000; margin: 0; }
