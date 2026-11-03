@@ -9,6 +9,18 @@
   };
   ensureSeed();
 
+  /* Dynamic render state - used to re-render news/milestones/announcement
+     in the newly selected language (see auras:langchange listener below). */
+  var newsRenders = {};
+  var timelineRenders = {};
+  var lastDetail = null;
+  var lastAnnounceData = null;
+  var trContainer = function (el) {
+    if (el && window.AURAS_I18N && window.AURAS_I18N.translateContainer) {
+      window.AURAS_I18N.translateContainer(el);
+    }
+  };
+
   /* Navbar mobile toggle */
   document.addEventListener('DOMContentLoaded', function () {
     const tg = document.getElementById('navToggle');
@@ -46,6 +58,8 @@
           '<a class="tag" href="news-detail.html?id=' + n.id + '">' + t('Read More →') + '</a>' +
           '</div></article>';
       }).join('');
+      trContainer(c);
+      newsRenders[containerId] = { list: list || null, limit: limit || 1000 };
     },
 
     /* Render full news detail */
@@ -68,6 +82,8 @@
         '<div class="news-content"><p>' + esc(news.content).replace(/\n/g, '<br>') + '</p></div>' +
         '<a class="btn btn-navy" href="news.html">' + t('← Back to News') + '</a>' +
         '</div>';
+      trContainer(c);
+      lastDetail = containerId;
     },
 
     /* Timeline renderer */
@@ -86,6 +102,8 @@
           '<p class="tl-desc">' + esc(m.description) + '</p>' +
           '</div>';
       }).join('');
+      trContainer(c);
+      timelineRenders[containerId] = { items: items || null };
     },
 
     /* Announcement modal - versioned read-tracking:
@@ -98,6 +116,7 @@
       if (!a || !a.enabled || !a.title) return;
       const mask = document.getElementById('announceModal');
       if (!mask) return;
+      lastAnnounceData = { title: a.title, date: a.date, content: a.content };
       const ver = a.version || 1;
       let viewed = null;
       try { viewed = JSON.parse(localStorage.getItem(ANN_VIEW_KEY) || 'null'); } catch (e) {}
@@ -105,6 +124,7 @@
       document.getElementById('annTitle').textContent = a.title;
       document.getElementById('annDate').textContent = t('Announced: ') + formatDate(a.date);
       document.getElementById('annContent').innerHTML = esc(a.content).replace(/\n/g, '<br>');
+      trContainer(mask);
       const markRead = function () {
         try { localStorage.setItem(ANN_VIEW_KEY, JSON.stringify({ version: ver, read: true })); } catch (e) {}
         mask.classList.remove('show');
@@ -115,6 +135,28 @@
       mask.addEventListener('click', function (e) { if (e.target === mask) markRead(); });
     }
   };
+
+  /* Re-render dynamic content after language switch */
+  window.addEventListener('auras:langchange', function () {
+    Object.keys(newsRenders).forEach(function (id) {
+      const p = newsRenders[id];
+      window.AURAS.renderNewsCards(id, p.list, p.limit);
+    });
+    Object.keys(timelineRenders).forEach(function (id) {
+      const p = timelineRenders[id];
+      window.AURAS.renderTimeline(id, p.items);
+    });
+    if (lastDetail) window.AURAS.renderNewsDetail(lastDetail);
+    if (lastAnnounceData) {
+      const mask = document.getElementById('announceModal');
+      if (mask) {
+        document.getElementById('annTitle').textContent = lastAnnounceData.title;
+        document.getElementById('annDate').textContent = t('Announced: ') + formatDate(lastAnnounceData.date);
+        document.getElementById('annContent').innerHTML = esc(lastAnnounceData.content).replace(/\n/g, '<br>');
+        trContainer(mask);
+      }
+    }
+  });
 })();
 
 
