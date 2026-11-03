@@ -45,7 +45,7 @@
   </div>
 </nav>
 <main>
-  <section class="hero"><div class="hero-bg" style="background-image:url('assets/images/page_02/img_1.jpg')"></div>
+  <section class="hero"><div class="hero-bg" style="background-image:url('assets/images/hangzhou/hero-westlake.jpg')"></div>
     <div class="container"><span class="subtitle">Your Trusted Global Trade Partner</span><h1>Your Trusted Trade Services Partner.<br>From Sourcing to Doorstep, Worldwide.</h1><p style="max-width:640px;margin:14px auto 22px">From trade services and own-brand products to industrial production lines and new energy solutions — we turn your requirements into reliable results.</p>
       <a class="btn btn-gold" href="services.html">Explore Our Services</a> <a class="btn btn-outline" href="contact.html" style="border-color:#fff;color:#fff">Contact Us</a></div>
     <div class="scroll-hint"></div>
@@ -178,6 +178,22 @@
     </div>
   </section>
 
+  <!-- ===== HANGZHOU SHOWCASE (West Lake imagery, apple-blue minimal) ===== -->
+  <section class="section ih-section hz-showcase" aria-label="Hangzhou West Lake">
+    <div class="container">
+      <div class="hz-wrap">
+        <div class="hz-media" style="background-image:url('assets/images/hangzhou/leifeng-pagoda.jpg')" role="img" aria-label="Leifeng Pagoda · Dusk over West Lake"></div>
+        <div class="hz-body">
+          <span class="eyebrow">Hangzhou · West Lake</span>
+          <h2 class="section-title">Where heritage meets the future of trade.</h2>
+          <p class="section-sub" style="max-width:520px;margin:14px 0 22px">From the misty shores of West Lake to global markets — AURAS draws inspiration from Hangzhou's craftsmanship and precision to serve partners worldwide.</p>
+          <a class="btn btn-navy" href="about.html">About AURAS</a>
+          <p class="hz-credit">Photo: Pexels (free license)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="cta"><h2>Ready to grow with AURAS?</h2><p style="max-width:560px;margin:10px auto 22px">Let's talk about trade services, products, production lines or new energy projects.</p><a class="btn btn-gold" href="contact.html">Contact Us</a></div>
 </main>
 <footer class="footer">
@@ -233,16 +249,17 @@ AURAS.initAnnouncement();
 <script>
 (function(){
   function s(x){return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-  function fd(d){if(!d)return '';var t=new Date(d);if(isNaN(t.getTime()))return d;var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[t.getMonth()]+' '+t.getDate()+', '+t.getFullYear();}
+  function fd(d){if(!d)return '';if(window.AURAS_I18N&&AURAS_I18N.date)return AURAS_I18N.date(d);var t=new Date(d);if(isNaN(t.getTime()))return d;var m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return m[t.getMonth()]+' '+t.getDate()+', '+t.getFullYear();}
+  function trSync(x){if(window.AURAS_I18N&&AURAS_I18N.trSync)return AURAS_I18N.trSync(x);return s(x);}
   function renderHeadline(){
     var el=document.getElementById('npHeadline');
     if(!el)return;
     var list=(window.AURAS&&AURAS.getNews)?AURAS.getNews():[];
-    if(!list||!list.length){el.innerHTML='<div class="np-empty">No updates yet. Check back soon.</div>';return;}
+    if(!list||!list.length){el.innerHTML='<div class="np-empty">'+AURAS_I18N.t('No updates yet. Check back soon.')+'</div>';return;}
     var items=list.slice().sort(function(a,b){return (b.date||'').localeCompare(a.date||'');});
     var n=items[0];
-    var cover=n.cover||'assets/images/page_02/img_1.jpg';
-    el.innerHTML='<article class="ih-hl-card"><a class="ih-hl-img" style="background-image:url(\''+s(cover)+'\')" href="news-detail.html?id='+n.id+'" aria-label="'+s(n.title)+'"></a><div class="ih-hl-body"><span class="ih-hl-meta"><span class="cat">'+s(n.category)+'</span><span>'+fd(n.date)+'</span></span><h3><a href="news-detail.html?id='+n.id+'">'+s(n.title)+'</a></h3><p>'+s(n.summary||'')+'</p><a class="btn btn-navy" href="news-detail.html?id='+n.id+'">'+AURAS_I18N.t('Read More →')+'</a></div></article>';
+    var cover=n.cover||'assets/images/hangzhou/hero-westlake.jpg';
+    el.innerHTML='<article class="ih-hl-card"><a class="ih-hl-img" style="background-image:url(\''+s(cover)+'\')" href="news-detail.html?id='+n.id+'" aria-label="'+s(trSync(n.title))+'"></a><div class="ih-hl-body"><span class="ih-hl-meta"><span class="cat">'+s(trSync(n.category))+'</span><span>'+fd(n.date)+'</span></span><h3><a href="news-detail.html?id='+n.id+'">'+s(trSync(n.title))+'</a></h3><p>'+s(trSync(n.summary||''))+'</p><a class="btn btn-navy" href="news-detail.html?id='+n.id+'">'+AURAS_I18N.t('Read More →')+'</a></div></article>';
   }
   function renderPortal(){
     var list=(window.AURAS&&AURAS.getNews)?AURAS.getNews():[];
@@ -256,13 +273,16 @@ AURAS.initAnnouncement();
       var c=cols[k],el=c.el;if(!el)return;
       var items=list.filter(function(n){return c.rules.indexOf(String(n.category||'').toLowerCase())>-1;})
         .sort(function(a,b){return (b.date||'').localeCompare(a.date||'');}).slice(0,4);
-      if(!items.length){el.innerHTML='<li class="np-item"><span class="np-empty">No updates yet. Check back soon.</span></li>';return;}
-      el.innerHTML=items.map(function(n){return '<li class="np-item"><a href="news-detail.html?id='+n.id+'"><span class="np-dot"></span><span class="np-item-title">'+s(n.title)+'</span><span class="np-item-date">'+fd(n.date)+'</span></a></li>';}).join('');
+      if(!items.length){el.innerHTML='<li class="np-item"><span class="np-empty">'+AURAS_I18N.t('No updates yet. Check back soon.')+'</span></li>';return;}
+      el.innerHTML=items.map(function(n){return '<li class="np-item"><a href="news-detail.html?id='+n.id+'"><span class="np-dot"></span><span class="np-item-title">'+s(trSync(n.title))+'</span><span class="np-item-date">'+fd(n.date)+'</span></a></li>';}).join('');
     });
   }
   function ready(fn){if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',fn);}else{fn();}}
   ready(renderHeadline);
   ready(renderPortal);
+  if (document.addEventListener) {
+    document.addEventListener('auras:langchange', function(){ renderHeadline(); renderPortal(); });
+  }
 })();
 </script>
 

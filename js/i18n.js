@@ -38,6 +38,11 @@
     "News & Milestones": { en: "News & Milestones", zh: "新闻与里程碑", fr: "Actualités et jalons", es: "Noticias e hitos", de: "Neuigkeiten und Meilensteine" , 'zh-TW': "新聞與里程碑", 'ar': "الأخبار والمحطات", 'pt': "Notícias e marcos", 'ru': "Новости и вехи", 'ja': "ニュースと沿革", 'ko': "뉴스와 연혁", 'it': "Notizie e tappe"},
     "Seven Sections of Our Story": { en: "Seven Sections of Our Story", zh: "我们的七个篇章", fr: "Sept chapitres de notre histoire", es: "Siete secciones de nuestra historia", de: "Sieben Kapitel unserer Geschichte" , 'zh-TW': "我們的七個篇章", 'ar': "سبعة فصول من قصتنا", 'pt': "Sete seções da nossa história", 'ru': "Семь глав нашей истории", 'ja': "私たちの歩みの七章", 'ko': "우리 이야기의 일곱 장", 'it': "Sette sezioni della nostra storia"},
     "About AURAS": { en: "About AURAS", zh: "关于 AURAS", fr: "À propos d'AURAS", es: "Sobre AURAS", de: "Über AURAS", 'zh-TW': "關於 AURAS", 'ar': "عن أوراس", 'pt': "Sobre a AURAS", 'ru': "Об AURAS", 'ja': "AURAS について", 'ko': "AURAS 소개", 'it': "Informazioni su AURAS" },
+    "Hangzhou · West Lake": { en: "Hangzhou · West Lake", zh: "杭州 · 西湖", fr: "Hangzhou · Lac de l'Ouest", es: "Hangzhou · Lago del Oeste", de: "Hangzhou · Westsee", 'zh-TW': "杭州 · 西湖", 'ar': "هانغتشو · البحيرة الغربية", 'pt': "Hangzhou · Lago Oeste", 'ru': "Ханчжоу · Западное озеро", 'ja': "杭州 · 西湖", 'ko': "항저우 · 서호", 'it': "Hangzhou · Lago dell'Ovest" },
+    "Where heritage meets the future of trade.": { en: "Where heritage meets the future of trade.", zh: "千年文脉，遇见未来贸易。", fr: "Là où l'héritage rencontre l'avenir du commerce.", es: "Donde el legado se encuentra con el futuro del comercio.", de: "Wo Tradition auf die Zukunft des Handels trifft.", 'zh-TW': "千年文脈，遇見未來貿易。", 'ar': "حيث يلتقي التراث بمستقبل التجارة.", 'pt': "Onde o legado encontra o futuro do comércio.", 'ru': "Где наследие встречается с будущим торговли.", 'ja': "伝統と貿易の未来が出会う場所。", 'ko': "유산과 무역의 미래가 만나는 곳.", 'it': "Dove l'eredità incontra il futuro del commercio." },
+    "From the misty shores of West Lake to global markets — AURAS draws inspiration from Hangzhou's craftsmanship and precision to serve partners worldwide.": { en: "From the misty shores of West Lake to global markets — AURAS draws inspiration from Hangzhou's craftsmanship and precision to serve partners worldwide.", zh: "从西湖的潋滟湖光到全球市场——AURAS 汲取杭州匠心与精工精神，为全球伙伴提供优质服务。", fr: "Des rives brumeuses du lac de l'Ouest aux marchés mondiaux — AURAS s'inspire du savoir-faire et de la précision de Hangzhou pour servir ses partenaires dans le monde entier.", es: "Desde las brumosas orillas del lago del Oeste hasta los mercados globales — AURAS se inspira en la artesanía y la precisión de Hangzhou para servir a sus socios en todo el mundo.", de: "Von den nebligen Ufern des Westsees bis zu den globalen Märkten — AURAS schöpft aus Hangzhous Handwerkskunst und Präzision, um Partner weltweit zu bedienen.", 'zh-TW': "從西湖的瀲灩湖光到全球市場——AURAS 汲取杭州匠心與精工精神，為全球夥伴提供優質服務。", 'ar': "من ضفاف بحيرة الغرب الضبابية إلى الأسواق العالمية — تستلهم AURAS من حرفية وتقنية هانغتشو لخدمة الشركاء حول العالم.", 'pt': "Das margens enevoadas do Lago Oeste aos mercados globais — a AURAS inspira-se no artesanato e na precisão de Hangzhou para servir parceiros em todo o mundo.", 'ru': "От туманных берегов Западного озера до мировых рынков — AURAS черпает вдохновение в мастерстве и точности Ханчжоу, чтобы служить партнёрам по всему миру.", 'ja': "西湖の霧のかかった岸辺から世界の市場へ — AURAS は杭州の職人技と精密さからインスピレーションを得て、世界のパートナーにサービスを提供します。", 'ko': "서호의 안개 낀 기슭에서 세계 시장까지 — AURAS는 항저우의 장인 정신과 정밀함에서 영감을 얻어 전 세계 파트너를 위해 서비스를 제공합니다.", 'it': "Dalle rive nebbiose del Lago dell'Ovest ai mercati globali — AURAS trae ispirazione dall'artigianato e dalla precisione di Hangzhou per servire partner in tutto il mondo." },
+    "Leifeng Pagoda · Dusk over West Lake": { en: "Leifeng Pagoda · Dusk over West Lake", zh: "雷峰塔 · 西湖暮色", fr: "Pagode Leifeng · Crépuscule sur le lac de l'Ouest", es: "Pagoda Leifeng · Atardecer sobre el Lago del Oeste", de: "Leifeng-Pagode · Abenddämmerung über dem Westsee", 'zh-TW': "雷峰塔 · 西湖暮色", 'ar': "معبد لايفنغ · الغسق فوق البحيرة الغربية", 'pt': "Pagode Leifeng · Crepúsculo sobre o Lago Oeste", 'ru': "Пагода Лэйфэн · Сумерки над Западным озером", 'ja': "雷峰塔 · 西湖の夕暮れ", 'ko': "레이펑탑 · 서호의 황혼", 'it': "Pagoda Leifeng · Tramonto sul Lago dell'Ovest" },
+    "Photo: Pexels (free license)": { en: "Photo: Pexels (free license)", zh: "图片来源：Pexels（免费授权）", fr: "Photo : Pexels (licence libre)", es: "Foto: Pexels (licencia libre)", de: "Foto: Pexels (freie Lizenz)", 'zh-TW': "圖片來源：Pexels（免費授權）", 'ar': "الصورة: Pexels (ترخيص مجاني)", 'pt': "Foto: Pexels (licença gratuita)", 'ru': "Фото: Pexels (свободная лицензия)", 'ja': "写真：Pexels（フリーライセンス）", 'ko': "사진: Pexels (무료 라이선스)", 'it': "Foto: Pexels (licenza gratuita)" },
     "Latest News": { en: "Latest News", zh: "最新新闻", fr: "Dernières actualités", es: "Últimas noticias", de: "Neueste Nachrichten" , 'zh-TW': "最新新聞", 'ar': "آخر الأخبار", 'pt': "Últimas notícias", 'ru': "Последние новости", 'ja': "最新ニュース", 'ko': "최신 뉴스", 'it': "Ultime notizie"},
     "Explore AURAS": { en: "Explore AURAS", zh: "探索 AURAS", fr: "Découvrir AURAS", es: "Explorar AURAS", de: "AURAS entdecken" , 'zh-TW': "探索 AURAS", 'ar': "استكشف أوراس", 'pt': "Explore a AURAS", 'ru': "Исследуйте AURAS", 'ja': "AURASを探索", 'ko': "AURAS 살펴보기", 'it': "Esplora AURAS"},
     "What We Do": { en: "What We Do", zh: "我们做什么", fr: "Ce que nous faisons", es: "Lo que hacemos", de: "Was wir tun", 'zh-TW': "我們做什麼", 'ar': "ما نقوم به", 'pt': "O que fazemos", 'ru': "Чем мы занимаемся", 'ja': "私たちの事業", 'ko': "우리의 사업", 'it': "Cosa facciamo" },
@@ -326,6 +331,120 @@
 
 };
 
+  /* ==================================================================
+     NEWS_DICT: hand-polished zh / zh-TW translations for runtime
+     dynamic content (news seed, announcements, milestones, portal
+     empty states). Keys are the exact English source strings used by
+     data.js / site.js / index.html inline renderers. Other languages
+     are covered by the gtx / MyMemory API fallback at runtime.
+     ================================================================== */
+  var NEWS_DICT = {
+    /* ---- news categories ---- */
+    "Announcement": { zh: "公告", 'zh-TW': "公告" },
+    "Exhibition": { zh: "展会", 'zh-TW': "展會" },
+    "Corporate": { zh: "企业动态", 'zh-TW': "企業動態" },
+    "New Business": { zh: "新业务", 'zh-TW': "新業務" },
+    "Company": { zh: "公司动态", 'zh-TW': "公司動態" },
+    "Industry": { zh: "行业资讯", 'zh-TW': "行業資訊" },
+    "Media": { zh: "媒体报道", 'zh-TW': "媒體報導" },
+
+    /* ---- news #1 ---- */
+    "AURAS Wins Major Overseas Charging Station Tender": { zh: "AURAS 中标海外大型充电站项目", 'zh-TW': "AURAS 標得海外大型充電站專案" },
+    "AURAS successfully secured a multi-standard DC fast charging station project overseas, marking a new milestone in the new energy business.": { zh: "AURAS 成功中标海外多标准直流快充充电站项目，为新能源业务树立了新的里程碑。", 'zh-TW': "AURAS 成功標得海外多標準直流快充充電站專案，為新能源業務樹立新的里程碑。" },
+    "AURAS INTERNATIONAL LIMITED is pleased to announce that our group has successfully won a major overseas tender for multi-standard DC fast charging stations (60KW-180KW-300KW). The project covers equipment supply, installation guidance and after-sales service. This achievement highlights our growing capability in the new energy sector and our commitment to delivering reliable, future-ready solutions to international partners.": { zh: "AURAS INTERNATIONAL LIMITED 很高兴地宣布：集团已成功中标海外多标准直流快充充电站（60KW-180KW-300KW）大型项目。项目涵盖设备供应、安装指导与售后服务。这一成果彰显了我们在新能源领域不断增强的实力，也体现了我们为国际伙伴交付可靠、面向未来解决方案的承诺。", 'zh-TW': "AURAS INTERNATIONAL LIMITED 很高興地宣布：集團已成功標得海外多標準直流快充充電站（60KW-180KW-300KW）大型專案。專案涵蓋設備供應、安裝指導與售後服務。這項成果彰顯了我們在新能源領域持續增強的实力，也體現了我們為國際夥伴交付可靠、面向未來解決方案的承諾。" },
+
+    /* ---- news #2 ---- */
+    "AURAS Debuts at Canton Fair": { zh: "AURAS 首次亮相广交会", 'zh-TW': "AURAS 首次亮相廣交會" },
+    "AURAS attended the Canton Fair for the first time, opening the door to international trade.": { zh: "AURAS 首次参展广交会，打开了通往国际贸易的大门。", 'zh-TW': "AURAS 首次參展廣交會，打開了通往國際貿易的大門。" },
+    "In October 2007, AURAS attended the Canton Fair for the first time, presenting our trade services and product sourcing capabilities to buyers from around the world. The exhibition was a valuable starting point that helped the company build its first overseas business relationships.": { zh: "2007 年 10 月，AURAS 首次参展广交会，向来自世界各地的采购商展示我们的贸易服务与产品采购能力。这次参展是宝贵的起点，帮助公司建立了首批海外业务关系。", 'zh-TW': "2007 年 10 月，AURAS 首次參展廣交會，向來自世界各地的採購商展示我們的貿易服務與產品採購能力。這次參展是寶貴的起點，幫助公司建立了首批海外業務關係。" },
+
+    /* ---- news #3 ---- */
+    "AURAS at Yiwu Fair": { zh: "AURAS 亮相义乌博览会", 'zh-TW': "AURAS 亮相義烏博覽會" },
+    "AURAS exhibited at the Yiwu International Commodities Fair, expanding its product network.": { zh: "AURAS 参展义乌国际小商品博览会，进一步拓展了产品网络。", 'zh-TW': "AURAS 參展義烏國際小商品博覽會，進一步拓展了產品網絡。" },
+    "AURAS joined the Yiwu Fair to explore broader commodity sourcing channels. Through the fair, we strengthened cooperation with manufacturers across stationery, homeware and industrial products, and expanded our overseas buyer network.": { zh: "AURAS 参加义乌博览会，探索更广泛的商品采购渠道。通过展会，我们与文具、家居用品及工业品领域的制造商加深了合作，并拓展了海外买家网络。", 'zh-TW': "AURAS 參加義烏博覽會，探索更廣泛的商品採購管道。透過展會，我們與文具、家居用品及工業品領域的製造商加深了合作，並拓展了海外買家網絡。" },
+
+    /* ---- news #4 ---- */
+    "AURAS at Algeria Fair": { zh: "AURAS 亮相阿尔及利亚博览会", 'zh-TW': "AURAS 亮相阿爾及利亞博覽會" },
+    "AURAS attended the Algeria International Fair, deepening cooperation in North Africa.": { zh: "AURAS 参展阿尔及利亚国际博览会，深化了在北非地区的合作。", 'zh-TW': "AURAS 參展阿爾及利亞國際博覽會，深化了在北非地區的合作。" },
+    "AURAS participated in the Algeria Fair, meeting partners and buyers from North Africa. The visit reinforced our service coverage in the region and led to long-term cooperation on trade and industrial projects.": { zh: "AURAS 参加阿尔及利亚博览会，与北非的合作伙伴和采购商会面。此行强化了我们在该地区的服务覆盖，并促成了贸易与工业项目的长期合作。", 'zh-TW': "AURAS 參加阿爾及利亞博覽會，與北非的合作夥伴和採購商會面。此行強化了我們在該地區的服務覆蓋，並促成了貿易與工業專案的長期合作。" },
+
+    /* ---- news #5 ---- */
+    "Annual Meeting & Supplier Recognition Ceremony": { zh: "年度大会暨优秀供应商表彰仪式", 'zh-TW': "年度大會暨優秀供應商表揚儀式" },
+    "AURAS held its annual meeting and recognized outstanding suppliers with awards.": { zh: "AURAS 举办年度大会，并表彰了优秀供应商。", 'zh-TW': "AURAS 舉辦年度大會，並表揚了優秀供應商。" },
+    "AURAS held its annual meeting, gathering partners and team members to review the year's achievements. Outstanding suppliers were recognized with awards, strengthening the AURAS supply chain family.": { zh: "AURAS 举办年度大会，合作伙伴与团队成员齐聚一堂，共同回顾一年的成果。大会表彰了优秀供应商，进一步巩固了 AURAS 供应链大家庭。", 'zh-TW': "AURAS 舉辦年度大會，合作夥伴與團隊成員齊聚一堂，共同回顧一年的成果。大會表揚了優秀供應商，進一步鞏固了 AURAS 供應鏈大家庭。" },
+
+    /* ---- news #6 ---- */
+    "AURAS Group Annual Meeting": { zh: "AURAS 集团年度大会", 'zh-TW': "AURAS 集團年度大會" },
+    "The AURAS Group annual meeting celebrated growth and set the strategy for the coming year.": { zh: "AURAS 集团年度大会庆祝业务增长，并制定了来年战略。", 'zh-TW': "AURAS 集團年度大會慶祝業務成長，並制定了來年策略。" },
+    "The AURAS Group annual meeting brought together all business units. The team reviewed strong performance across trade services and new business lines, and set the strategic direction for continued international expansion.": { zh: "AURAS 集团年度大会汇聚各业务单元。团队回顾了贸易服务与新业务线的亮眼表现，并明确了持续拓展国际市场的战略方向。", 'zh-TW': "AURAS 集團年度大會匯聚各業務單元。團隊回顧了貿易服務與新業務線的亮眼表現，並明確了持續拓展國際市場的策略方向。" },
+
+    /* ---- news #7 ---- */
+    "Return to Algeria Fair with New Business Lines": { zh: "携新业务线重返阿尔及利亚博览会", 'zh-TW': "攜新業務線重返阿爾及利亞博覽會" },
+    "AURAS returned to the Algeria Fair, now presenting new energy and project solutions.": { zh: "AURAS 重返阿尔及利亚博览会，带来了新能源与项目解决方案。", 'zh-TW': "AURAS 重返阿爾及利亞博覽會，帶來了新能源與專案解決方案。" },
+    "AURAS returned to the Algeria Fair with an expanded portfolio: trade services, production line projects and the latest new energy solutions including solar, hydrogen and EV charging. The fair marked the launch of our integrated 'trade + project + new energy' offering.": { zh: "AURAS 携更丰富的产品组合重返阿尔及利亚博览会：贸易服务、生产线项目，以及涵盖光伏、氢能与电动汽车充电的最新新能源解决方案。此次参展标志着我们“贸易 + 项目 + 新能源”一体化服务正式亮相。", 'zh-TW': "AURAS 攜更豐富的產品組合重返阿爾及利亞博覽會：貿易服務、生產線專案，以及涵蓋太陽光電、氫能與電動汽車充電的最新新能源解決方案。此次參展標誌著我們「貿易＋專案＋新能源」一體化服務正式亮相。" },
+
+    /* ---- news #8 ---- */
+    "New Energy Business Line Officially Launched": { zh: "新能源业务线正式启动", 'zh-TW': "新能源業務線正式啟動" },
+    "AURAS officially launched its new energy business: EV charging, solar and green hydrogen.": { zh: "AURAS 正式启动新能源业务：电动汽车充电、光伏与绿氢。", 'zh-TW': "AURAS 正式啟動新能源業務：電動汽車充電、太陽光電與綠氫。" },
+    "AURAS officially launched its new energy business line, covering multi-standard DC fast charging stations (60KW-180KW-300KW), solar energy systems, green hydrogen (H2), crude oil and natural gas trade. The new business line creates a complete energy ecosystem for overseas customers.": { zh: "AURAS 正式启动新能源业务线，涵盖多标准直流快充充电站（60KW-180KW-300KW）、光伏发电系统、绿氢（H2）以及原油和天然气贸易。新业务线为海外客户构建了完整的能源生态。", 'zh-TW': "AURAS 正式啟動新能源業務線，涵蓋多標準直流快充充電站（60KW-180KW-300KW）、太陽光電發電系統、綠氫（H2）以及原油和天然氣貿易。新業務線為海外客戶構建了完整的能源生態。" },
+
+    /* ---- announcement ---- */
+    "Major Tender Win - New Energy Project": { zh: "重大中标喜讯——新能源项目", 'zh-TW': "重大標得喜訊——新能源專案" },
+    "AURAS INTERNATIONAL LIMITED proudly announces that we have won a major overseas tender for multi-standard DC fast charging stations (60KW-180KW-300KW). This success opens a new chapter for our new energy business. Contact us to discuss partnership opportunities!": { zh: "AURAS INTERNATIONAL LIMITED 郑重宣布：我们已成功中标海外多标准直流快充充电站（60KW-180KW-300KW）大型项目。这一成功为我们的新能源业务开启了新篇章。欢迎联系我们，洽谈合作机会！", 'zh-TW': "AURAS INTERNATIONAL LIMITED 鄭重宣布：我們已成功標得海外多標準直流快充充電站（60KW-180KW-300KW）大型專案。這項成功為我們的新能源業務開啟了新篇章。歡迎聯繫我們，洽談合作機會！" },
+
+    /* ---- milestones ---- */
+    "Company Founded & First Canton Fair": { zh: "公司成立并首登广交会", 'zh-TW': "公司成立並首登廣交會" },
+    "AURAS was established and attended the Canton Fair for the first time, entering international trade.": { zh: "AURAS 正式成立，并首次参展广交会，踏入国际贸易领域。", 'zh-TW': "AURAS 正式成立，並首次參展廣交會，踏入國際貿易領域。" },
+    "Yiwu Fair Participation": { zh: "参展义乌博览会", 'zh-TW': "參展義烏博覽會" },
+    "Expanded commodity sourcing channels and overseas buyer network at Yiwu Fair.": { zh: "在义乌博览会拓展商品采购渠道与海外买家网络。", 'zh-TW': "在義烏博覽會拓展商品採購管道與海外買家網絡。" },
+    "Algeria Fair Debut": { zh: "首秀阿尔及利亚博览会", 'zh-TW': "首秀阿爾及利亞博覽會" },
+    "Entered the North Africa market through the Algeria International Fair.": { zh: "通过阿尔及利亚国际博览会进入北非市场。", 'zh-TW': "透過阿爾及利亞國際博覽會進入北非市場。" },
+    "Annual Meeting & Supplier Awards": { zh: "年度大会暨供应商表彰", 'zh-TW': "年度大會暨供應商表揚" },
+    "Held annual meeting and recognized outstanding suppliers, strengthening the supply chain.": { zh: "举办年度大会并表彰优秀供应商，进一步巩固供应链体系。", 'zh-TW': "舉辦年度大會並表揚優秀供應商，進一步鞏固供應鏈體系。" },
+    "AURAS Group Annual Meeting": { zh: "AURAS 集团年度大会", 'zh-TW': "AURAS 集團年度大會" },
+    "Group-wide annual meeting set the strategy for international expansion.": { zh: "集团年度大会确立了国际拓展战略。", 'zh-TW': "集團年度大會確立了國際拓展策略。" },
+    "Return to Algeria Fair": { zh: "重返阿尔及利亚博览会", 'zh-TW': "重返阿爾及利亞博覽會" },
+    "Returned to the Algeria Fair presenting new energy solutions and production line projects.": { zh: "重返阿尔及利亚博览会，展示新能源解决方案与生产线项目。", 'zh-TW': "重返阿爾及利亞博覽會，展示新能源解決方案與生產線專案。" },
+    "New Energy Business Launch": { zh: "新能源业务正式启动", 'zh-TW': "新能源業務正式啟動" },
+    "Launched EV charging, solar and green hydrogen business lines.": { zh: "启动电动汽车充电、光伏与绿氢业务线。", 'zh-TW': "啟動電動汽車充電、太陽光電與綠氫業務線。" },
+    "Major Tender Win": { zh: "重大项目中标", 'zh-TW': "重大專案標得" },
+    "Won a major overseas tender for multi-standard DC fast charging stations.": { zh: "中标海外多标准直流快充充电站重大项目。", 'zh-TW': "標得海外多標準直流快充充電站重大專案。" },
+
+    /* ---- portal empty states & misc runtime strings ---- */
+    "No updates yet. Check back soon.": { zh: "暂无更新，敬请期待。", 'zh-TW': "暫無更新，敬請期待。" },
+    "No news published yet. Check back soon.": { zh: "暂无发布的新闻，敬请期待。", 'zh-TW': "暫無發布的新聞，敬請期待。" },
+    "No milestones yet.": { zh: "暂无里程碑记录。", 'zh-TW': "暫無里程碑記錄。" },
+    "News not found.": { zh: "未找到该新闻。", 'zh-TW': "未找到該新聞。" },
+    "Back to News": { zh: "返回新闻列表", 'zh-TW': "返回新聞列表" },
+    "← Back to News": { zh: "← 返回新闻列表", 'zh-TW': "← 返回新聞列表" },
+    "Announced: ": { zh: "公告日期：", 'zh-TW': "公告日期：" },
+    "Full Milestones": { zh: "查看完整历程", 'zh-TW': "查看完整歷程" },
+    "Explore Our Services": { zh: "探索我们的服务", 'zh-TW': "探索我們的服務" },
+    "View Projects": { zh: "查看项目", 'zh-TW': "查看專案" },
+    "Read News": { zh: "阅读新闻", 'zh-TW': "閱讀新聞" },
+    "Good News": { zh: "喜讯", 'zh-TW': "喜訊" },
+    "Close": { zh: "关闭", 'zh-TW': "關閉" },
+
+    /* ---- homepage timeline (static English strings covered by DICT too) ---- */
+    "Canton Fair": { zh: "广交会", 'zh-TW': "廣交會" },
+    "Global sourcing hub where AURAS connects buyers and manufacturers.": { zh: "全球采购枢纽，AURAS 在此连接买家与制造商。", 'zh-TW': "全球採購樞紐，AURAS 在此連接買家與製造商。" },
+    "Yiwu Fair": { zh: "义乌博览会", 'zh-TW': "義烏博覽會" },
+    "Everyday commodities and fast-moving consumer goods sourcing.": { zh: "日用商品与快消品的集中采购地。", 'zh-TW': "日用商品與快消品的集中採購地。" },
+    "Algeria Fair": { zh: "阿尔及利亚博览会", 'zh-TW': "阿爾及利亞博覽會" },
+    "Deepening partnerships across North Africa and the Mediterranean.": { zh: "深化北非与地中海地区的合作伙伴关系。", 'zh-TW': "深化北非與地中海地區的合作夥伴關係。" },
+    "Annual Meetings": { zh: "年度大会", 'zh-TW': "年度大會" },
+    "Bringing global partners together to plan the year ahead.": { zh: "汇聚全球伙伴，共商来年计划。", 'zh-TW': "匯聚全球夥伴，共商來年計畫。" },
+    "Global Cooperation": { zh: "全球合作", 'zh-TW': "全球合作" },
+    "A growing network of factories, logistics and clients worldwide.": { zh: "遍布全球的工厂、物流与客户网络持续壮大。", 'zh-TW': "遍布全球的工廠、物流與客戶網絡持續壯大。" },
+
+    /* ---- Hangzhou showcase section ---- */
+    "Hangzhou · West Lake": { zh: "杭州 · 西湖", 'zh-TW': "杭州 · 西湖" },
+    "Where heritage meets the future of trade.": { zh: "千年文脉，遇见未来贸易。", 'zh-TW': "千年文脈，遇見未來貿易。" },
+    "From the misty shores of West Lake to global markets — AURAS draws inspiration from Hangzhou's craftsmanship and precision to serve partners worldwide.": { zh: "从西湖的潋滟湖光到全球市场——AURAS 汲取杭州匠心与精工精神，为全球伙伴提供优质服务。", 'zh-TW': "從西湖的瀲灩湖光到全球市場——AURAS 汲取杭州匠心與精工精神，為全球夥伴提供優質服務。" },
+    "Leifeng Pagoda · Dusk over West Lake": { zh: "雷峰塔 · 西湖暮色", 'zh-TW': "雷峰塔 · 西湖暮色" },
+    "Photo: Pexels (free license)": { zh: "图片来源：Pexels（免费授权）", 'zh-TW': "圖片來源：Pexels（免費授權）" }
+  };
+
   var HERO = {
     "Your Trusted Trade Services Partner.<br>From Sourcing to Doorstep, Worldwide.": {
       en: "Your Trusted Trade Services Partner.<br>From Sourcing to Doorstep, Worldwide.",
@@ -364,6 +483,7 @@
 
   function applyLang(l) {
     var i;
+    lang = l; // keep internal lang in sync BEFORE any t()/trSync/date calls
     // 1) restore original English text for previously translated elements
     var marked = document.querySelectorAll('[data-i18n]');
     for (i = 0; i < marked.length; i++) {
@@ -409,6 +529,7 @@
     try { localStorage.setItem(LANG_KEY, l); } catch (e) {}
     // notify dynamic renderers (news / milestones / announcement) to re-render
     try { window.dispatchEvent(new CustomEvent('auras:langchange', { detail: { lang: l } })); } catch (e) {}
+    try { document.dispatchEvent(new CustomEvent('auras:langchange', { detail: { lang: l } })); } catch (e) {}
   }
 
   function closeLangMenu() {
@@ -553,14 +674,31 @@
   }
   function trApi(text, target) {
     if (typeof fetch !== 'function') return Promise.resolve(null);
+    var tl = TR_LANG_MAP[target];
     var pairs = trSplit(text, 450);
     var seq = pairs.map(function (p) {
-      return fetch(TR_API + '?q=' + encodeURIComponent(p) + '&langpair=en|' + TR_LANG_MAP[target])
+      /* Channel 1: MyMemory free API (CORS-enabled, reliable in browser) */
+      var mmReq = fetch(TR_API + '?q=' + encodeURIComponent(p) + '&langpair=en|' + tl)
         .then(function (r) { return r.json(); })
         .then(function (j) {
           return (j && j.responseData && j.responseData.translatedText) ? j.responseData.translatedText : null;
         })
         .catch(function () { return null; });
+      /* Channel 2: translate.googleapis.com gtx (unofficial) fallback */
+      var gtxReq = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + tl + '&dt=t&q=' + encodeURIComponent(p))
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (j && Array.isArray(j[0]) && j[0].length) {
+            var out = '';
+            for (var k = 0; k < j[0].length; k++) {
+              if (j[0][k] && j[0][k][0]) out += j[0][k][0];
+            }
+            return out ? out : null;
+          }
+          return null;
+        })
+        .catch(function () { return null; });
+      return mmReq.then(function (m) { return m != null ? m : gtxReq; });
     });
     return Promise.all(seq).then(function (outs) {
       for (var i = 0; i < outs.length; i++) if (outs[i] == null) return null;
@@ -578,6 +716,7 @@
     var t = text.trim();
     if (target === 'en' || trIsSkippable(t)) return Promise.resolve(t);
     if (DICT[t] && DICT[t][target] != null) return Promise.resolve(DICT[t][target]);
+    if (NEWS_DICT[t] && NEWS_DICT[t][target] != null) return Promise.resolve(NEWS_DICT[t][target]);
     var cached = trGetCache(target, t);
     if (cached != null) return Promise.resolve(cached);
     return trApi(t, target).then(function (out) {
@@ -608,6 +747,7 @@
       var t = val.trim();
       if (trIsSkippable(t)) continue;
       if (DICT[t] && DICT[t][target] != null) { node.nodeValue = DICT[t][target]; continue; }
+      if (NEWS_DICT[t] && NEWS_DICT[t][target] != null) { node.nodeValue = NEWS_DICT[t][target]; continue; }
       var cached = trGetCache(target, t);
       if (cached != null) { node.nodeValue = cached; continue; }
       jobs.push({ node: node, text: t });
@@ -625,10 +765,38 @@
   }
 
   /* Expose dynamic translate helper for runtime-rendered strings (site.js) */
+  /* Synchronous translate for runtime-rendered strings (site.js / inline
+     renderers): zh & zh-TW resolve instantly from NEWS_DICT; other
+     languages return the English source immediately and are upgraded
+     asynchronously by translateContainer through gtx / MyMemory. */
+  function trSync(text) {
+    var s = String(text == null ? '' : text);
+    if (lang === 'en') return s;
+    if (NEWS_DICT[s] && NEWS_DICT[s][lang] != null) return NEWS_DICT[s][lang];
+    var cached = trGetCache(lang, s);
+    if (cached != null) return cached;
+    return s;
+  }
+
+  /* Localized date: zh / zh-TW -> "2026年9月28日", others -> "Sep 28, 2026" */
+  function trDate(d) {
+    if (!d) return '';
+    var t = new Date(d);
+    if (isNaN(t.getTime())) return d;
+    if (lang === 'zh' || lang === 'zh-TW') {
+      return t.getFullYear() + '年' + (t.getMonth() + 1) + '月' + t.getDate() + '日';
+    }
+    var m = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return m[t.getMonth()] + ' ' + t.getDate() + ', ' + t.getFullYear();
+  }
+
   window.AURAS_I18N = {
     t: function (s) {
       return (DICT[s] && DICT[s][lang]) ? DICT[s][lang] : s;
     },
+    trSync: trSync,
+    trText: trText,
+    date: trDate,
     lang: function () { return lang; },
     translateContainer: translateContainer
   };

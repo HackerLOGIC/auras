@@ -3,9 +3,15 @@
    Navbar, news list/detail rendering, announcement modal
    ============================================================ */
 (function () {
-  /* i18n helper: prefer AURAS_I18N.t once loaded; fall back to raw string */
+  /* i18n helper: prefer AURAS_I18N.trSync (offline zh/zh-TW dict for
+     dynamic strings), fall back to AURAS_I18N.t / raw string. */
   var t = function (s) {
+    if (window.AURAS_I18N && window.AURAS_I18N.trSync) return window.AURAS_I18N.trSync(s);
     return (window.AURAS_I18N && window.AURAS_I18N.t) ? window.AURAS_I18N.t(s) : s;
+  };
+  /* Localized date: zh / zh-TW show "2026年9月28日", others keep English */
+  var fmtDate = function (d) {
+    return (window.AURAS_I18N && window.AURAS_I18N.date) ? window.AURAS_I18N.date(d) : formatDate(d);
   };
   ensureSeed();
 
@@ -52,9 +58,9 @@
         return '<article class="card news-item">' +
           '<a class="card-img" style="background-image:url(\'' + cover + '\')" href="news-detail.html?id=' + n.id + '"></a>' +
           '<div class="card-body">' +
-          '<div class="news-meta"><span class="cat">' + esc(n.category) + '</span><span>' + formatDate(n.date) + '</span></div>' +
-          '<h3><a href="news-detail.html?id=' + n.id + '">' + esc(n.title) + '</a></h3>' +
-          '<p>' + esc(n.summary) + '</p>' +
+          '<div class="news-meta"><span class="cat">' + esc(t(n.category)) + '</span><span>' + fmtDate(n.date) + '</span></div>' +
+          '<h3><a href="news-detail.html?id=' + n.id + '">' + esc(t(n.title)) + '</a></h3>' +
+          '<p>' + esc(t(n.summary)) + '</p>' +
           '<a class="tag" href="news-detail.html?id=' + n.id + '">' + t('Read More →') + '</a>' +
           '</div></article>';
       }).join('');
@@ -76,10 +82,10 @@
       const cover = news.cover || IMG + 'page_02/img_1.jpg';
       c.innerHTML =
         '<div class="news-detail">' +
-        '<div class="news-meta"><span class="cat">' + esc(news.category) + '</span><span>' + formatDate(news.date) + '</span></div>' +
-        '<h1>' + esc(news.title) + '</h1>' +
-        '<img src="' + cover + '" alt="' + esc(news.title) + '">' +
-        '<div class="news-content"><p>' + esc(news.content).replace(/\n/g, '<br>') + '</p></div>' +
+        '<div class="news-meta"><span class="cat">' + esc(t(news.category)) + '</span><span>' + fmtDate(news.date) + '</span></div>' +
+        '<h1>' + esc(t(news.title)) + '</h1>' +
+        '<img src="' + cover + '" alt="' + esc(t(news.title)) + '">' +
+        '<div class="news-content"><p>' + esc(t(news.content)).replace(/\n/g, '<br>') + '</p></div>' +
         '<a class="btn btn-navy" href="news.html">' + t('← Back to News') + '</a>' +
         '</div>';
       trContainer(c);
@@ -98,8 +104,8 @@
       c.innerHTML = list.map(function (m) {
         return '<div class="tl-item">' +
           '<div class="tl-year">' + esc(m.year) + '</div>' +
-          '<h3 class="tl-title">' + esc(m.title) + '</h3>' +
-          '<p class="tl-desc">' + esc(m.description) + '</p>' +
+          '<h3 class="tl-title">' + esc(t(m.title)) + '</h3>' +
+          '<p class="tl-desc">' + esc(t(m.description)) + '</p>' +
           '</div>';
       }).join('');
       trContainer(c);
@@ -121,9 +127,9 @@
       let viewed = null;
       try { viewed = JSON.parse(localStorage.getItem(ANN_VIEW_KEY) || 'null'); } catch (e) {}
       if (viewed && viewed.version === ver && viewed.read) return; // already seen this version
-      document.getElementById('annTitle').textContent = a.title;
-      document.getElementById('annDate').textContent = t('Announced: ') + formatDate(a.date);
-      document.getElementById('annContent').innerHTML = esc(a.content).replace(/\n/g, '<br>');
+      document.getElementById('annTitle').textContent = t(a.title);
+      document.getElementById('annDate').textContent = t('Announced: ') + fmtDate(a.date);
+      document.getElementById('annContent').innerHTML = esc(t(a.content)).replace(/\n/g, '<br>');
       trContainer(mask);
       const markRead = function () {
         try { localStorage.setItem(ANN_VIEW_KEY, JSON.stringify({ version: ver, read: true })); } catch (e) {}
@@ -150,9 +156,9 @@
     if (lastAnnounceData) {
       const mask = document.getElementById('announceModal');
       if (mask) {
-        document.getElementById('annTitle').textContent = lastAnnounceData.title;
-        document.getElementById('annDate').textContent = t('Announced: ') + formatDate(lastAnnounceData.date);
-        document.getElementById('annContent').innerHTML = esc(lastAnnounceData.content).replace(/\n/g, '<br>');
+        document.getElementById('annTitle').textContent = t(lastAnnounceData.title);
+        document.getElementById('annDate').textContent = t('Announced: ') + fmtDate(lastAnnounceData.date);
+        document.getElementById('annContent').innerHTML = esc(t(lastAnnounceData.content)).replace(/\n/g, '<br>');
         trContainer(mask);
       }
     }

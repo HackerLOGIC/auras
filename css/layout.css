@@ -1527,3 +1527,43 @@ body > .lang-item { position: fixed; top: 14px; right: 14px; z-index: 1000; marg
   color: #ffffff !important;
   text-shadow: 0 1px 3px rgba(10, 30, 60, 0.35);
 }
+
+/* ============================================================
+   HANGZHOU SHOWCASE (West Lake imagery, apple-blue minimal)
+   ============================================================ */
+.hz-showcase {
+  background: linear-gradient(180deg, #F3F8FF 0%, #FFFFFF 100%);
+  padding: 96px 0;
+}
+.hz-wrap {
+  display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center;
+  max-width: 1080px; margin: 0 auto;
+}
+.hz-media {
+  border-radius: 24px; min-height: 420px;
+  background-size: cover; background-position: center;
+  box-shadow: 0 24px 60px rgba(20, 60, 120, 0.18);
+  position: relative; overflow: hidden;
+}
+.hz-media::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(22, 74, 150, 0) 55%, rgba(10, 30, 60, 0.25) 100%);
+  pointer-events: none;
+}
+.hz-body { text-align: left; }
+.hz-body .eyebrow { margin-bottom: 10px; }
+.hz-body .section-title { margin: 6px 0 0; text-align: left; }
+.hz-body .section-sub { text-align: left; }
+.hz-credit {
+  margin-top: 18px; font-size: 12px; color: #8FA3BE;
+  letter-spacing: 0.3px;
+}
+@media (max-width: 900px) {
+  .hz-wrap { grid-template-columns: 1fr; gap: 28px; }
+  .hz-media { min-height: 320px; }
+  .hz-showcase { padding: 72px 0; }
+}
+@media (max-width: 560px) {
+  .hz-media { min-height: 240px; border-radius: 18px; }
+  .hz-showcase { padding: 56px 0; }
+}
