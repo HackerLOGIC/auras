@@ -1,0 +1,136 @@
+/* ==========================================================================
+   AURAS · Hangzhou Landmark Hero Carousel
+   首页 Hero 背景多图轮播（西湖 / 雷峰塔 / 六和塔 / 钱塘江 / 市民中心 / 城市阳台夜景）
+   仅负责轮播图层的叠放、淡入淡出与指示点，不改动原有蓝色渐变遮罩与首屏文案样式
+   ========================================================================== */
+
+/* 让指示点与图片层都以 hero 自身为定位基准，避免窄屏下指示点溢出视口 */
+.hero {
+  position: relative;
+}
+
+.hero .hero-bg.hero-carousel {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  opacity: .86 !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  background-image: none !important;
+  z-index: 0;
+}
+
+/* 覆盖原有的粉色/白色通铺遮罩：改为「中央柔光 + 四周透出照片」，
+   既保证深蓝色首屏文案在任意照片（含夜间城市）上都清晰可读，
+   又让周边地标细节透出，形成沉浸感。 */
+.hero .hero-bg.hero-carousel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background:
+    radial-gradient(56% 50% at 50% 44%,
+      rgba(255, 255, 255, .82) 0%,
+      rgba(255, 255, 255, .62) 40%,
+      rgba(255, 255, 255, .26) 68%,
+      rgba(255, 255, 255, 0) 90%),
+    linear-gradient(180deg,
+      rgba(255, 255, 255, .40) 0%,
+      rgba(255, 255, 255, .08) 32%,
+      rgba(10, 25, 45, .16) 100%) !important;
+}
+
+/* 深蓝色文案在照片上叠一层极淡白色光晕，进一步提升安全对比度 */
+.hero .container h1,
+.hero .container .subtitle,
+.hero .container p {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, .70), 0 2px 18px rgba(255, 255, 255, .50);
+}
+
+.hero-carousel .hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1400ms cubic-bezier(.22, .61, .36, 1);
+  will-change: opacity, transform;
+  transform: scale(1.02);
+  backface-visibility: hidden;
+}
+
+.hero-carousel .hero-slide.is-active {
+  opacity: 1;
+  animation: hzHeroKenBurns 18s ease-out both;
+}
+
+@keyframes hzHeroKenBurns {
+  from { transform: scale(1.02); }
+  to   { transform: scale(1.09); }
+}
+
+/* ---------- 指示点 ---------- */
+.hero .hero-dots {
+  position: absolute;
+  right: 56px;
+  bottom: 46px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .58);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+  box-shadow: 0 4px 16px rgba(13, 26, 43, .10);
+}
+
+.hero .hero-dot {
+  width: 34px;
+  height: 3px;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background: rgba(22, 74, 150, .22);
+  cursor: pointer;
+  transition: background-color .35s ease, width .35s ease, opacity .35s ease;
+}
+
+.hero .hero-dot:hover { background: rgba(22, 74, 150, .45); }
+
+.hero .hero-dot.is-active {
+  width: 54px;
+  background: #164a96;
+}
+
+.hero .hero-dot:focus-visible {
+  outline: 2px solid #277df4;
+  outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  /* 移动端顶部有 89px 固定公告条，hero 起点下移，指示点需上提才能落在首屏内 */
+  .hero .hero-dots { right: 24px; bottom: 104px; gap: 8px; }
+  .hero .hero-dot { width: 26px; }
+  .hero .hero-dot.is-active { width: 40px; }
+}
+
+/* 与站点原有断点保持一致：≤375px 时原设计即隐藏 hero 背景图 */
+@media (max-width: 375px) {
+  .hero .hero-bg.hero-carousel { display: none; }
+}
+
+/* 平板与手机：收拢指示点，避免压住文案 */
+@media (max-width: 640px) {
+  .hero .hero-dots { right: 18px; bottom: 96px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-carousel .hero-slide { transition-duration: 0ms; }
+  .hero-carousel .hero-slide.is-active { animation: none; }
+}
