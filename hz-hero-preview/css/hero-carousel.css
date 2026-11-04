@@ -136,3 +136,31 @@
   .hero-carousel .hero-slide { transition-duration: 0ms; }
   .hero-carousel .hero-slide.is-active { animation: none; }
 }
+
+
+/* ===== V2：首页两个 CTA 按钮下移至 Hero 下方 ===== */
+.hero { position: relative; }
+.hero .container.hero-cta-bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 116px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1120px;
+  margin: 0;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  z-index: 6;
+  text-align: center;
+}
+.hero .container.hero-cta-bottom::before { content: none; }
+@media (max-width: 900px) {
+  .hero .container.hero-cta-bottom { bottom: 152px; gap: 12px; }
+}
+@media (max-width: 640px) {
+  .hero .container.hero-cta-bottom { bottom: 140px; padding: 0 18px; }
+}
