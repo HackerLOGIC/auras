@@ -164,3 +164,20 @@
 @media (max-width: 640px) {
   .hero .container.hero-cta-bottom { bottom: 140px; padding: 0 18px; }
 }
+
+
+/* ===== V3：清除 CTA 区域多出的浅色/不透明横条 ===== */
+.hero .container.hero-cta-bottom,
+.hero .container.hero-cta-bottom::before,
+.hero .container.hero-cta-bottom::after {
+  background: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  border-radius: 0 !important;
+}
+.hero .container.hero-cta-bottom::before,
+.hero .container.hero-cta-bottom::after { content: none !important; display: none !important; }
