@@ -1,55 +1,33 @@
 /* ==========================================================================
-   AURAS · Hangzhou Landmark Hero Carousel
-   首页 Hero 背景多图轮播（西湖 / 雷峰塔 / 六和塔 / 钱塘江 / 市民中心 / 城市阳台夜景）
-   仅负责轮播图层的叠放、淡入淡出与指示点，不改动原有蓝色渐变遮罩与首屏文案样式
+   AURAS · Hangzhou Landmark Hero Carousel  (V5)
+   首屏：6 张杭州现代地标实拍全屏轮播，照片原色直出，不做任何蒙版压暗。
+   版式：hero 内不保留标题 / 副标题 / 说明文字 / 滚动提示，只留两枚胶囊玻璃 CTA。
    ========================================================================== */
 
-/* 让指示点与图片层都以 hero 自身为定位基准，避免窄屏下指示点溢出视口 */
+/* ---------- 1. Hero 容器 ---------- */
 .hero {
   position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #0b1220;
 }
 
+/* ---------- 2. 轮播图层：照片原色呈现 ---------- */
 .hero .hero-bg.hero-carousel {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
   overflow: hidden;
-  opacity: .95 !important;
+  opacity: 1 !important;
+  filter: none !important;
   -webkit-mask-image: none !important;
   mask-image: none !important;
   background-image: none !important;
   z-index: 0;
-}
-
-/* 覆盖原有的粉色/白色通铺遮罩：改为「中央柔光 + 四周透出照片」，
-   既保证深蓝色首屏文案在任意照片（含夜间城市）上都清晰可读，
-   又让周边地标细节透出，形成沉浸感。 */
-.hero .hero-bg.hero-carousel::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  pointer-events: none;
-  background:
-    radial-gradient(64% 60% at 50% 46%,
-      rgba(6, 20, 44, .56) 0%,
-      rgba(6, 20, 44, .36) 50%,
-      rgba(6, 20, 44, .12) 74%,
-      rgba(6, 20, 44, 0) 92%),
-    linear-gradient(180deg,
-      rgba(5, 18, 40, .30) 0%,
-      rgba(5, 18, 40, .10) 30%,
-      rgba(5, 18, 40, .34) 100%) !important;
-}
-
-/* 深蓝色文案在照片上叠一层极淡白色光晕，进一步提升安全对比度 */
-.hero .container h1,
-.hero .container .subtitle,
-.hero .container p,
-.hero .container .btn-outline {
-  color: #FFFFFF !important;
-  text-shadow: 0 1px 3px rgba(3, 14, 32, .58), 0 8px 28px rgba(3, 14, 32, .46) !important;
 }
 
 .hero-carousel .hero-slide {
@@ -59,125 +37,209 @@
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: opacity 1400ms cubic-bezier(.22, .61, .36, 1);
+  transition: opacity 1600ms cubic-bezier(.4, 0, .2, 1);
   will-change: opacity, transform;
-  transform: scale(1.02);
+  transform: scale(1.005);
   backface-visibility: hidden;
 }
 
 .hero-carousel .hero-slide.is-active {
   opacity: 1;
-  animation: hzHeroKenBurns 18s ease-out both;
+  animation: hzHeroKenBurns 26s ease-out both;
 }
 
+/* Ken Burns 弱化：仅极轻微推进，避免高清照片发虚 */
 @keyframes hzHeroKenBurns {
-  from { transform: scale(1.02); }
-  to   { transform: scale(1.09); }
+  from { transform: scale(1.005); }
+  to   { transform: scale(1.035); }
 }
 
-/* ---------- 指示点 ---------- */
-.hero .hero-dots {
-  position: absolute;
-  right: 56px;
-  bottom: 46px;
-  z-index: 4;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 9px 13px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, .58);
-  -webkit-backdrop-filter: blur(12px) saturate(140%);
-  backdrop-filter: blur(12px) saturate(140%);
-  box-shadow: 0 4px 16px rgba(13, 26, 43, .10);
+/* ---------- 3. 彻底清除任何蒙版 / 渐变 / 遮罩图层 ---------- */
+.hero::before,
+.hero::after,
+.hero .hero-bg.hero-carousel::before,
+.hero .hero-bg.hero-carousel::after,
+.hero .hero-carousel::before,
+.hero .hero-carousel::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
 }
 
-.hero .hero-dot {
-  width: 34px;
-  height: 3px;
-  padding: 0;
-  border: 0;
-  border-radius: 2px;
-  background: rgba(22, 74, 150, .22);
-  cursor: pointer;
-  transition: background-color .35s ease, width .35s ease, opacity .35s ease;
+/* 兼容旧主题在 .hero 上的伪元素渐变 */
+.hero-bg::after,
+.hero-bg::before {
+  content: none !important;
+  display: none !important;
+  background: none !important;
 }
 
-.hero .hero-dot:hover { background: rgba(22, 74, 150, .45); }
-
-.hero .hero-dot.is-active {
-  width: 54px;
-  background: #164a96;
-}
-
-.hero .hero-dot:focus-visible {
-  outline: 2px solid #277df4;
-  outline-offset: 4px;
-}
-
-@media (max-width: 900px) {
-  /* 移动端顶部有 89px 固定公告条，hero 起点下移，指示点需上提才能落在首屏内 */
-  .hero .hero-dots { right: 24px; bottom: 104px; gap: 8px; }
-  .hero .hero-dot { width: 26px; }
-  .hero .hero-dot.is-active { width: 40px; }
-}
-
-/* 与站点原有断点保持一致：≤375px 时原设计即隐藏 hero 背景图 */
-@media (max-width: 375px) {
-  .hero .hero-bg.hero-carousel { display: none; }
-}
-
-/* 平板与手机：收拢指示点，避免压住文案 */
-@media (max-width: 640px) {
-  .hero .hero-dots { right: 18px; bottom: 96px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-carousel .hero-slide { transition-duration: 0ms; }
-  .hero-carousel .hero-slide.is-active { animation: none; }
-}
-
-
-/* ===== V2：首页两个 CTA 按钮下移至 Hero 下方 ===== */
-.hero { position: relative; }
+/* ---------- 4. CTA 区：只保留两枚胶囊玻璃按钮 ---------- */
 .hero .container.hero-cta-bottom {
-  position: absolute;
-  left: 50%;
-  bottom: 116px;
-  transform: translateX(-50%);
+  position: relative;
+  left: auto;
+  bottom: auto;
+  transform: none;
   width: 100%;
   max-width: 1120px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 16px;
   z-index: 6;
   text-align: center;
-}
-.hero .container.hero-cta-bottom::before { content: none; }
-@media (max-width: 900px) {
-  .hero .container.hero-cta-bottom { bottom: 152px; gap: 12px; }
-}
-@media (max-width: 640px) {
-  .hero .container.hero-cta-bottom { bottom: 140px; padding: 0 18px; }
-}
-
-
-/* ===== V3：清除 CTA 区域多出的浅色/不透明横条 ===== */
-.hero .container.hero-cta-bottom,
-.hero .container.hero-cta-bottom::before,
-.hero .container.hero-cta-bottom::after {
   background: none !important;
-  background-image: none !important;
-  background-color: transparent !important;
   border: 0 !important;
   box-shadow: none !important;
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
-  border-radius: 0 !important;
 }
+
 .hero .container.hero-cta-bottom::before,
-.hero .container.hero-cta-bottom::after { content: none !important; display: none !important; }
+.hero .container.hero-cta-bottom::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* 隐藏 hero 内一切文字元素（标题 / 副标题 / 段落 / 说明） */
+.hero h1,
+.hero h2,
+.hero .subtitle,
+.hero .eyebrow,
+.hero p,
+.hero .scroll-hint {
+  display: none !important;
+}
+
+/* ---------- 5. 胶囊玻璃按钮 ---------- */
+.hero .hero-cta-bottom .btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 184px;
+  height: 52px;
+  padding: 0 32px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, .16) !important;
+  border: 1px solid rgba(255, 255, 255, .55) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  backdrop-filter: blur(18px) saturate(180%);
+  box-shadow:
+    0 8px 30px rgba(6, 16, 34, .28),
+    inset 0 1px 0 rgba(255, 255, 255, .38);
+  text-shadow: 0 1px 2px rgba(6, 16, 34, .35);
+  transition: transform .32s cubic-bezier(.4, 0, .2, 1),
+              background-color .32s ease,
+              box-shadow .32s ease,
+              border-color .32s ease;
+  overflow: hidden;
+}
+
+/* 主按钮：更实一点，仍保持玻璃质感 */
+.hero .hero-cta-bottom .btn.btn-gold {
+  background: rgba(255, 255, 255, .26) !important;
+  border-color: rgba(255, 255, 255, .72) !important;
+}
+
+.hero .hero-cta-bottom .btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, .32) !important;
+  border-color: rgba(255, 255, 255, .85) !important;
+  box-shadow:
+    0 14px 40px rgba(6, 16, 34, .34),
+    inset 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+.hero .hero-cta-bottom .btn:active { transform: translateY(0); }
+
+.hero .hero-cta-bottom .btn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, .95);
+  outline-offset: 4px;
+}
+
+/* ---------- 6. 指示点 ---------- */
+.hero .hero-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 42px;
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .14);
+  border: 1px solid rgba(255, 255, 255, .38);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
+  backdrop-filter: blur(16px) saturate(170%);
+  box-shadow: 0 6px 22px rgba(6, 16, 34, .22);
+}
+
+.hero .hero-dot {
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .45);
+  cursor: pointer;
+  transition: background-color .35s ease, width .35s ease, opacity .35s ease;
+}
+
+.hero .hero-dot:hover { background: rgba(255, 255, 255, .75); }
+
+.hero .hero-dot.is-active {
+  width: 48px;
+  background: #ffffff;
+}
+
+.hero .hero-dot:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* ---------- 7. 响应式 ---------- */
+@media (max-width: 1024px) {
+  .hero { min-height: 82vh; }
+}
+
+@media (max-width: 900px) {
+  .hero { min-height: 76vh; }
+  .hero .hero-cta-bottom { gap: 12px; padding: 0 22px; }
+  .hero .hero-cta-bottom .btn { min-width: 158px; height: 48px; padding: 0 26px; font-size: 14px; }
+  .hero .hero-dots { bottom: 34px; gap: 8px; padding: 8px 13px; }
+  .hero .hero-dot { width: 24px; }
+  .hero .hero-dot.is-active { width: 38px; }
+}
+
+@media (max-width: 640px) {
+  .hero { min-height: 70vh; }
+  .hero .hero-cta-bottom { flex-direction: column; gap: 12px; }
+  .hero .hero-cta-bottom .btn { width: 100%; max-width: 300px; }
+  .hero .hero-dots { bottom: 26px; }
+}
+
+@media (max-width: 375px) {
+  /* 极窄屏保留照片（JPEG 已压缩，成本低），仅调整按钮 */
+  .hero .hero-cta-bottom { padding: 0 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-carousel .hero-slide { transition-duration: 0ms; }
+  .hero-carousel .hero-slide.is-active { animation: none; }
+  .hero .hero-cta-bottom .btn { transition: none; }
+}
