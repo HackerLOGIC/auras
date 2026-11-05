@@ -63,20 +63,29 @@
     if (document.hidden) { stop(); } else { start(); }
   });
 
-  // 预热后续图片，避免首轮切换出现空白
+  // 图片加载优化：首图由 <link rel="preload"> 高优先级加载；
+  // 第二张在首屏稳定后立即预热，其余按 700ms 间隔错峰预热，避免 8 张原图同时抢带宽造成白屏。
+  function bgUrl(slide) {
+    var bg = (slide && slide.style.backgroundImage) || '';
+    var m = bg.match(/url\(['"]?([^'")]+)['"]?\)/);
+    return m ? m[1] : '';
+  }
+  function preloadImage(src) {
+    if (!src) return;
+    var img = new Image();
+    img.decoding = 'async';
+    img.src = src;
+  }
   function preload() {
-    slides.slice(1).forEach(function (s) {
-      var bg = s.style.backgroundImage || '';
-      var m = bg.match(/url\(['"]?([^'")]+)['"]?\)/);
-      if (!m) return;
-      var img = new Image();
-      img.src = m[1];
+    preloadImage(bgUrl(slides[1]));
+    slides.slice(2).forEach(function (s, i) {
+      window.setTimeout(function () { preloadImage(bgUrl(s)); }, 700 * (i + 1));
     });
   }
   if ('requestIdleCallback' in window) {
-    window.requestIdleCallback(preload, { timeout: 2500 });
+    window.requestIdleCallback(preload, { timeout: 2000 });
   } else {
-    window.setTimeout(preload, 1200);
+    window.setTimeout(preload, 900);
   }
 
   start();

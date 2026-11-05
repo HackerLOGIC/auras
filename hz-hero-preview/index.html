@@ -13,7 +13,8 @@
 <link rel="stylesheet" href="css/style.css?v5m=1">
 <link rel="stylesheet" href="css/v2-theme.css?v5m=1">
 <link rel="stylesheet" href="css/layout.css?v=10" />
-  <link rel="stylesheet" href="css/hero-carousel.css?v=12">
+  <link rel="stylesheet" href="css/hero-carousel.css?v=13">
+  <link rel="preload" as="image" href="assets/images/hangzhou/hero-cbd-skyline.jpg" fetchpriority="high">
 </head>
 <body>
 <!-- Page Loader -->
@@ -49,18 +50,20 @@
 <main>
   <section class="hero hero-plain">
     <div class="hero-bg hero-carousel" id="heroCarousel">
-      <div class="hero-slide is-active" data-name="杭州之门 · Hangzhou Gate" style="background-image:url('assets/images/hangzhou/hero-hangzhou-gate.jpg')"></div>
-      <div class="hero-slide" data-name="来福士中心 · Raffles City" style="background-image:url('assets/images/hangzhou/hero-raffles-city.jpg')"></div>
-      <div class="hero-slide" data-name="钱江新城 CBD · Qianjiang New City" style="background-image:url('assets/images/hangzhou/hero-cbd-skyline.jpg')"></div>
-      <div class="hero-slide" data-name="市民中心 · Civic Center" style="background-image:url('assets/images/hangzhou/hero-civic-center.jpg')"></div>
-      <div class="hero-slide" data-name="城市阳台夜景 · City Balcony" style="background-image:url('assets/images/hangzhou/hero-city-balcony.jpg')"></div>
-      <div class="hero-slide" data-name="西湖 · West Lake" style="background-image:url('assets/images/hangzhou/hero-westlake.jpg')"></div>
+      <div class="hero-slide is-active" data-name="钱江新城 CBD · Qianjiang New City" style="background-image:url('assets/images/hangzhou/hero-cbd-skyline.jpg')"></div>
+      <div class="hero-slide" data-name="钱塘江大桥 · Qiantang River Bridge" style="background-image:url('assets/images/hangzhou/hero-qiantang-bridge.jpg')"></div>
+      <div class="hero-slide" data-name="杭州城市夜景 · Hangzhou at Night" style="background-image:url('assets/images/hangzhou/hero-city-night.jpg')"></div>
+      <div class="hero-slide" data-name="杭州城市地标 · Hangzhou Landmark" style="background-image:url('assets/images/hangzhou/hero-city-landmark.jpg')"></div>
+      <div class="hero-slide" data-name="古塔 · Ancient Pagoda" style="background-image:url('assets/images/hangzhou/hero-ancient-pagoda.jpg')"></div>
+      <div class="hero-slide" data-name="雷峰塔 · Leifeng Pagoda" style="background-image:url('assets/images/hangzhou/hero-leifeng-pagoda.jpg')"></div>
+      <div class="hero-slide" data-name="西湖亭台 · West Lake Pavilion" style="background-image:url('assets/images/hangzhou/hero-lake-pavilion.jpg')"></div>
+      <div class="hero-slide" data-name="钱江新城夜景 · CBD at Night" style="background-image:url('assets/images/hangzhou/hero-cbd-night.jpg')"></div>
     </div>
     <div class="container hero-cta-bottom">
       <a class="btn btn-gold" href="services.html">Explore Our Services</a>
       <a class="btn btn-outline" href="contact.html">Contact Us</a>
     </div>
-    <div class="hero-dots" id="heroDots" role="tablist" aria-label="Hangzhou landmark carousel"><button class="hero-dot is-active" type="button" role="tab" aria-label="杭州之门 · Hangzhou Gate" aria-selected="true" data-index="0"></button><button class="hero-dot" type="button" role="tab" aria-label="来福士中心 · Raffles City" aria-selected="false" data-index="1"></button><button class="hero-dot" type="button" role="tab" aria-label="钱江新城 CBD · Qianjiang New City" aria-selected="false" data-index="2"></button><button class="hero-dot" type="button" role="tab" aria-label="市民中心 · Civic Center" aria-selected="false" data-index="3"></button><button class="hero-dot" type="button" role="tab" aria-label="城市阳台夜景 · City Balcony" aria-selected="false" data-index="4"></button><button class="hero-dot" type="button" role="tab" aria-label="西湖 · West Lake" aria-selected="false" data-index="5"></button></div>
+    <div class="hero-dots" id="heroDots" role="tablist" aria-label="Hangzhou landmark carousel"><button class="hero-dot is-active" type="button" role="tab" aria-label="钱江新城 CBD · Qianjiang New City" aria-selected="true" data-index="0"></button><button class="hero-dot" type="button" role="tab" aria-label="钱塘江大桥 · Qiantang River Bridge" aria-selected="false" data-index="1"></button><button class="hero-dot" type="button" role="tab" aria-label="杭州城市夜景 · Hangzhou at Night" aria-selected="false" data-index="2"></button><button class="hero-dot" type="button" role="tab" aria-label="杭州城市地标 · Hangzhou Landmark" aria-selected="false" data-index="3"></button><button class="hero-dot" type="button" role="tab" aria-label="古塔 · Ancient Pagoda" aria-selected="false" data-index="4"></button><button class="hero-dot" type="button" role="tab" aria-label="雷峰塔 · Leifeng Pagoda" aria-selected="false" data-index="5"></button><button class="hero-dot" type="button" role="tab" aria-label="西湖亭台 · West Lake Pavilion" aria-selected="false" data-index="6"></button><button class="hero-dot" type="button" role="tab" aria-label="钱江新城夜景 · CBD at Night" aria-selected="false" data-index="7"></button></div>
   </section>
 
   <!-- ===== CLIENT CASES (case wall, extracted from brochure) ===== -->
@@ -244,7 +247,7 @@ AURAS.initAnnouncement();
 <script src="js/ui.js"></script>
 <script src="js/premium.js"></script>
 <script src="js/loader.js"></script>
-  <script src="js/hero-carousel.js?v=3"></script>
+  <script src="js/hero-carousel.js?v=4"></script>
 
 <script>
 (function(){
