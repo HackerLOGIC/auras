@@ -5,7 +5,7 @@
    ========================================================================== */
 
 /* ---------- 1. Hero 容器 ---------- */
-.hero {
+.hero-plain {
   position: relative;
   min-height: 92vh;
   display: flex;
@@ -16,7 +16,7 @@
 }
 
 /* ---------- 2. 轮播图层：照片原色呈现 ---------- */
-.hero .hero-bg.hero-carousel {
+.hero-plain .hero-bg.hero-carousel {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
@@ -55,12 +55,12 @@
 }
 
 /* ---------- 3. 彻底清除任何蒙版 / 渐变 / 遮罩图层 ---------- */
-.hero::before,
-.hero::after,
-.hero .hero-bg.hero-carousel::before,
-.hero .hero-bg.hero-carousel::after,
-.hero .hero-carousel::before,
-.hero .hero-carousel::after {
+.hero-plain::before,
+.hero-plain::after,
+.hero-plain .hero-bg.hero-carousel::before,
+.hero-plain .hero-bg.hero-carousel::after,
+.hero-plain .hero-carousel::before,
+.hero-plain .hero-carousel::after {
   content: none !important;
   display: none !important;
   background: none !important;
@@ -69,7 +69,7 @@
   opacity: 0 !important;
 }
 
-/* 兼容旧主题在 .hero 上的伪元素渐变 */
+/* 兼容旧主题在 .hero-plain 上的伪元素渐变 */
 .hero-bg::after,
 .hero-bg::before {
   content: none !important;
@@ -78,7 +78,7 @@
 }
 
 /* ---------- 4. CTA 区：只保留两枚胶囊玻璃按钮 ---------- */
-.hero .container.hero-cta-bottom {
+.hero-plain .container.hero-cta-bottom {
   position: relative;
   left: auto;
   bottom: auto;
@@ -101,24 +101,24 @@
   backdrop-filter: none !important;
 }
 
-.hero .container.hero-cta-bottom::before,
-.hero .container.hero-cta-bottom::after {
+.hero-plain .container.hero-cta-bottom::before,
+.hero-plain .container.hero-cta-bottom::after {
   content: none !important;
   display: none !important;
 }
 
 /* 隐藏 hero 内一切文字元素（标题 / 副标题 / 段落 / 说明） */
-.hero h1,
-.hero h2,
-.hero .subtitle,
-.hero .eyebrow,
-.hero p,
-.hero .scroll-hint {
+.hero-plain h1,
+.hero-plain h2,
+.hero-plain .subtitle,
+.hero-plain .eyebrow,
+.hero-plain p,
+.hero-plain .scroll-hint {
   display: none !important;
 }
 
 /* ---------- 5. 胶囊玻璃按钮 ---------- */
-.hero .hero-cta-bottom .btn {
+.hero-plain .hero-cta-bottom .btn {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -149,12 +149,12 @@
 }
 
 /* 主按钮：更实一点，仍保持玻璃质感 */
-.hero .hero-cta-bottom .btn.btn-gold {
+.hero-plain .hero-cta-bottom .btn.btn-gold {
   background: rgba(255, 255, 255, .26) !important;
   border-color: rgba(255, 255, 255, .72) !important;
 }
 
-.hero .hero-cta-bottom .btn:hover {
+.hero-plain .hero-cta-bottom .btn:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, .32) !important;
   border-color: rgba(255, 255, 255, .85) !important;
@@ -163,15 +163,15 @@
     inset 0 1px 0 rgba(255, 255, 255, .5);
 }
 
-.hero .hero-cta-bottom .btn:active { transform: translateY(0); }
+.hero-plain .hero-cta-bottom .btn:active { transform: translateY(0); }
 
-.hero .hero-cta-bottom .btn:focus-visible {
+.hero-plain .hero-cta-bottom .btn:focus-visible {
   outline: 2px solid rgba(255, 255, 255, .95);
   outline-offset: 4px;
 }
 
 /* ---------- 6. 指示点 ---------- */
-.hero .hero-dots {
+.hero-plain .hero-dots {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -189,7 +189,7 @@
   box-shadow: 0 6px 22px rgba(6, 16, 34, .22);
 }
 
-.hero .hero-dot {
+.hero-plain .hero-dot {
   width: 30px;
   height: 3px;
   padding: 0;
@@ -200,46 +200,46 @@
   transition: background-color .35s ease, width .35s ease, opacity .35s ease;
 }
 
-.hero .hero-dot:hover { background: rgba(255, 255, 255, .75); }
+.hero-plain .hero-dot:hover { background: rgba(255, 255, 255, .75); }
 
-.hero .hero-dot.is-active {
+.hero-plain .hero-dot.is-active {
   width: 48px;
   background: #ffffff;
 }
 
-.hero .hero-dot:focus-visible {
+.hero-plain .hero-dot:focus-visible {
   outline: 2px solid #ffffff;
   outline-offset: 4px;
 }
 
 /* ---------- 7. 响应式 ---------- */
 @media (max-width: 1024px) {
-  .hero { min-height: 82vh; }
+  .hero-plain { min-height: 82vh; }
 }
 
 @media (max-width: 900px) {
-  .hero { min-height: 76vh; }
-  .hero .hero-cta-bottom { gap: 12px; padding: 0 22px; }
-  .hero .hero-cta-bottom .btn { min-width: 158px; height: 48px; padding: 0 26px; font-size: 14px; }
-  .hero .hero-dots { bottom: 34px; gap: 8px; padding: 8px 13px; }
-  .hero .hero-dot { width: 24px; }
-  .hero .hero-dot.is-active { width: 38px; }
+  .hero-plain { min-height: 76vh; }
+  .hero-plain .hero-cta-bottom { gap: 12px; padding: 0 22px; }
+  .hero-plain .hero-cta-bottom .btn { min-width: 158px; height: 48px; padding: 0 26px; font-size: 14px; }
+  .hero-plain .hero-dots { bottom: 34px; gap: 8px; padding: 8px 13px; }
+  .hero-plain .hero-dot { width: 24px; }
+  .hero-plain .hero-dot.is-active { width: 38px; }
 }
 
 @media (max-width: 640px) {
-  .hero { min-height: 70vh; }
-  .hero .hero-cta-bottom { flex-direction: column; gap: 12px; }
-  .hero .hero-cta-bottom .btn { width: 100%; max-width: 300px; }
-  .hero .hero-dots { bottom: 26px; }
+  .hero-plain { min-height: 70vh; }
+  .hero-plain .hero-cta-bottom { flex-direction: column; gap: 12px; }
+  .hero-plain .hero-cta-bottom .btn { width: 100%; max-width: 300px; }
+  .hero-plain .hero-dots { bottom: 26px; }
 }
 
 @media (max-width: 375px) {
   /* 极窄屏保留照片（JPEG 已压缩，成本低），仅调整按钮 */
-  .hero .hero-cta-bottom { padding: 0 16px; }
+  .hero-plain .hero-cta-bottom { padding: 0 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .hero-carousel .hero-slide { transition-duration: 0ms; }
   .hero-carousel .hero-slide.is-active { animation: none; }
-  .hero .hero-cta-bottom .btn { transition: none; }
+  .hero-plain .hero-cta-bottom .btn { transition: none; }
 }
